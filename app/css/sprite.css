@@ -1,0 +1,366 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-blog {
+  background-image: url(../img/sprite.png);
+  background-position: -237px -89px;
+  width: 19px;
+  height: 22px;
+}
+.icon-dictionary {
+  background-image: url(../img/sprite.png);
+  background-position: -143px -187px;
+  width: 23px;
+  height: 18px;
+}
+.icon-disc-close {
+  background-image: url(../img/sprite.png);
+  background-position: -237px -170px;
+  width: 19px;
+  height: 19px;
+}
+.icon-disc-rewr {
+  background-image: url(../img/sprite.png);
+  background-position: -97px -187px;
+  width: 23px;
+  height: 23px;
+}
+.icon-discuss-likes {
+  background-image: url(../img/sprite.png);
+  background-position: -92px -48px;
+  width: 12px;
+  height: 14px;
+}
+.icon-discussion {
+  background-image: url(../img/sprite.png);
+  background-position: -237px -131px;
+  width: 20px;
+  height: 20px;
+}
+.icon-download-apple {
+  background-image: url(../img/sprite.png);
+  background-position: -237px 0px;
+  width: 22px;
+  height: 26px;
+}
+.icon-download-arrow {
+  background-image: url(../img/sprite.png);
+  background-position: -166px -187px;
+  width: 16px;
+  height: 16px;
+}
+.icon-download-google {
+  background-image: url(../img/sprite.png);
+  background-position: -74px -187px;
+  width: 23px;
+  height: 24px;
+}
+.icon-footer-question {
+  background-image: url(../img/sprite.png);
+  background-position: -202px -70px;
+  width: 35px;
+  height: 34px;
+}
+.icon-forum-1 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -149px;
+  width: 39px;
+  height: 38px;
+}
+.icon-forum-2 {
+  background-image: url(../img/sprite.png);
+  background-position: -164px -77px;
+  width: 38px;
+  height: 38px;
+}
+.icon-forum-3 {
+  background-image: url(../img/sprite.png);
+  background-position: -39px -149px;
+  width: 38px;
+  height: 38px;
+}
+.icon-forum-4 {
+  background-image: url(../img/sprite.png);
+  background-position: -164px 0px;
+  width: 38px;
+  height: 39px;
+}
+.icon-forum-5 {
+  background-image: url(../img/sprite.png);
+  background-position: -164px -39px;
+  width: 38px;
+  height: 38px;
+}
+.icon-forum-6 {
+  background-image: url(../img/sprite.png);
+  background-position: -43px -112px;
+  width: 37px;
+  height: 37px;
+}
+.icon-forum-answers {
+  background-image: url(../img/sprite.png);
+  background-position: -104px -48px;
+  width: 13px;
+  height: 12px;
+}
+.icon-forum-likes {
+  background-image: url(../img/sprite.png);
+  background-position: -68px -48px;
+  width: 12px;
+  height: 14px;
+}
+.icon-forum_news-answers {
+  background-image: url(../img/sprite.png);
+  background-position: -182px -187px;
+  width: 13px;
+  height: 12px;
+}
+.icon-forum_news-likes {
+  background-image: url(../img/sprite.png);
+  background-position: -80px -48px;
+  width: 12px;
+  height: 14px;
+}
+.icon-header-help {
+  background-image: url(../img/sprite.png);
+  background-position: -184px -167px;
+  width: 16px;
+  height: 16px;
+}
+.icon-home-small {
+  background-image: url(../img/sprite.png);
+  background-position: -237px -208px;
+  width: 10px;
+  height: 10px;
+}
+.icon-link-angle-green {
+  background-image: url(../img/sprite.png);
+  background-position: -154px -112px;
+  width: 8px;
+  height: 14px;
+}
+.icon-link-angle-white {
+  background-image: url(../img/sprite.png);
+  background-position: -154px -126px;
+  width: 8px;
+  height: 14px;
+}
+.icon-logo-small {
+  background-image: url(../img/sprite.png);
+  background-position: -34px -187px;
+  width: 40px;
+  height: 25px;
+}
+.icon-main-intro-1 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 55px;
+  height: 62px;
+}
+.icon-main-intro-2 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -62px;
+  width: 52px;
+  height: 50px;
+}
+.icon-main-intro-3 {
+  background-image: url(../img/sprite.png);
+  background-position: -55px 0px;
+  width: 62px;
+  height: 48px;
+}
+.icon-main-intro-4 {
+  background-image: url(../img/sprite.png);
+  background-position: -117px 0px;
+  width: 47px;
+  height: 56px;
+}
+.icon-main-join-1 {
+  background-image: url(../img/sprite.png);
+  background-position: -100px -62px;
+  width: 44px;
+  height: 44px;
+}
+.icon-main-join-2 {
+  background-image: url(../img/sprite.png);
+  background-position: -52px -62px;
+  width: 48px;
+  height: 46px;
+}
+.icon-main-join-3 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -112px;
+  width: 43px;
+  height: 37px;
+}
+.icon-placemarker {
+  background-image: url(../img/sprite.png);
+  background-position: -144px -62px;
+  width: 17px;
+  height: 21px;
+}
+.icon-reference {
+  background-image: url(../img/sprite.png);
+  background-position: -237px -111px;
+  width: 20px;
+  height: 20px;
+}
+.icon-registration-1 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -187px;
+  width: 34px;
+  height: 31px;
+}
+.icon-registration-2 {
+  background-image: url(../img/sprite.png);
+  background-position: -202px -104px;
+  width: 34px;
+  height: 34px;
+}
+.icon-registration-3 {
+  background-image: url(../img/sprite.png);
+  background-position: -164px -115px;
+  width: 34px;
+  height: 33px;
+}
+.icon-registration-4 {
+  background-image: url(../img/sprite.png);
+  background-position: -202px -138px;
+  width: 34px;
+  height: 34px;
+}
+.icon-search {
+  background-image: url(../img/sprite.png);
+  background-position: -120px -187px;
+  width: 23px;
+  height: 23px;
+}
+.icon-sidebar-article {
+  background-image: url(../img/sprite.png);
+  background-position: -144px -83px;
+  width: 20px;
+  height: 17px;
+}
+.icon-sidebar-discuss {
+  background-image: url(../img/sprite.png);
+  background-position: -237px -151px;
+  width: 20px;
+  height: 19px;
+}
+.icon-sidebar-themes {
+  background-image: url(../img/sprite.png);
+  background-position: -237px -48px;
+  width: 22px;
+  height: 22px;
+}
+.icon-social-facebook {
+  background-image: url(../img/sprite.png);
+  background-position: -80px -112px;
+  width: 37px;
+  height: 36px;
+}
+.icon-social-instagram {
+  background-image: url(../img/sprite.png);
+  background-position: -149px -149px;
+  width: 35px;
+  height: 35px;
+}
+.icon-social-linkedin {
+  background-image: url(../img/sprite.png);
+  background-position: -202px 0px;
+  width: 35px;
+  height: 35px;
+}
+.icon-social-odnoklassniki {
+  background-image: url(../img/sprite.png);
+  background-position: -77px -149px;
+  width: 36px;
+  height: 36px;
+}
+.icon-social-twitter {
+  background-image: url(../img/sprite.png);
+  background-position: -202px -35px;
+  width: 35px;
+  height: 35px;
+}
+.icon-social-vkontakte {
+  background-image: url(../img/sprite.png);
+  background-position: -117px -112px;
+  width: 37px;
+  height: 36px;
+}
+.icon-social-youtube {
+  background-image: url(../img/sprite.png);
+  background-position: -113px -149px;
+  width: 36px;
+  height: 36px;
+}
+.icon-subscribe {
+  background-image: url(../img/sprite.png);
+  background-position: -202px -172px;
+  width: 16px;
+  height: 12px;
+}
+.icon-user-ring {
+  background-image: url(../img/sprite.png);
+  background-position: -184px -149px;
+  width: 16px;
+  height: 18px;
+}
+.icon-user-star {
+  background-image: url(../img/sprite.png);
+  background-position: -237px -189px;
+  width: 19px;
+  height: 19px;
+}
+.icon-word-control-bold {
+  background-image: url(../img/sprite.png);
+  background-position: -206px -187px;
+  width: 8px;
+  height: 12px;
+}
+.icon-word-control-emoji {
+  background-image: url(../img/sprite.png);
+  background-position: -237px -26px;
+  width: 22px;
+  height: 22px;
+}
+.icon-word-control-file {
+  background-image: url(../img/sprite.png);
+  background-position: -237px -70px;
+  width: 22px;
+  height: 19px;
+}
+.icon-word-control-italic {
+  background-image: url(../img/sprite.png);
+  background-position: -195px -187px;
+  width: 11px;
+  height: 12px;
+}
+.icon-word-control-list {
+  background-image: url(../img/sprite.png);
+  background-position: -218px -172px;
+  width: 13px;
+  height: 12px;
+}
+.icon-word-control-num-list {
+  background-image: url(../img/sprite.png);
+  background-position: -55px -48px;
+  width: 13px;
+  height: 14px;
+}

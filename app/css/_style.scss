@@ -1,0 +1,276 @@
+.app {
+	min-width: 320px;
+	overflow-x: hidden;
+	background: #ffffff;
+	
+	.wr,
+	.lia-quilt-wr {
+		&-header {
+			&-banner {
+				padding: 3px 0;
+				background: #eede2a;
+			}
+			&-navigation {
+				background: #eeeeee;
+			}
+			&-search {
+				padding: 21px 0;
+				border-bottom: solid 1px #e5e5e5;
+			}
+			&-unauth {
+				height: 60px; position: relative; z-index: 2;
+				background: $main-color-1;
+				@include respond-to(lg) {
+					height: auto;
+				}
+			}
+
+			& > img {width: 100%;}
+		}
+		&-main {
+			&-intro {
+				position: relative; padding: 149px 0 25px;
+				background: url('../img/main-intro-bg.jpg') center center no-repeat;
+				background-size: cover;
+				@include respond-to(md) {
+					padding: 120px 0 25px;
+				}
+				@include respond-to(sm) {
+					padding: 90px 0 25px;
+				}
+				&:before {
+					content: '';
+					display: block; position: absolute; left: 0; top: 0; right: 0; bottom: 0;
+					background: rgba(0,0,0,0.26);
+				}
+				&:after {
+					content: '';
+					display: block; width: 100%; height: 0; position: absolute; left: 0; bottom: 0;
+					box-shadow: 0 0 200px 100px rgba(0,0,0,0.8);
+				}
+			}
+			&-start {
+				position: relative; padding: 95px 0 0;
+				background: #ffffff;
+				@include respond-to(md) {
+					padding: 80px 0 0;
+				}
+				@include respond-to(sm) {
+					padding: 60px 0 0;
+				}
+			}
+			&-articles {
+				padding: 95px 0 40px;
+				@include respond-to(md) {
+					padding: 80px 0 40px;
+				}
+				@include respond-to(sm) {
+					padding: 60px 0 40px;
+				}
+			}
+			&-join {
+				padding: 95px 0 130px;
+				@include respond-to(md) {
+					padding: 80px 0 100px;
+				}
+				@include respond-to(sm) {
+					padding: 60px 0 70px;
+				}
+			}
+			&-social {
+				padding: 75px 0 63px;
+				background: #f7f7f7;
+			}
+		}
+		&-bread_crumbs {
+			padding: 30px 0; position: relative;
+		}
+		&-registration,
+		&-authorization,
+		&-switch-user {
+			padding: 0 0 190px;
+			@include respond-to(sm) {
+				padding: 0 0 130px;
+			}
+			@include respond-to(xs) {
+				padding: 0 0 80px;
+			}
+		}
+		&-new_theme {
+			padding-bottom: 90px; position: relative;
+		}
+		&-forum {
+			padding-bottom: 60px; position: relative;
+		}
+		&-articles {
+			padding: 62px 0 118px; position: relative;
+			background: #f9f9f9;
+		}
+		&-not_found {
+			padding:  27px 0 60px;
+		}
+		&-footer {
+			padding: 29px 0 36px; position: relative;
+			background: #f7f7f7;
+			// border-top: solid 5px $main-color-1;
+			&-subscribe {
+				padding: 20px 0 20px; position: relative;
+				background: $main-color-1;
+			}
+			
+			& > img {width: 100%;}
+		}
+	}
+}
+
+
+// community styles
+// .lia-quilt-row-forum-main .BoardBrowserListTaplet {
+// 	display: none;
+// }
+.BreadCrumb.lia-breadcrumb {
+	margin: 0 auto; padding: 30px 15px;
+}
+.BreadCrumb .lia-list-standard-inline {
+	padding: 0;
+}
+.ForumPage .MessageView.lia-thread-reply {
+	display: none;
+}
+.wr-container {
+	@extend .clear;
+	width: 1270px; margin: 0 auto !important;
+}
+// .lia-quilt-column {
+// 	padding: 0 15px !important;
+// }
+// .lia-top-quilt > .lia-quilt-row-main > .lia-quilt-column > .lia-quilt-column-alley {
+// 	margin-bottom: 0 !important;
+// }
+// .lia-top-quilt > .lia-quilt-row-main > .lia-quilt-column:first-child,
+// .lia-top-quilt > .lia-quilt-row-main > .lia-quilt-column:last-child {
+// 	padding-left: 0 !important; padding-right: 0 !important;
+// }
+
+.lia-quilt-row {
+	&-header-banner {
+		padding: 3px 0;
+		background: #eede2a;
+	}
+	&-header-nav {
+		background: #eeeeee;
+	}
+	// &-header-search {
+	// 	padding: 21px 0;
+	// 	border-bottom: solid 1px #e5e5e5;
+	// }
+	// &-forum-articles {
+	// 	padding: 62px 0 118px;
+	// 	background: #f9f9f9;
+	// }
+	&-new-theme {
+		padding-bottom: 90px;
+	}
+	&-forum-main {
+		padding-bottom: 60px;
+	}
+	&-wr-footer {
+		padding: 34px 0 70px;
+		background: #f7f7f7; border-top: solid 5px $main-color-1;
+	}
+	&-wr-footer-subscribe {
+		padding: 20px 0 20px;
+		background: $main-color-1;
+	}
+}
+
+.wr-content {
+	width: 1270px; margin: 0 auto;
+
+	form.MessageEditorForm {margin-top: 30px;}
+
+	> p {
+		color: #999999; font-size: 12px; font-family: $HNC-Italic; text-align: center; padding-bottom: 20px;
+
+		em {
+			color: $main-color-1; font-size: 18px; font-family: $HNC-Bold;
+			position: relative; top: 5px;
+		}
+	}
+}
+.lia-quilt-row-main {
+	width: 1270px; margin: 0 auto;
+	@include respond-to(desktop) {
+		width: 1170px;
+	}
+	@include respond-to(lg) {
+		width: 970px;
+	}
+	@include respond-to(md) {
+		width: 750px;
+	}
+	@include respond-to(sm) {
+		width: 100%;
+	}
+}
+.lia-page-header {width: 1270px; margin: 0 auto; padding: 0;}
+
+
+
+// hide components
+.CommunityPage {
+	.LithiumLogo,
+	.lia-component-common-widget-scroll-to,
+	.lia-quilt-community-hero,
+	.lia-component-community-widget-featured-content,
+	.lia-component-quilt-vitality,
+	.BoardBrowserListTaplet,
+	.MessageListTaplet,
+	.KudoedAuthorsLeaderboardTaplet,
+	.MessageListTaplet,
+	.ActionLinksTaplet {display: none;}
+}
+.CategoryPage {
+	.LithiumLogo,
+	.lia-component-common-widget-scroll-to,
+	.lia-component-common-widget-slide-out-nav-menu,
+	.lia-component-nodes-widget-community-title,
+	.lia-header-actions,
+	.SearchForm {display: none;}
+}
+.ForumPage {
+	.LithiumLogo,
+	.lia-component-common-widget-scroll-to,
+	.lia-component-common-widget-slide-out-nav-menu,
+	.lia-component-nodes-widget-community-title,
+	.lia-header-actions,
+	.lia-component-community-widget-page-options,
+	.SearchForm {display: none;}
+}
+.ForumTopicPage {
+	.LithiumLogo,
+	.lia-component-common-widget-scroll-to,
+	.lia-component-common-widget-slide-out-nav-menu,
+	.lia-component-nodes-widget-community-title,
+	.lia-header-actions,
+	.lia-component-community-widget-page-options,
+	.SearchForm,
+	.PageTitle,
+	.lia-component-thread-pager,
+	.lia-page-header,
+	.lia-component-topic-message,
+	.lia-component-reply-count-conditional {display: none;}
+}
+.UserLoginPage {
+	.LithiumLogo,
+	.lia-component-common-widget-scroll-to,
+	.lia-component-common-widget-slide-out-nav-menu,
+	.lia-component-nodes-widget-community-title,
+	.lia-header-actions,
+	.lia-component-community-widget-page-options,
+	.SearchForm,
+	.PageTitle,
+	.lia-component-quilt-header-with-two-nav,
+	.UserLoginForm,
+	.RegisterNowForm {display: none;}
+}

@@ -1,0 +1,41 @@
+<#assign apiVersion = "2.0"/>
+
+<#assign x= rest(apiVersion,"/search?q=" + "SELECT * FROM boards WHERE parent_category.id = 'test_category'"?url) />
+<#assign count = rest(apiVersion,"/search?q=" + "SELECT * FROM messages WHERE board.id = 'stroym' AND depth = 0"?url) />
+
+
+
+<div class="forum-body">
+	<p class="auth-text">Тест неавторизированному пользователю, с сообщением, что чтобы комментировать, делиться и учавствовать в жизни сообщества нужно <a href="#">авторизироваться</a> или <a href="#">зарегистрироваться</a>. Пока он может просматривать статьи и форум, но не принимать участие в жизни сообщества.</p>
+	<div class="forum-list">
+		<ul>
+			<li>
+				<em>Форум</em>
+				<em>Тем</em>
+				<em>Сообщений</em>
+				<em>Последняя тема</em>
+			</li>
+
+			<#list x.data.items as board >
+
+			<li>
+				<div>
+					<span><i class="icon icon-forum-1"></i></span>
+					<h3><a href="${board.view_href}">${board.title}</a></h3>
+					<p>${board.description}</p>
+				</div>
+				<p>${count.data.size}</p>
+				<span>8</span>
+				<div>
+					<h4><a href="#">Когда можно наносить бутумную мастику на стены фун...</a></h4>
+					<ul>
+						<li>от <a href="#">Svjatoslav</a></li>
+						<li><span class="date"><i class="fa fa-clock-o"></i>сегодня, 13:50</span></li>
+					</ul>
+				</div>
+			</li>
+			</#list>
+
+		</ul>
+	</div>
+</div>
