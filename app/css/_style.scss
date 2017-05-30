@@ -109,6 +109,9 @@
 		&-not_found {
 			padding:  27px 0 60px;
 		}
+		&-search_result {
+			padding: 0 0 120px;
+		}
 		&-footer {
 			padding: 29px 0 36px; position: relative;
 			background: #f7f7f7;
@@ -218,59 +221,59 @@
 
 
 // hide components
-.CommunityPage {
-	.LithiumLogo,
-	.lia-component-common-widget-scroll-to,
-	.lia-quilt-community-hero,
-	.lia-component-community-widget-featured-content,
-	.lia-component-quilt-vitality,
-	.BoardBrowserListTaplet,
-	.MessageListTaplet,
-	.KudoedAuthorsLeaderboardTaplet,
-	.MessageListTaplet,
-	.ActionLinksTaplet {display: none;}
-}
-.CategoryPage {
-	.LithiumLogo,
-	.lia-component-common-widget-scroll-to,
-	.lia-component-common-widget-slide-out-nav-menu,
-	.lia-component-nodes-widget-community-title,
-	.lia-header-actions,
-	.SearchForm {display: none;}
-}
-.ForumPage {
-	.LithiumLogo,
-	.lia-component-common-widget-scroll-to,
-	.lia-component-common-widget-slide-out-nav-menu,
-	.lia-component-nodes-widget-community-title,
-	.lia-header-actions,
-	.lia-component-community-widget-page-options,
-	.SearchForm {display: none;}
-}
-.ForumTopicPage {
-	.LithiumLogo,
-	.lia-component-common-widget-scroll-to,
-	.lia-component-common-widget-slide-out-nav-menu,
-	.lia-component-nodes-widget-community-title,
-	.lia-header-actions,
-	.lia-component-community-widget-page-options,
-	.SearchForm,
-	.PageTitle,
-	.lia-component-thread-pager,
-	.lia-page-header,
-	.lia-component-topic-message,
-	.lia-component-reply-count-conditional {display: none;}
-}
-.UserLoginPage {
-	.LithiumLogo,
-	.lia-component-common-widget-scroll-to,
-	.lia-component-common-widget-slide-out-nav-menu,
-	.lia-component-nodes-widget-community-title,
-	.lia-header-actions,
-	.lia-component-community-widget-page-options,
-	.SearchForm,
-	.PageTitle,
-	.lia-component-quilt-header-with-two-nav,
-	.UserLoginForm,
-	.RegisterNowForm {display: none;}
-}
+// .CommunityPage {
+// 	.LithiumLogo,
+// 	.lia-component-common-widget-scroll-to,
+// 	.lia-quilt-community-hero,
+// 	.lia-component-community-widget-featured-content,
+// 	.lia-component-quilt-vitality,
+// 	.BoardBrowserListTaplet,
+// 	.MessageListTaplet,
+// 	.KudoedAuthorsLeaderboardTaplet,
+// 	.MessageListTaplet,
+// 	.ActionLinksTaplet {display: none;}
+// }
+// .CategoryPage {
+// 	.LithiumLogo,
+// 	.lia-component-common-widget-scroll-to,
+// 	.lia-component-common-widget-slide-out-nav-menu,
+// 	.lia-component-nodes-widget-community-title,
+// 	.lia-header-actions,
+// 	.SearchForm {display: none;}
+// }
+// .ForumPage {
+// 	.LithiumLogo,
+// 	.lia-component-common-widget-scroll-to,
+// 	.lia-component-common-widget-slide-out-nav-menu,
+// 	.lia-component-nodes-widget-community-title,
+// 	.lia-header-actions,
+// 	.lia-component-community-widget-page-options,
+// 	.SearchForm {display: none;}
+// }
+// .ForumTopicPage {
+// 	.LithiumLogo,
+// 	.lia-component-common-widget-scroll-to,
+// 	.lia-component-common-widget-slide-out-nav-menu,
+// 	.lia-component-nodes-widget-community-title,
+// 	.lia-header-actions,
+// 	.lia-component-community-widget-page-options,
+// 	.SearchForm,
+// 	.PageTitle,
+// 	.lia-component-thread-pager,
+// 	.lia-page-header,
+// 	.lia-component-topic-message,
+// 	.lia-component-reply-count-conditional {display: none;}
+// }
+// .UserLoginPage {
+// 	.LithiumLogo,
+// 	.lia-component-common-widget-scroll-to,
+// 	.lia-component-common-widget-slide-out-nav-menu,
+// 	.lia-component-nodes-widget-community-title,
+// 	.lia-header-actions,
+// 	.lia-component-community-widget-page-options,
+// 	.SearchForm,
+// 	.PageTitle,
+// 	.lia-component-quilt-header-with-two-nav,
+// 	.UserLoginForm,
+// 	.RegisterNowForm {display: none;}
+// }

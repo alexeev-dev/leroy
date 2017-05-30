@@ -54,6 +54,5 @@ function discussListGen() {
 
 		deleteButton.addClass(forumDiscDeleteClasses);
 		// deleteButton.attr('id', forumDiscDeleteId).attr('data-lia-action-token', forumDiscDeleteData).attr('href', forumDiscDeleteLink);
-		console.log(forumDiscDeleteLink + '/ ' + ,forumDiscDeleteData + '/ ' + ,forumDiscDeleteId + '/ ' + ,forumDiscDeleteClasses);
 	}
 }

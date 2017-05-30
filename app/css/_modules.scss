@@ -2770,6 +2770,333 @@ ul {
 	}
 }
 
+.result {
+	&-wrap {
+		h1 {
+			color: $main-color-2; font-size: 23px; font-family: $HNL-Black; letter-spacing: -0.07px;
+			margin-bottom: 46px;
+			@include respond-to(sm) {
+				font-size: 20px;
+				margin-bottom: 30px;
+			}
+			& > em {
+				font-family: $HNL-BoldItalic;
+				display: inline-block; margin-left: 1px;
+			}
+			& > span {
+				color: #bbbbbb; font-size: 15px; font-family: $HNL-Italic; letter-spacing: 0.05px;
+				display: inline-block; position: relative; left: -1px;
+				@include respond-to(md) {
+					left: 0; display: block; margin-top: 10px;
+				}
+				&:before {
+					content: '/ ';
+					color: #bbbbbb; font-size: 15px; font-family: $HNL-Italic; letter-spacing: 0.05px;
+					@include respond-to(md) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	&-item {
+		margin-bottom: 21px;
+		background: #f9f9f9; border: solid 1px #e9e9e9;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		h2 {
+			color: $main-color-2; font-size: 20px; font-family: $HNC-Bold;
+			padding: 18px 19px 19px;
+			background: #f3f3f3; border-bottom: solid 1px #e9e9e9;
+			span {
+				font-family: $HNC-Medium;
+			}
+		}
+		ul {
+			&.articles {
+				display: flex; padding: 20px 9px 21px;
+				@include respond-to(md) {
+					flex-wrap: wrap; 
+				}
+				@include respond-to(xs) {
+					margin-left: 0; padding: 20px 15px;
+				}
+				& > li { 
+					margin: 0 15px; width: calc(20% - 30px);
+					overflow: hidden;
+					@include respond-to(md) {
+						width: calc(50% - 30px); margin-bottom: 30px;
+					}
+					@include respond-to(xs) {
+						width: 100%; margin: 0 0 30px;
+					}
+					&:last-child {
+						@include respond-to(xs) {
+							margin-bottom: 0;
+						}
+					}
+					figure {
+						img {
+							width: 100%;
+						}
+						figcaption {
+							padding-top: 15px;
+							h5 {
+								a {
+									font-size: 14px; font-family: $HNC-Medium; line-height: 17px; letter-spacing: 0.4px;
+									&:hover {
+										color: $main-color-1;
+									}
+								}
+							}
+							ul {
+								padding-top: 8px;
+								li {
+									font-size: 12px; font-family: $OpenSans; font-weight: 600;
+									display: inline-block; margin-right: 14px;
+									&:first-child {
+										color: #333399;
+									}
+									&:last-child {
+										color: $main-color-1;
+										margin-right: 0;
+									}
+									i {
+										margin-right: 4px; position: relative;
+										&.icon-forum_news {
+											&-answers {
+												top: 2px;
+											}
+											&-likes {
+												top: 1px;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			&.forum-list {
+				& > li {
+					display: flex; padding: 21px 0 23px;
+					border-bottom: solid 1px #eaeaea;
+					@include respond-to(sm) {
+						flex-wrap: wrap; padding: 21px 15px 23px;
+					}
+					&:last-child {
+						border-bottom: none;
+					}
+					& > div {
+						position: relative;
+						&:first-child {
+							width: 48.33856%; padding-left: 23px;
+							@include respond-to(lg) {
+								width: 45%;
+							}
+							@include respond-to(sm) {
+								width: 100%; margin-bottom: 15px; padding-left: 0;
+							}
+						}
+						&:nth-child(3) {
+							width: 16.02756%; align-self: center; padding-bottom: 2px;
+							@include respond-to(lg) {
+								width: 23%;
+							}
+							@include respond-to(sm) {
+								display: none;
+							}
+						}
+						&:last-child {
+							width: 14.20695%; padding-top: 8px; padding-left: 26px; align-self: center;
+							@include respond-to(lg) {
+								padding-left: 0; width: 15%;
+							}
+							@include respond-to(sm) {
+								text-align: center;
+								width: 100%;
+							}
+							a {
+								color: $main-color-1; font-size: 13px; font-family: $HNC-Medium; line-height: 16px; letter-spacing: -0.1px;
+								display: inline-block;
+								&.comm {
+									left: 134px;
+									@include respond-to(lg) {
+										display: none;
+									}
+								}
+
+								br {
+									@include respond-to(sm) {
+										display: none;
+									}
+								}
+							}
+						}
+						h4 {
+							margin-bottom: 14px;
+							a {
+								color: $main-color-1; font-size: 16px; font-family: $HNC-Bold; letter-spacing: 0.1px;
+								display: block;
+								&:hover {
+									text-decoration: underline;
+								}
+							}
+						}
+						& > figure {
+							float: left; width: 37px; height: 37px; position: relative; top: 2px; left: 1px; margin-right: 15px;
+							border: solid 1px #ebebeb; border-radius: 50%;
+							overflow: hidden;
+							img {
+								position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+							}
+						}
+						& > a {
+							&.auth {
+								color: $main-color-1; font-size: 13px; font-family: $HNC-Medium;
+								display: inline-block; margin-bottom: 6px;
+							}
+							&.comm {
+								color: #ffffff;
+								display: block; width: 14px; height: 14px; position: absolute; left: 109px; top: 50%; transform: translateY(-50%);
+								background: $main-color-1; border: solid 1px $main-color-1; border-radius: 50%;
+								&:hover {
+									background: #ffffff;
+									i {
+										color: $main-color-1;
+									}
+								}
+								i {
+									color: #ffffff; font-size: 10px;
+									position: absolute; left: 58%; top: 58%; transform: translate(-50%,-50%);
+								}
+							}
+						}
+						& > span {
+							font-size: 11px;
+							display: block;
+							i {
+								color: #bcbcbc; font-size: 12px;
+								margin-right: 6px; position: relative; top: 1px;
+							}
+							&.date {
+								font-family: $Roboto;
+							}
+							&.date-comm {
+								font-family: $HNC-Medium;
+							}
+						}
+						& > p {
+							font-size: 11px; font-family: $HNC-Medium;
+							margin-bottom: 5px;
+							a {
+								color: $main-color-1; white-space: nowrap; text-overflow: ellipsis;
+								display: inline-block; max-width: 90px; position: relative; top: 4px;
+								overflow: hidden;
+								&:hover {
+									text-decoration: underline;
+								}
+							}
+						}
+					}
+					& > ul {
+						width: 21.42%; align-self: center; padding-top: 4px;
+						@include respond-to(lg) {
+							width: 17%;
+						}
+						@include respond-to(sm) {
+							text-align: center;
+							width: 100%;
+						}
+						li {
+							color: #bbbbbb; font-size: 12px; font-family: $HNC-Medium; font-weight: 600; text-align: center;
+							margin-bottom: 12px;
+							@include respond-to(sm) {
+								display: inline-block; margin: 0 10px;
+							}
+							&:last-child {margin-bottom: 0;}
+							i {
+								margin-right: 3px; position: relative;
+								&.icon-forum {
+									&-answers {
+										top: 2px;
+									}
+									&-likes {
+										top: 1px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			&.users {
+				display: flex; justify-content: flex-start; flex-wrap: wrap; padding: 28px 8px 0;
+				@include respond-to(xs) {
+					padding: 30px 15px;
+				}
+				li {
+					width: calc(25% - 40px); margin: 0 20px 37px; position: relative; padding-left: 100px; min-height: 76px; padding-top: 1px;
+					@include respond-to(lg) {
+						padding-left: 90px; margin: 0 10px 37px; width: calc(25% - 20px);
+					}
+					@include respond-to(md) {
+						width: calc(33.33333% - 20px);
+					}
+					@include respond-to(sm) {
+						width: calc(50% - 20px);
+					}
+					@include respond-to(xs) {
+						width: 100%; margin: 0 0 30px;
+					}
+					&:last-child {
+						@include respond-to(xs) {
+							margin-bottom: 0;
+						}
+					}
+					figure {
+						width: 76px; height: 76px; position: absolute; left: 0; top: 0;
+						border-radius: 50%;
+						overflow: hidden;
+						img {
+							min-width: 100%; position: relative; left: 50%; top: 50%; transform: translate(-50%,-50%);
+						}
+					}
+					a, p, span {
+						color: $main-color-2;
+					}
+					a {
+						font-size: 18px; font-family: $HNL-Bold;
+						display: inline-block; position: relative; margin-bottom: 12px;
+						transition: color 0.2s ease-out;
+						&:after {
+							content: '';
+							display: block; width: 0%; height: 1px; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%);
+							background: $main-color-2;
+							transition: opacity 0.2s ease-out, width 0.2s ease-out;
+						}
+						&:hover {
+							color: $main-color-1;
+							&:after {
+								width: 100%;
+								background: $main-color-1;
+							}
+						}
+					}
+					p {
+						font-size: 14px; font-family: $HNL-Medium; line-height: 16px;
+					}
+					span {
+						font-size: 11px; font-family: $HNC-Medium; letter-spacing: -0.1px;
+					}
+				}
+			}
+		}
+	}
+}
+
 /*********************************/
 /********* Sub Modules ***********/
 /*********************************/
