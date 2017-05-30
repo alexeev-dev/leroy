@@ -11174,6 +11174,16 @@ ul.btn-list {
 .forum-body > a.btn, .KudosButton .forum-body > a.lia-button-image-kudos {
   margin-bottom: 25px; }
 
+.forum-body h1 {
+  color: #333333;
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  margin-bottom: 30px; }
+  @media (max-width: 480px) {
+    .forum-body h1 {
+      font-size: 20px; } }
+
 .forum-body p.auth-text {
   font-size: 13px;
   font-family: "Open Sans", sans-serif;
@@ -11197,13 +11207,14 @@ ul.btn-list {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 13px; }
-  .forum-pagination h3 {
+  .forum-pagination h1 {
     color: #333333;
     font-size: 23px;
     font-family: "Open Sans", sans-serif;
-    font-weight: 800; }
+    font-weight: 800;
+    margin-bottom: 0; }
     @media (max-width: 480px) {
-      .forum-pagination h3 {
+      .forum-pagination h1 {
         font-size: 20px; } }
   .forum-pagination ul {
     padding-top: 2px;
@@ -14026,7 +14037,8 @@ ul.btn-list {
   .registration form .lia-form-footer .lia-quilt-column-16,
   .authorization form .lia-form-footer .lia-quilt-column-16,
   .switch-user form .lia-form-footer .lia-quilt-column-16 {
-    width: 100%; }
+    width: 100%;
+    padding-left: 0; }
   .registration form button, .registration form input[type=submit],
   .authorization form button,
   .authorization form input[type=submit],
@@ -14062,6 +14074,15 @@ ul.btn-list {
       background: #66c05d;
       border-color: #66c05d;
       outline: none; }
+    .registration form button.lia-link-disabled, .registration form input[type=submit].lia-link-disabled,
+    .authorization form button.lia-link-disabled,
+    .authorization form input[type=submit].lia-link-disabled,
+    .switch-user form button.lia-link-disabled,
+    .switch-user form input[type=submit].lia-link-disabled {
+      color: #ffffff !important;
+      background: #66c05d !important;
+      border-color: #66c05d !important;
+      pointer-events: none; }
 
 .registration ul,
 .authorization ul,
@@ -14275,6 +14296,8 @@ ul.btn-list {
           background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(50%, #d5d8d6), color-stop(50%, rgba(255, 255, 255, 0)));
           background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #d5d8d6 50%, rgba(255, 255, 255, 0));
           background: linear-gradient(90deg, rgba(255, 255, 255, 0), #d5d8d6 50%, rgba(255, 255, 255, 0)); } }
+    .not-found > ul > li > a {
+      display: inline-block; }
     .not-found > ul > li span {
       display: block;
       width: 98px;
@@ -15008,7 +15031,8 @@ ul.forum-img {
   .app .lia-quilt-wr-footer {
     padding: 29px 0 36px;
     position: relative;
-    background: #f7f7f7; }
+    background: #f7f7f7;
+    border-top: solid 3px #66c05d; }
     .app .wr-footer-subscribe,
     .app .lia-quilt-wr-footer-subscribe {
       padding: 20px 0 20px;
@@ -15054,6 +15078,9 @@ ul.forum-img {
   padding: 20px 0 20px;
   background: #66c05d; }
 
+.lia-top-quilt > .lia-quilt-row-footer {
+  border-top: none; }
+
 .wr-content {
   width: 1270px;
   margin: 0 auto; }
@@ -15092,6 +15119,73 @@ ul.forum-img {
   width: 1270px;
   margin: 0 auto;
   padding: 0; }
+
+.CommunityPage .LithiumLogo,
+.CommunityPage .lia-component-common-widget-scroll-to,
+.CommunityPage .lia-quilt-community-hero,
+.CommunityPage .lia-component-community-widget-featured-content,
+.CommunityPage .lia-component-quilt-vitality,
+.CommunityPage .BoardBrowserListTaplet,
+.CommunityPage .MessageListTaplet,
+.CommunityPage .KudoedAuthorsLeaderboardTaplet,
+.CommunityPage .MessageListTaplet,
+.CommunityPage .ActionLinksTaplet {
+  display: none; }
+
+.CategoryPage .LithiumLogo,
+.CategoryPage .lia-component-common-widget-scroll-to,
+.CategoryPage .lia-component-common-widget-slide-out-nav-menu,
+.CategoryPage .lia-component-nodes-widget-community-title,
+.CategoryPage .lia-header-actions,
+.CategoryPage .SearchForm {
+  display: none; }
+
+.ForumPage .LithiumLogo,
+.ForumPage .lia-component-common-widget-scroll-to,
+.ForumPage .lia-component-common-widget-slide-out-nav-menu,
+.ForumPage .lia-component-nodes-widget-community-title,
+.ForumPage .lia-header-actions,
+.ForumPage .lia-component-community-widget-page-options,
+.ForumPage .SearchForm {
+  display: none; }
+
+.ForumTopicPage .LithiumLogo,
+.ForumTopicPage .lia-component-common-widget-scroll-to,
+.ForumTopicPage .lia-component-common-widget-slide-out-nav-menu,
+.ForumTopicPage .lia-component-nodes-widget-community-title,
+.ForumTopicPage .lia-header-actions,
+.ForumTopicPage .lia-component-community-widget-page-options,
+.ForumTopicPage .SearchForm,
+.ForumTopicPage .PageTitle,
+.ForumTopicPage .lia-component-thread-pager,
+.ForumTopicPage .lia-page-header,
+.ForumTopicPage .lia-component-reply-count-conditional {
+  display: none; }
+
+.UserLoginPage .LithiumLogo,
+.UserLoginPage .lia-component-common-widget-scroll-to,
+.UserLoginPage .lia-component-common-widget-slide-out-nav-menu,
+.UserLoginPage .lia-component-nodes-widget-community-title,
+.UserLoginPage .lia-header-actions,
+.UserLoginPage .lia-component-community-widget-page-options,
+.UserLoginPage .SearchForm,
+.UserLoginPage .PageTitle,
+.UserLoginPage .lia-component-quilt-header-with-two-nav,
+.UserLoginPage .UserLoginForm,
+.UserLoginPage .RegisterNowForm {
+  display: none; }
+
+.Error404Page .LithiumLogo,
+.Error404Page .lia-component-common-widget-scroll-to,
+.Error404Page .lia-component-common-widget-slide-out-nav-menu,
+.Error404Page .lia-component-nodes-widget-community-title,
+.Error404Page .lia-header-actions,
+.Error404Page .lia-component-community-widget-page-options,
+.Error404Page .SearchForm,
+.Error404Page .PageTitle,
+.Error404Page .InfoMessage,
+.Error404Page .InfoMessage + img {
+  display: none; }
 
 /*********************************/
 /********** Typography ***********/
