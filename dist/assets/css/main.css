@@ -11182,7 +11182,7 @@ ul.btn-list {
   margin-bottom: 30px; }
   @media (max-width: 480px) {
     .forum-body h1 {
-      font-size: 20px; } }
+      font-size: 24px; } }
 
 .forum-body p.auth-text {
   font-size: 13px;
@@ -15174,6 +15174,33 @@ ul.forum-img {
 .UserLoginPage .UserLoginForm,
 .UserLoginPage .RegisterNowForm {
   display: none; }
+
+.PostPage .LithiumLogo,
+.PostPage .lia-component-common-widget-scroll-to,
+.PostPage .lia-component-common-widget-slide-out-nav-menu,
+.PostPage .lia-component-nodes-widget-community-title,
+.PostPage .lia-header-actions,
+.PostPage .lia-component-community-widget-page-options,
+.PostPage .SearchForm,
+.PostPage .MessageEditorForm,
+.PostPage .MessageEditorForm + p {
+  display: none; }
+
+.PostPage h1.PageTitle {
+  color: #333333;
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  padding: 0 15px;
+  margin-bottom: 30px; }
+  @media (max-width: 480px) {
+    .PostPage h1.PageTitle {
+      font-size: 24px; } }
+  .PostPage h1.PageTitle span {
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit; }
 
 .Error404Page .LithiumLogo,
 .Error404Page .lia-component-common-widget-scroll-to,
