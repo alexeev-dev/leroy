@@ -12909,6 +12909,47 @@ ul.btn-list {
           margin-right: 0; }
           .header-navigation div.user ul li:last-child:after {
             display: none; }
+  .header-navigation div.unauth ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 300px;
+    height: 41px; }
+    .header-navigation div.unauth ul:hover li a:after {
+      display: none; }
+    .header-navigation div.unauth ul li {
+      width: 50%; }
+      .header-navigation div.unauth ul li:last-child a:after {
+        display: none; }
+      .header-navigation div.unauth ul li a {
+        color: #ffffff;
+        font-size: 10px;
+        font-family: "HelveticaNeueCyr-Bold", Helvetica, sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 41px;
+        letter-spacing: -0.1px;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+        position: relative;
+        background: #66c05d; }
+        .header-navigation div.unauth ul li a:after {
+          content: '';
+          display: block;
+          width: 1px;
+          height: 26px;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          background: #00a639; }
+        .header-navigation div.unauth ul li a:hover {
+          background: #00a639; }
 
 .header-unauth {
   position: relative; }
@@ -13679,14 +13720,14 @@ ul.btn-list {
       @media (max-width: 767px) {
         .main-join ul li p br {
           display: none; } }
-  .main-join a {
+  .main-join > a {
     color: #66c05d;
     font-size: 15px;
     font-family: "HelveticaNeueLt-Bold", Helvetica, sans-serif;
     text-decoration: underline; }
-    .main-join a:hover {
+    .main-join > a:hover {
       text-decoration: none; }
-    .main-join a.btn, .main-join .KudosButton a.lia-button-image-kudos, .KudosButton .main-join a.lia-button-image-kudos {
+    .main-join > a.btn, .KudosButton .main-join > a.lia-button-image-kudos {
       color: #ffffff;
       font-size: 15px;
       font-family: "HelveticaNeueLt-Heavy", Helvetica, sans-serif;
@@ -13700,11 +13741,11 @@ ul.btn-list {
       -webkit-border-radius: 0;
       border-radius: 0; }
       @media (max-width: 480px) {
-        .main-join a.btn, .main-join .KudosButton a.lia-button-image-kudos, .KudosButton .main-join a.lia-button-image-kudos {
+        .main-join > a.btn, .KudosButton .main-join > a.lia-button-image-kudos {
           font-size: 13px;
           width: 100%;
           margin-bottom: 30px; } }
-      .main-join a.btn:before, .main-join .KudosButton a.lia-button-image-kudos:before, .KudosButton .main-join a.lia-button-image-kudos:before, .main-join a.btn:after, .main-join .KudosButton a.lia-button-image-kudos:after, .KudosButton .main-join a.lia-button-image-kudos:after {
+      .main-join > a.btn:before, .KudosButton .main-join > a.lia-button-image-kudos:before, .main-join > a.btn:after, .KudosButton .main-join > a.lia-button-image-kudos:after {
         content: '';
         display: block;
         width: 295px;
@@ -13713,31 +13754,31 @@ ul.btn-list {
         top: 29px;
         background: #e1e1e1; }
         @media (max-width: 1199px) {
-          .main-join a.btn:before, .main-join .KudosButton a.lia-button-image-kudos:before, .KudosButton .main-join a.lia-button-image-kudos:before, .main-join a.btn:after, .main-join .KudosButton a.lia-button-image-kudos:after, .KudosButton .main-join a.lia-button-image-kudos:after {
+          .main-join > a.btn:before, .KudosButton .main-join > a.lia-button-image-kudos:before, .main-join > a.btn:after, .KudosButton .main-join > a.lia-button-image-kudos:after {
             width: 200px; } }
         @media (max-width: 1199px) {
-          .main-join a.btn:before, .main-join .KudosButton a.lia-button-image-kudos:before, .KudosButton .main-join a.lia-button-image-kudos:before, .main-join a.btn:after, .main-join .KudosButton a.lia-button-image-kudos:after, .KudosButton .main-join a.lia-button-image-kudos:after {
+          .main-join > a.btn:before, .KudosButton .main-join > a.lia-button-image-kudos:before, .main-join > a.btn:after, .KudosButton .main-join > a.lia-button-image-kudos:after {
             width: 120px; } }
         @media (max-width: 767px) {
-          .main-join a.btn:before, .main-join .KudosButton a.lia-button-image-kudos:before, .KudosButton .main-join a.lia-button-image-kudos:before, .main-join a.btn:after, .main-join .KudosButton a.lia-button-image-kudos:after, .KudosButton .main-join a.lia-button-image-kudos:after {
+          .main-join > a.btn:before, .KudosButton .main-join > a.lia-button-image-kudos:before, .main-join > a.btn:after, .KudosButton .main-join > a.lia-button-image-kudos:after {
             display: none; } }
-      .main-join a.btn:before, .main-join .KudosButton a.lia-button-image-kudos:before, .KudosButton .main-join a.lia-button-image-kudos:before {
+      .main-join > a.btn:before, .KudosButton .main-join > a.lia-button-image-kudos:before {
         left: -315px; }
         @media (max-width: 1199px) {
-          .main-join a.btn:before, .main-join .KudosButton a.lia-button-image-kudos:before, .KudosButton .main-join a.lia-button-image-kudos:before {
+          .main-join > a.btn:before, .KudosButton .main-join > a.lia-button-image-kudos:before {
             left: -220px; } }
         @media (max-width: 1199px) {
-          .main-join a.btn:before, .main-join .KudosButton a.lia-button-image-kudos:before, .KudosButton .main-join a.lia-button-image-kudos:before {
+          .main-join > a.btn:before, .KudosButton .main-join > a.lia-button-image-kudos:before {
             left: -140px; } }
-      .main-join a.btn:after, .main-join .KudosButton a.lia-button-image-kudos:after, .KudosButton .main-join a.lia-button-image-kudos:after {
+      .main-join > a.btn:after, .KudosButton .main-join > a.lia-button-image-kudos:after {
         right: -315px; }
         @media (max-width: 1199px) {
-          .main-join a.btn:after, .main-join .KudosButton a.lia-button-image-kudos:after, .KudosButton .main-join a.lia-button-image-kudos:after {
+          .main-join > a.btn:after, .KudosButton .main-join > a.lia-button-image-kudos:after {
             right: -220px; } }
         @media (max-width: 1199px) {
-          .main-join a.btn:after, .main-join .KudosButton a.lia-button-image-kudos:after, .KudosButton .main-join a.lia-button-image-kudos:after {
+          .main-join > a.btn:after, .KudosButton .main-join > a.lia-button-image-kudos:after {
             right: -140px; } }
-      .main-join a.btn:hover, .main-join .KudosButton a.lia-button-image-kudos:hover, .KudosButton .main-join a.lia-button-image-kudos:hover {
+      .main-join > a.btn:hover, .KudosButton .main-join > a.lia-button-image-kudos:hover {
         color: #66c05d; }
   .main-join > p {
     color: #000000;
