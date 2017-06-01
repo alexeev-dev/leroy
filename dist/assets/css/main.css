@@ -15223,8 +15223,7 @@ ul.forum-img {
 .PostPage .lia-header-actions,
 .PostPage .lia-component-community-widget-page-options,
 .PostPage .SearchForm,
-.PostPage .MessageEditorForm,
-.PostPage .MessageEditorForm + p {
+.PostPage .wr-new_theme {
   display: none; }
 
 .PostPage h1.PageTitle {
