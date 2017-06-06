@@ -112,6 +112,11 @@
 		&-search_result {
 			padding: 0 0 120px;
 		}
+		&-blog {
+			&-main {
+				padding: 0 0 115px;
+			}
+		}
 		&-footer {
 			padding: 29px 0 36px; position: relative;
 			background: #f7f7f7; border-top: solid 3px $main-color-1;
@@ -312,4 +317,27 @@
 	.PageTitle,
 	.InfoMessage,
 	.InfoMessage + img {display: none;}
+}
+
+.SearchPage {
+	.LithiumLogo,
+	.lia-component-common-widget-scroll-to,
+	.lia-component-common-widget-slide-out-nav-menu,
+	.lia-component-nodes-widget-community-title,
+	.lia-header-actions,
+	.lia-component-community-widget-page-options,
+	.SearchForm,
+	.PageTitle,
+	.lia-component-search-title,
+	.searchPageFormWrapper,
+	.lia-search-tab-bar,
+	.lia-component-quilt-search-page-thread-filters,
+	.search-menu-bar {display: none;}
+	.lia-message-search-container .lia-quilt-column-common-header {border: none;}
+	.lia-quilt-row-main {
+		padding-bottom: 120px;
+		.lia-quilt-row-main {
+			padding-bottom: 0;
+		}
+	}
 }
