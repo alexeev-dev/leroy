@@ -341,3 +341,26 @@
 		}
 	}
 }
+
+.ReplyPage {
+	.LithiumLogo,
+	.lia-component-common-widget-scroll-to,
+	.lia-component-common-widget-slide-out-nav-menu,
+	.lia-component-nodes-widget-community-title,
+	.lia-header-actions,
+	.lia-component-community-widget-page-options,
+	.SearchForm,
+	.PageTitle,
+	.discussion-link {display: none;}
+	
+	.lia-message-view-display .lia-quilt-column-full-content > .lia-quilt-column-alley {margin: 0;}
+
+	.editorPostPage {
+		.lia-panel-heading-bar-wrapper {
+			display: none;
+		}
+	}
+	.lia-panel-message {
+		margin-bottom: 0;
+	}
+}

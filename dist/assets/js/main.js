@@ -40,19 +40,42 @@ $(window).load(function() {
 // discussion list generation
 function discussListGen() {
 	// js-forum-list
-	var forumDiscComp = $('.lia-component-reply-list .linear-message-list'),
+	var forumDiscComp = $('.linear-message-list'),
 		forumDiscGen = $('.js-forum-disc ul'),
-		forumDiscCompLength = $('.lia-component-reply-list .linear-message-list .lia-linear-display-message-view').length,
-		forumDiscCompRow = $('.lia-component-reply-list .linear-message-list .lia-linear-display-message-view');
+		forumDiscCompLength = $('.linear-message-list .lia-linear-display-message-view').length,
+		forumDiscCompRow = $('.linear-message-list .lia-linear-display-message-view');
 
 	for(i=0;i<forumDiscCompLength;i++) {
-		var forumDiscDeleteLink = forumDiscCompRow.eq(i).find('.lia-menu-action .lia-menu-dropdown-items .delete-message').attr('href'),
-			forumDiscDeleteData = forumDiscCompRow.eq(i).find('.lia-menu-action .lia-menu-dropdown-items .delete-message').data('lia-action-token'),
-			forumDiscDeleteId = forumDiscCompRow.eq(i).find('.lia-menu-action .lia-menu-dropdown-items .delete-message').attr('id'),
-			forumDiscDeleteClasses = forumDiscCompRow.eq(i).find('.lia-menu-action .lia-menu-dropdown-items .delete-message').attr('class'),
-			deleteButton = forumDiscCompRow.eq(i).find('.forum-disc disc-red li:last-child a');
+		var forumDiscDeleteLink = forumDiscCompRow.eq(i).find('.lia-menu-navigation .dropdown-positioning .lia-menu-dropdown-items .delete-message').attr('href'),
+			forumDiscDeleteData = forumDiscCompRow.eq(i).find('.lia-menu-navigation .dropdown-positioning .lia-menu-dropdown-items .delete-message').data('lia-action-token'),
+			forumDiscDeleteId = forumDiscCompRow.eq(i).find('.lia-menu-navigation .dropdown-positioning .lia-menu-dropdown-items .delete-message').attr('id'),
+			forumDiscDeleteClasses = forumDiscCompRow.eq(i).find('.lia-menu-navigation .dropdown-positioning .lia-menu-dropdown-items .delete-message').attr('class'),
+			forumDiscEditLink = forumDiscCompRow.eq(i).find('.lia-menu-navigation .dropdown-positioning .lia-menu-dropdown-items .edit-message').attr('href'),
+			forumDiscEditId = forumDiscCompRow.eq(i).find('.lia-menu-navigation .dropdown-positioning .lia-menu-dropdown-items .edit-message').attr('id'),
+			forumDiscEditClasses = forumDiscCompRow.eq(i).find('.lia-menu-navigation .dropdown-positioning .lia-menu-dropdown-items .edit-message').attr('class'),
+			deleteButton = forumDiscCompRow.eq(i).find('.forum-disc .disc-red li:last-child a'),
+			editButton = forumDiscCompRow.eq(i).find('.forum-disc .disc-red li:first-child a');
+
+		if(forumDiscCompRow.eq(i).find('.lia-menu-navigation .dropdown-positioning .lia-menu-dropdown-items .delete-message').html() == undefined) {
+			forumDiscDeleteLink = forumDiscCompRow.eq(i).find('.lia-menu-navigation .dropdown-positioning .lia-menu-dropdown-items .delete-message-and-replies').attr('href');
+			forumDiscDeleteData = forumDiscCompRow.eq(i).find('.lia-menu-navigation .dropdown-positioning .lia-menu-dropdown-items .delete-message-and-replies').data('lia-action-token');
+			forumDiscDeleteId = forumDiscCompRow.eq(i).find('.lia-menu-navigation .dropdown-positioning .lia-menu-dropdown-items .delete-message-and-replies').attr('id');
+			forumDiscDeleteClasses = forumDiscCompRow.eq(i).find('.lia-menu-navigation .dropdown-positioning .lia-menu-dropdown-items .delete-message-and-replies').attr('class');
+		}
 
 		deleteButton.addClass(forumDiscDeleteClasses);
-		// deleteButton.attr('id', forumDiscDeleteId).attr('data-lia-action-token', forumDiscDeleteData).attr('href', forumDiscDeleteLink);
+		deleteButton.attr('id', forumDiscDeleteId).attr('data-lia-action-token', forumDiscDeleteData).attr('href', forumDiscDeleteLink);
+		editButton.addClass(forumDiscEditClasses);
+		editButton.attr('id', forumDiscEditId).attr('href', forumDiscEditLink);
 	}
 }
+
+// delete message button
+// function deleteMessageButtons() {
+// 	var messageList = $('.lia-component-reply-list > div'),
+// 		messageListLength = $('.lia-component-reply-list > div .lia-linear-display-message-view').length;
+
+// 	for(i=0;i<messageListLength;i++) {
+// 		var 
+// 	}
+// }
