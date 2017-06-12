@@ -11508,10 +11508,6 @@ form.MessageEditorForm {
       color: #bfbfbf;
       font-weight: 700;
       opacity: 1; }
-  form.MessageEditorForm .lia-input-edit-form-row > .lia-quilt-column-right {
-    display: none; }
-  form.MessageEditorForm .lia-input-edit-form-row > .lia-quilt-column-left {
-    width: 100%; }
   form.MessageEditorForm .lia-button-group .lia-button-wrapper-Cancel-action input {
     color: #66c05d;
     padding: 9px 28px 10px;
@@ -15806,7 +15802,7 @@ ul.forum-img {
   .app .wr-main-intro,
   .app .lia-quilt-wr-main-intro {
     position: relative;
-    padding: 149px 0 25px;
+    padding: 100px 0 25px;
     background: url("../img/main-intro-bg.jpg") center center no-repeat;
     background-size: cover; }
     @media (max-width: 991px) {

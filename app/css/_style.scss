@@ -29,7 +29,7 @@
 		}
 		&-main {
 			&-intro {
-				position: relative; padding: 149px 0 25px;
+				position: relative; padding: 100px 0 25px;
 				background: url('../img/main-intro-bg.jpg') center center no-repeat;
 				background-size: cover;
 				@include respond-to(md) {

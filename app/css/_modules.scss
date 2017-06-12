@@ -548,10 +548,10 @@ form.MessageEditorForm {
 			opacity: 1;
 		}
 	}
-	.lia-input-edit-form-row {
-		& > .lia-quilt-column-right {display: none;}
-		& > .lia-quilt-column-left {width: 100%;}
-	}
+	// .lia-input-edit-form-row {
+	// 	& > .lia-quilt-column-right {display: none;}
+	// 	& > .lia-quilt-column-left {width: 100%;}
+	// }
 	.lia-button-group {
 		.lia-button-wrapper-Submit-action {
 			input {
