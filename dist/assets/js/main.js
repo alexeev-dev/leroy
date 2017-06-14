@@ -31,6 +31,11 @@ $(document).ready(function() {
 
 	// discussion list generation function
 	discussListGen();
+
+	// header user dropdown 
+	$('.js-user-dropdown').click(function() {
+		$(this).toggleClass('active');
+	});
 });
 
 $(window).load(function() {

@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 // Helvetica Neue Cyr
+@include font-face('HelveticaNeueCyr-Roman',HelveticaNeueCyr-Roman);
 @include font-face('HelveticaNeueCyr-Medium',HelveticaNeueCyr-Medium);
 @include font-face('HelveticaNeueCyr-Italic',HelveticaNeueCyr-Italic);
 @include font-face('HelveticaNeueCyr-Bold',HelveticaNeueCyr-Bold);
@@ -20,6 +21,9 @@
 @include font-face('HelveticaNeueLt-BoldItalic',HelveticaNeueLt-BoldItalic);
 @include font-face('HelveticaNeueLt-Medium',HelveticaNeueLt-Medium);
 @include font-face('HelveticaNeueLt-Italic',HelveticaNeueLt-Italic);
+
+// Helvetica Neue Lt Cond
+@include font-face('HelveticaNeueLtCond-Regular',HelveticaNeueLtCond-Regular);
 
 // Helvetica Neue Condensed
 @include font-face('HelveticaNeue-CondensedBold',HelveticaNeue-CondensedBold);
