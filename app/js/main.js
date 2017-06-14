@@ -35,6 +35,13 @@ $(document).ready(function() {
 	// header user dropdown 
 	$('.js-user-dropdown').click(function() {
 		$(this).toggleClass('active');
+		return false;
+	});
+
+	// user page slide block
+	$('.js-userPageSlide').click(function(){
+		$(this).toggleClass('active').next().slideToggle();
+		return false;
 	});
 });
 
