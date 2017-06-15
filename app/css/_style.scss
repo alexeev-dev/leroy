@@ -128,6 +128,9 @@
 				}
 			}
 		}
+		&-user_page {
+			padding: 0 0 152px;
+		}
 		&-footer {
 			padding: 29px 0 36px; position: relative;
 			background: #f7f7f7; border-top: solid 3px $main-color-1;
@@ -373,5 +376,13 @@
 	}
 	.lia-panel-message {
 		margin-bottom: 0;
+	}
+}
+
+.BlogArticlePage {
+	.MessageView {
+		.lia-quilt-row-main {
+			width: 100%;
+		}
 	}
 }
