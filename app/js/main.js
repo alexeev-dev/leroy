@@ -43,6 +43,13 @@ $(document).ready(function() {
 		$(this).toggleClass('active').next().slideToggle();
 		return false;
 	});
+
+	// shops list dropdown
+	$('.js-shopsListBtn').click(function(){
+		$(this).toggleClass('active');
+		$('.js-shopsListDropdown').slideToggle();
+		return false;
+	});
 });
 
 $(window).load(function() {

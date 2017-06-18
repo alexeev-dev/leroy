@@ -115,6 +115,13 @@
 		&-blog {
 			&-main {
 				padding: 0 0 115px;
+				.blog-functional {
+					ul {
+						li {
+							.KudosButton {display: block;}
+						}
+					}
+				}
 			}
 		}
 		&-personal_area {
@@ -379,10 +386,60 @@
 	}
 }
 
+.BlogPage {
+	.LithiumLogo,
+	.lia-component-common-widget-scroll-to,
+	.lia-component-common-widget-slide-out-nav-menu,
+	.lia-component-nodes-widget-community-title,
+	.lia-header-actions,
+	.lia-component-community-widget-page-options,
+	.SearchForm,
+	.PageTitle,
+	.lia-menu-bar-bottom,
+	.lia-component-media-widget-masonry-grid,
+	.lia-component-community-widget-featured-content,
+	.labelnew,
+	.BoardManagementTaplet {display: none;}
+}
+
 .BlogArticlePage {
+	.LithiumLogo,
+	.lia-component-common-widget-scroll-to,
+	.lia-component-common-widget-slide-out-nav-menu,
+	.lia-component-nodes-widget-community-title,
+	.lia-header-actions,
+	.lia-component-community-widget-page-options,
+	.SearchForm,
+	.PageTitle {display: none;}
+
 	.MessageView {
 		.lia-quilt-row-main {
-			width: 100%;
+			width: 100%; padding: 0;
+		}
+		.lia-quilt-row-header {display: none;}
+	}
+	.lia-component-article {
+		margin-top: 0;
+	}
+	.lia-quilt-row-main {padding-bottom: 115px;}
+
+	.lia-CommentEditor-form {
+		input[type=submit] {
+			@extend .btn;
+			&:hover {
+				background: transparent;
+			}
+			&:active,
+			&:active:focus,
+			&:focus:hover {
+				color: $main-color-1;
+				background: transparent;
+				outline: none;
+			}
+			&:focus {
+				color: #ffffff;
+				background: $main-color-1;
+			}
 		}
 	}
 }
