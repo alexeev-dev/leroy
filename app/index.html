@@ -8,6 +8,9 @@
 	<p class="browsehappy">Вы используете <strong>УСТАРЕВШИЙ Internet Explorer</strong> браузер. Пожалуйста, <a href="http://browsehappy.com/">обновите ваш Браузер</a> чтобы увидеть больше возможностей на сайтах!</p>
 	<![endif]-->
 
+	<!-- scripts -->
+	//= tpl/scripts.html
+
 	<!-- Preloader  -->
 	<div class="preloader"></div>
 
@@ -56,15 +59,6 @@
 								</li>
 								<li>
 									<span>
-										<i class="icon icon-main-intro-3"></i>
-									</span>
-									<ul>
-										<li>Узнайте сложные строительные термины <br>на простом языке.</li>
-										<li>Поделитесь своими знаниями</li>
-									</ul>
-								</li>
-								<li>
-									<span>
 										<i class="icon icon-main-intro-4"></i>
 									</span>
 									<ul>
@@ -89,27 +83,27 @@
 						<a href="#" class="double-height">
 							<img src="assets/img/main-start-1.jpg">
 							<span>
-								<em>Ванная</em>
+								<em>Чистовая отделка и декор</em>
 							</span>
 						</a>
 						<a href="#">
 							<img src="assets/img/main-start-2.jpg">
 							<span>
-								<em>Кухня</em>
+								<em>Кухни</em>
 							</span>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<img src="assets/img/main-start-3.jpg">
+							<img src="assets/img/main-start-03.jpg">
 							<span>
-								<em>Спальня</em>
+								<em>Дача и сад</em>
 							</span>
 						</a>
 						<a href="#" class="double-height">
 							<img src="assets/img/main-start-4.jpg">
 							<span>
-								<em>Сад</em>
+								<em>Черновые работы</em>
 							</span>
 						</a>
 					</li>
@@ -117,13 +111,13 @@
 						<a href="#" class="double-height">
 							<img src="assets/img/main-start-5.jpg">
 							<span>
-								<em>Сантехника</em>
+								<em>Освещение и электричество</em>
 							</span>
 						</a>
 						<a href="#">
 							<img src="assets/img/main-start-6.jpg">
 							<span>
-								<em>Интерьеры</em>
+								<em>Сантехника и водоснабжение</em>
 							</span>
 						</a>
 					</li>
@@ -131,13 +125,13 @@
 						<a href="#">
 							<img src="assets/img/main-start-7.jpg">
 							<span>
-								<em>Отопление</em>
+								<em>Хранение</em>
 							</span>
 						</a>
 						<a href="#" class="double-height">
 							<img src="assets/img/main-start-8.jpg">
 							<span>
-								<em>Отделочные материалы</em>
+								<em>Проекты наших клиентов</em>
 							</span>
 						</a>
 					</li>
@@ -245,23 +239,95 @@
 							<h3>Следите за нами в соц. сетях, чтобы получать больше полезных советов <br>по ремонту и обустройству дома!</h3>
 							<ul>
 								<li>
-									<img src="assets/img/main-social-insta.jpg">
-								</li>
-								<li>
-									<img src="assets/img/main-social-vk.jpg">
-								</li>
-								<li>
-									<img src="assets/img/main-social-ok.jpg">
-								</li>
-							</ul>
-						</div>
+									<div class="socials-title">
+										<p>
+											<i class="fa fa-instagram"></i>
+											leroymerlinrussia
+										</p>
+										<a href="//www.instagram.com/leroymerlinrussia/" target="_blank" class="social-btn" onclick="dataLayerSocialClickPush('Instagram', this.href, 'subscribe');">Подписаться</a>
+									</div>
 
+									<div class="socials-content">
+										<img src="//leroymerlin.ru/bitrix/templates/lm2016/i/cat.jpg" alt="Ремонт — дело тонкое! Даже котику трудно оставаться равнодушным к процессу преображения жилья. #ЛеруаМерлен #LeroyMerlin #leroymerlinrus_hr #ЯЛюблюЛеруаМерлен">
+									</div>
+								</li>
+								<li>
+									<div class="socials-title">
+										<p>
+											<i class="fa fa-vk"></i>
+											leroy_merlin
+										</p>
+										<a href="//www.instagram.com/leroymerlinrussia/" target="_blank" class="social-btn" onclick="dataLayerSocialClickPush('Instagram', this.href, 'subscribe');">Подписаться</a>
+									</div>
+									<div class="socials-content">
+										<div id="vk_groups"></div>
+										<script type="text/javascript">
+											$(window).on('load scroll', function(event) {
+												if (event.type === 'scroll') {
+													if ($(window).scrollTop() + $(window).height() >= $('.socials').offset().top && !$('.socials').attr('loaded')) {
+														$('.socials').attr('loaded', true);
+
+														var api = '//vk.com/js/api/openapi.js?121';
+														var fragment = document.createDocumentFragment(),
+														element = document.createElement('script');
+
+														element.async = element.src = api;
+														fragment.appendChild(element);
+
+														element = document.getElementsByTagName('script')[0];
+														element.parentNode.insertBefore(fragment, element);
+
+														window.vkAsyncInit = function() {
+															VK.Widgets.Group("vk_groups", {
+																mode: 2,
+																wide: 1,
+																width: "auto",
+																height: "360"
+															}, 44586958)
+														};
+													}
+												}
+											});
+										</script>
+									</div>
+								</li>
+								<li>
+									<div class="socials-title">
+										<p>
+											<i class="fa fa-youtube"></i>
+											LeroyMerlinRu
+										</p>
+										<a href="//www.instagram.com/leroymerlinrussia/" target="_blank" class="social-btn" onclick="dataLayerSocialClickPush('Instagram', this.href, 'subscribe');">Подписаться</a>
+									</div>
+									<div class="socials-content">
+										<div id="ok_group_widget"></div>
+										<script>
+											!function (d, id, did, st) {
+												var js = d.createElement("script");
+												js.src = "https://connect.ok.ru/connect.js";
+												js.onload = js.onreadystatechange = function () {
+													if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+														if (!this.executed) {
+															this.executed = true;
+															setTimeout(function () {
+																OK.CONNECT.insertGroupWidget(id,did,st);
+															}, 0);
+														}
+													}}
+													d.documentElement.appendChild(js);
+												}(document,"ok_group_widget","50582132228315",'{"width":auto, "height":360}');
+											</script>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<!-- footer -->
+			<!-- footer -->
 		//= tpl/footer-subscribe.html
 
 		<!-- footer -->

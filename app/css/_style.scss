@@ -107,10 +107,15 @@
 			background: #f9f9f9;
 		}
 		&-not_found {
-			padding:  27px 0 60px;
+			padding: 0 0 60px; margin-top: -20px;
 		}
-		&-search_result {
-			padding: 0 0 120px;
+		&-search {
+			&_result {
+				padding: 0 0 120px;
+			}
+			&_error {
+				padding: 0;
+			}
 		}
 		&-blog {
 			&-main {
@@ -338,6 +343,24 @@
 	.PageTitle,
 	.InfoMessage,
 	.InfoMessage + img {display: none;}
+	.lia-quilt-error404-page {
+		.lia-quilt-row-main {
+			.lia-quilt-column-single {
+				.lia-quilt-column-alley-single {
+					padding: 0;
+					.container {
+						width: 100%; padding: 0;
+						.row {
+							margin: 0;
+							.col-md-12 {
+								padding: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 .SearchPage {
@@ -398,8 +421,7 @@
 	.lia-menu-bar-bottom,
 	.lia-component-media-widget-masonry-grid,
 	.lia-component-community-widget-featured-content,
-	.labelnew,
-	.BoardManagementTaplet {display: none;}
+	.labelnew {display: none;}
 }
 
 .BlogArticlePage {
