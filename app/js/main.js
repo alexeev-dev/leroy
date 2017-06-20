@@ -50,6 +50,9 @@ $(document).ready(function() {
 		$('.js-shopsListDropdown').slideToggle();
 		return false;
 	});
+
+	// placeholder replace
+	$('.header-search .SearchForm .search-input.lia-search-input-message').attr('placeholder', 'Поиск по статьям и пользователям');
 });
 
 $(window).load(function() {

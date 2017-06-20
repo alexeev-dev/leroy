@@ -154,6 +154,8 @@
 	z-index: 1;
 }
 
+#__okGroup0 {width: 100% !important;}
+
 
 /*********************************/
 /*********** Modules *************/
@@ -2058,7 +2060,7 @@ ul {
 		div {
 			&.user {
 				@extend .clear;
-				width: 273px; position: relative; order: 2;
+				width: 273px; position: relative; order: 2; margin-top: 8px;
 				background: $main-color-1;
 				@include respond-to(md) {
 					width: 40%; order: 0;
@@ -2159,7 +2161,7 @@ ul {
 				}
 			}
 			&.unauth {
-				width: 273px; order: 2;
+				width: 273px; order: 2; margin-top: 8px;
 				@include respond-to(md) {
 					width: 40%; order: 0;
 				}

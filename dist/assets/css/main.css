@@ -11763,6 +11763,9 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .owl-carousel .owl-stage-outer {
   z-index: 1; }
 
+#__okGroup0 {
+  width: 100% !important; }
+
 /*********************************/
 /*********** Modules *************/
 /*********************************/
@@ -14030,6 +14033,7 @@ ul.btn-list {
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
+    margin-top: 8px;
     background: #66c05d; }
     @media (max-width: 991px) {
       .header-search div.user {
@@ -14189,7 +14193,8 @@ ul.btn-list {
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
     -ms-flex-order: 2;
-    order: 2; }
+    order: 2;
+    margin-top: 8px; }
     @media (max-width: 991px) {
       .header-search div.unauth {
         width: 40%;
