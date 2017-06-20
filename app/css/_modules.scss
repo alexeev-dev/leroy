@@ -154,9 +154,26 @@
 	z-index: 1;
 }
 
-#__okGroup0 {width: 100% !important;}
+#__okGroup {
+	&0 {
+		width: 100% !important;
+	}
+	&1 {display: none !important;}
+}
 
+.blogControl {
+	margin-bottom: 15px;
+	li {
+		display: inline-block; margin-right: 10px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
 
+.pluso {
+	.pluso-more {display: none !important;}
+}
 /*********************************/
 /*********** Modules *************/
 /*********************************/
@@ -2070,7 +2087,7 @@ ul {
 				}
 				& > a {
 					text-align: center;
-					float: left; width: 180px; height: 41px; padding: 6px 10px 5px; position: relative; display: block;
+					float: left; width: 100%; height: 41px; padding: 6px 10px 5px; position: relative; display: block;
 					&:hover {
 						background: #00a639;
 					}
@@ -2103,6 +2120,7 @@ ul {
 							content: '\f0d7';
 							color: #ffffff; font: normal normal normal 14px/1 FontAwesome; font-size: 10px; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
 							display: inline-block; position: absolute;  right: -10px; top: 50%; transform: translateY(-50%);
+							display: none;
 						}
 					}
 				}
@@ -2853,7 +2871,7 @@ ul {
 			}
 			&:after {
 				content: '';
-				display: block; width: 100%; height: 320px; position: absolute; left: 0; bottom: -40px;
+				display: block; width: 1000%; height: 320px; position: absolute; left: 50; bottom: -40px; transform: translateX(-50%);
 				background: $main-color-1;
 			}
 			&.owl-carousel {
@@ -4151,36 +4169,36 @@ ul {
 						vertical-align: top; padding-top: 8px;
 					}
 					&:last-child {margin-right: 0;}
-					a {
-						font-size: 16px;
-						display: inline-block; width: 33px; height: 33px; position: relative;
-						border: solid 1px #efefef; border-radius: 50%;
-						&.vk {
-							color: #5075a5;
-							&:hover {
-								color: #ffffff;
-								background: #5075a5; border-color: #5075a5;
-							}
-						}
-						&.fb {
-							color: #2d4485;
-							&:hover {
-								color: #ffffff;
-								background: #2d4485; border-color: #2d4485;
-							}
-						}
-						&.ok {
-							color: #f58220;
-							&:hover {
-								color: #ffffff;
-								background: #f58220; border-color: #f58220;
-							}
-						}
-						i {
-							color: inherit;
-							position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
-						}
-					}
+					// a {
+					// 	font-size: 16px;
+					// 	display: inline-block; width: 33px; height: 33px; position: relative;
+					// 	border: solid 1px #efefef; border-radius: 50%;
+					// 	&.vk {
+					// 		color: #5075a5;
+					// 		&:hover {
+					// 			color: #ffffff;
+					// 			background: #5075a5; border-color: #5075a5;
+					// 		}
+					// 	}
+					// 	&.fb {
+					// 		color: #2d4485;
+					// 		&:hover {
+					// 			color: #ffffff;
+					// 			background: #2d4485; border-color: #2d4485;
+					// 		}
+					// 	}
+					// 	&.ok {
+					// 		color: #f58220;
+					// 		&:hover {
+					// 			color: #ffffff;
+					// 			background: #f58220; border-color: #f58220;
+					// 		}
+					// 	}
+					// 	i {
+					// 		color: inherit;
+					// 		position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+					// 	}
+					// }
 				}
 			}
 			&:last-child {
@@ -4223,6 +4241,9 @@ ul {
 					.lia-button-image-kudos-disabled {
 						border: solid 1px #efefef;
 						cursor: default;
+						a {
+							border: none;
+						}
 					}
 					.lia-button-image-kudos-enabled {
 						border: solid 1px #efefef;
@@ -4230,6 +4251,9 @@ ul {
 							background: transparent; border: solid 1px $main-color-1;
 							a, span {
 								color: $main-color-1;
+								&:before {
+									color: inherit;
+								}
 							}
 						}
 						a {
@@ -4433,14 +4457,23 @@ ul {
 .user_page {
 	&-info {
 		display: flex; margin-bottom: 30px;
+		@include respond-to(md) {
+			flex-wrap: wrap;
+		}
 		div {
 			@extend .clear;
 			width: 378px; padding: 23px 34px;
 			background: $main-color-1;
+			@include respond-to(md) {
+				width: 100%;
+			}
 			figure {
 				width: 94px; height: 94px; position: relative; float: left; margin-right: 30px;
 				border-radius: 50%;
 				overflow: hidden;
+				@include respond-to(xs) {
+					float: none; margin-right: 0;
+				}
 				img {
 					min-width: 100%; position: relative; left: 50%; top: 50%; transform: translate(-50%,-50%);
 				}
@@ -4467,9 +4500,21 @@ ul {
 		ul {
 			width: calc(100%  - 378px); display: flex; padding: 0 15px;
 			background: #f9f9f9; border: solid 1px #e9e9e9; border-left: none;
+			@include respond-to(md) {
+				width: 100%;
+			}
+			@include respond-to(xs) {
+				flex-wrap: wrap;
+			}
 			li {
 				color: $main-color-2; font-size: 12px; font-family: $HNC-Roman; text-align: center; line-height: 14px;
 				width: 25%; position: relative; padding-top: 34px;
+				@include respond-to(md) {
+					padding: 15px 0;
+				}
+				@include respond-to(xs) {
+					width: 100%;
+				}
 				&:last-child {
 					&:after {display: none;}
 				}
@@ -4477,6 +4522,9 @@ ul {
 					content: '';
 					display: block; width: 1px; height: 39px; position: absolute; right: 0; top: 50%; transform: translateY(-50%);
 					background: #e9e9e9;
+					@include respond-to(xs) {
+						width: 80%; height: 1px; top: auto; right: auto; left: 50%; bottom: 0; transform: translateX(-50%);
+					}
 				}
 				span {
 					color: $main-color-1; font-size: 30px; font-family: $HNC-Bold; line-height: 30px;

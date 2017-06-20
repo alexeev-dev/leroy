@@ -119,7 +119,7 @@
 		}
 		&-blog {
 			&-main {
-				padding: 0 0 115px;
+				padding: 0;
 				.blog-functional {
 					ul {
 						li {
@@ -432,7 +432,8 @@
 	.lia-header-actions,
 	.lia-component-community-widget-page-options,
 	.SearchForm,
-	.PageTitle {display: none;}
+	.PageTitle,
+	.lia-blog-article-page-comment-count {display: none;}
 
 	.MessageView {
 		.lia-quilt-row-main {
@@ -463,5 +464,37 @@
 				background: $main-color-1;
 			}
 		}
+	}
+
+	.CommentList,
+	.lia-panel-message {
+		.MessageView {
+			.lia-quilt-row-footer {
+				display: none;
+			}
+		}
+	}
+}
+
+.ui-widget-overlay,
+.ui-widget.ui-dialog.ui-widget-content {
+	display: none !important;
+}
+
+.EditPage {
+	.LithiumLogo,
+	.lia-component-common-widget-scroll-to,
+	.lia-component-common-widget-slide-out-nav-menu,
+	.lia-component-nodes-widget-community-title {display: none;}
+	.lia-top-quilt > .lia-quilt-row-main > .lia-quilt-column-left-content > .lia-quilt-column-alley,
+	.lia-top-quilt > .lia-quilt-row-main > .lia-quilt-column-right-content > .lia-quilt-column-alley,
+	.lia-top-quilt > .lia-quilt-row-main > .lia-quilt-column-single > .lia-quilt-column-alley {padding: 0;}
+	.PageTitle {
+		padding: 0 15px;
+	}
+
+	.wr-blog-main {
+		.blogControl,
+		.forum-disc {display: none;}
 	}
 }

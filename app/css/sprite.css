@@ -36,13 +36,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-blog-slider-answers {
   background-image: url(../img/sprite.png);
-  background-position: -217px -220px;
+  background-position: -189px -220px;
   width: 13px;
   height: 12px;
 }
 .icon-blog-slider-likes {
   background-image: url(../img/sprite.png);
-  background-position: -168px -220px;
+  background-position: -140px -220px;
   width: 12px;
   height: 14px;
 }
@@ -54,31 +54,31 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-dictionary {
   background-image: url(../img/sprite.png);
-  background-position: -172px -187px;
+  background-position: -150px -187px;
   width: 23px;
   height: 18px;
 }
 .icon-disc-close {
   background-image: url(../img/sprite.png);
-  background-position: -93px -220px;
+  background-position: -74px -220px;
   width: 19px;
   height: 19px;
 }
 .icon-disc-rewr {
   background-image: url(../img/sprite.png);
-  background-position: -237px -140px;
+  background-position: -237px -163px;
   width: 23px;
   height: 23px;
 }
 .icon-discuss-likes {
   background-image: url(../img/sprite.png);
-  background-position: -192px -220px;
+  background-position: -164px -220px;
   width: 12px;
   height: 14px;
 }
 .icon-discussion {
   background-image: url(../img/sprite.png);
-  background-position: -34px -220px;
+  background-position: -144px -84px;
   width: 20px;
   height: 20px;
 }
@@ -90,7 +90,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-download-arrow {
   background-image: url(../img/sprite.png);
-  background-position: -215px -187px;
+  background-position: -193px -187px;
   width: 16px;
   height: 16px;
 }
@@ -120,7 +120,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-forum-2 {
   background-image: url(../img/sprite.png);
-  background-position: -39px -149px;
+  background-position: -164px -39px;
   width: 38px;
   height: 38px;
 }
@@ -138,7 +138,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-forum-5 {
   background-image: url(../img/sprite.png);
-  background-position: -164px -39px;
+  background-position: -39px -149px;
   width: 38px;
   height: 38px;
 }
@@ -150,13 +150,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-forum-answers {
   background-image: url(../img/sprite.png);
-  background-position: -204px -220px;
+  background-position: -176px -220px;
   width: 13px;
   height: 12px;
 }
 .icon-forum-likes {
   background-image: url(../img/sprite.png);
-  background-position: -156px -220px;
+  background-position: -128px -220px;
   width: 12px;
   height: 14px;
 }
@@ -168,13 +168,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-forum_news-likes {
   background-image: url(../img/sprite.png);
-  background-position: -144px -220px;
+  background-position: -225px -187px;
   width: 12px;
   height: 14px;
 }
 .icon-header-help {
   background-image: url(../img/sprite.png);
-  background-position: -128px -220px;
+  background-position: -209px -187px;
   width: 16px;
   height: 16px;
 }
@@ -192,7 +192,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-likes-green {
   background-image: url(../img/sprite.png);
-  background-position: -180px -220px;
+  background-position: -152px -220px;
   width: 12px;
   height: 14px;
 }
@@ -264,7 +264,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-reference {
   background-image: url(../img/sprite.png);
-  background-position: -144px -84px;
+  background-position: -34px -220px;
   width: 20px;
   height: 20px;
 }
@@ -294,13 +294,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-search {
   background-image: url(../img/sprite.png);
-  background-position: -237px -163px;
+  background-position: -237px -140px;
   width: 23px;
   height: 23px;
 }
 .icon-sidebar-article {
   background-image: url(../img/sprite.png);
-  background-position: -195px -187px;
+  background-position: -173px -187px;
   width: 20px;
   height: 17px;
 }
@@ -336,7 +336,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-sidebar-themes {
   background-image: url(../img/sprite.png);
-  background-position: -106px -187px;
+  background-position: -237px -186px;
   width: 22px;
   height: 22px;
 }
@@ -348,7 +348,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-social-instagram {
   background-image: url(../img/sprite.png);
-  background-position: -202px -35px;
+  background-position: -149px -149px;
   width: 35px;
   height: 35px;
 }
@@ -366,7 +366,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-social-twitter {
   background-image: url(../img/sprite.png);
-  background-position: -149px -149px;
+  background-position: -202px -35px;
   width: 35px;
   height: 35px;
 }
@@ -381,12 +381,6 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   background-position: -77px -149px;
   width: 36px;
   height: 36px;
-}
-.icon-socials-widjet-insta {
-  background-image: url(../img/sprite.png);
-  background-position: -237px -186px;
-  width: 22px;
-  height: 22px;
 }
 .icon-subscribe {
   background-image: url(../img/sprite.png);
@@ -408,7 +402,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-user-star {
   background-image: url(../img/sprite.png);
-  background-position: -74px -220px;
+  background-position: -93px -220px;
   width: 19px;
   height: 19px;
 }
@@ -420,19 +414,19 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-word-control-emoji {
   background-image: url(../img/sprite.png);
-  background-position: -128px -187px;
+  background-position: -106px -187px;
   width: 22px;
   height: 22px;
 }
 .icon-word-control-file {
   background-image: url(../img/sprite.png);
-  background-position: -150px -187px;
+  background-position: -128px -187px;
   width: 22px;
   height: 19px;
 }
 .icon-word-control-italic {
   background-image: url(../img/sprite.png);
-  background-position: -230px -220px;
+  background-position: -202px -220px;
   width: 11px;
   height: 12px;
 }
