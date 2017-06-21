@@ -171,9 +171,9 @@
 	}
 }
 
-.pluso {
-	.pluso-more {display: none !important;}
-}
+
+.pluso-more {display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;}
+
 /*********************************/
 /*********** Modules *************/
 /*********************************/
@@ -2871,34 +2871,31 @@ ul {
 			}
 			&:after {
 				content: '';
-				display: block; width: 1000%; height: 320px; position: absolute; left: 50; bottom: -40px; transform: translateX(-50%);
+				display: block; width: 1000%; height: 260px; position: absolute; left: 50; bottom: -40px; transform: translateX(-50%);
 				background: $main-color-1;
-			}
-			&.owl-carousel {
-				li {
-					figure {
-						img {
-							width: auto; min-width: 100%; min-height: 100%; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
-						}
-					}
-				}
 			}
 			li {
 				text-align: left;
 				position: relative; z-index: 2; width: 275px; display: inline-block; padding-bottom: 9px;
 				background: #ffffff;
 				figure {
-					height: 250px; margin-bottom: 13px; position: relative;
+					height: 170px; margin-bottom: 13px; position: relative;
 					overflow: hidden;
 					img {
-
+						width: 100%;
 					}
 				}
 				h4 {
 					color: $main-color-2; font-size: 14px; font-family: $HNL-Bold; text-transform: uppercase; line-height: 17px;
 					padding: 0 14px; margin-bottom: 13px;
+					a {
+						color: inherit; font-size: inherit; font-family: inherit;
+						&:hover {
+							color: $main-color-1; text-decoration: underline;
+						}
+					}
 				}
-				a {
+				& > a {
 					color: $main-color-1; font-size: 12px; font-family: $HNL-Bold; text-transform: uppercase;
 					margin-left: 15px; position: relative;
 					&:hover {
@@ -3304,7 +3301,7 @@ ul {
 	}
 	h3 {
 		color: $main-color-2; font-size: 19px; font-family: $OpenSans; font-weight: 700; text-align: center; text-transform: uppercase;
-		margin-bottom: 11px;
+		margin-bottom: 30px;
 	}
 	& > ul {
 		display: flex; justify-content: space-between; width: 1029px; margin: 0 auto;
@@ -3955,10 +3952,10 @@ ul {
 					margin-bottom: 0;
 				}
 				& > figure {
-					height: 160px; position: relative; margin: -1px -1px 14px;
+					position: relative; margin: -1px -1px 14px;
 					overflow: hidden;
 					img {
-						min-width: 100%; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+						width: 100%;
 					}
 				}
 				h3 {
@@ -4155,7 +4152,7 @@ ul {
 				text-align: center;
 				width: 100%;
 			}
-			&:first-child {
+			&.blog-functional-socials {
 				@include respond-to(sm) {
 					margin-bottom: 15px;
 				}
@@ -4201,7 +4198,7 @@ ul {
 					// }
 				}
 			}
-			&:last-child {
+			&.blog-functional-articles {
 				li {
 					display: inline-block; margin-left: 6px;
 					@include respond-to(sm) {
@@ -4508,7 +4505,7 @@ ul {
 			}
 			li {
 				color: $main-color-2; font-size: 12px; font-family: $HNC-Roman; text-align: center; line-height: 14px;
-				width: 25%; position: relative; padding-top: 34px;
+				width: 33.33333%; position: relative; padding-top: 34px;
 				@include respond-to(md) {
 					padding: 15px 0;
 				}
