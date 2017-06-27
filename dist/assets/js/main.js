@@ -66,6 +66,18 @@ $(document).ready(function() {
         $('body,html').animate({scrollTop: top}, 1500);
     });
 
+    // blog functional unauth control
+    $('.js-blogFunctional-unauth').click(function() {
+    	$('.popup-blog-functional-unauth').bPopup({
+    		 autoClose: 10000
+    	});
+    	return false;
+    });
+
+    $('.lia-button-Submit-action').click(function() {
+    	window.onbeforeunload = null;
+    });
+
 });
 
 $(window).load(function() {

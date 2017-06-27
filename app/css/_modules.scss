@@ -378,8 +378,9 @@
 							border: none;
 						}
 						a {
-							font-size: 14px; font-family: $HNC-Medium; line-height: 18px; letter-spacing: -0.15px;
-							display: inline-block;
+							font-size: 14px; font-family: $HNC-Medium; line-height: 18px; letter-spacing: -0.15px; white-space: nowrap; text-overflow: ellipsis;
+							display: inline-block; max-width: 100%;
+							overflow: hidden;
 							&:hover {
 								color: $main-color-1;
 							}
@@ -1176,15 +1177,21 @@ ul {
 						}
 					}
 					h3 {
-						font-size: 15px; font-family: $OpenSans; font-weight: 700; letter-spacing: 0.05px;
+						font-size: 15px; font-family: $OpenSans; font-weight: 700; letter-spacing: 0.05px; word-wrap: break-word;
 						margin-bottom: 16px;
 					}
 					h4 {
-						font-size: 13px; font-family: $OpenSans; font-weight: 600; letter-spacing: -0.08px;
+						font-size: 13px; font-family: $OpenSans; font-weight: 600; letter-spacing: -0.08px; word-wrap: break-word;
 						margin-bottom: 16px; padding-top: 2px;
 					}
 					p {
-						font-size: 14px; font-family: $OpenSans; line-height: 21px; letter-spacing: 0.1px;
+						font-size: 14px; font-family: $OpenSans; line-height: 21px; letter-spacing: 0.1px; word-wrap: break-word;
+						a {
+							color: $main-color-1;
+							&:hover {
+								text-decoration: underline;
+							}
+						}
 					}
 					& > input {
 						font-size: 15px; font-family: $OpenSans; font-weight: 700; letter-spacing: 0.05px;
@@ -1715,6 +1722,18 @@ ul {
 				}
 				a {
 					color: $main-color-1;
+					display: inline-block; position: relative;
+					&:hover {
+						&:after {
+							width: 100%;
+						}
+					}
+					&:after {
+						content: '';
+						display: block; width: 0%; height: 1px; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%);
+						background: $main-color-1;
+						transition: width 0.3s ease-out;
+					}
 				}
 				i {
 					position: absolute; right: 1px; top: -5px;
@@ -1729,8 +1748,13 @@ ul {
 			}
 			a.lm_link {
 				color: #ffffff; font-size: 11px; font-family: $HNC-Medium; text-transform: uppercase;
-				display: block; padding: 15px 34px 14px 18px; position: relative; margin-bottom: 28px;
-				background: $main-color-1;
+				display: block; padding: 14px 33px 13px 17px; position: relative; margin-bottom: 28px;
+				background: $main-color-1; border: solid 1px $main-color-1;
+				transition: color 0.3s ease-out, background 0.3s ease-out;
+				&:hover {
+					color: $main-color-1;
+					background: #ffffff;
+				}
 				span {
 					color: inherit; font-family: $OpenSans; font-weight: 700; text-decoration: underline; letter-spacing: 0.2px;
 				}
@@ -1768,8 +1792,15 @@ ul {
 				li {
 					width: 187px; height: 126px; position: relative; margin: 0;
 					border: dashed 1px #d9d9d9;
+					transition: border 0.3s ease-out;
+					&:hover {
+						border: solid 1px $main-color-1;
+					}
 					@include respond-to(lg) {
 						width: 100%;
+					}
+					a {
+						position: absolute; left: 0; top: 0; right: 0; bottom: 0;
 					}
 					img {
 						position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
@@ -3519,13 +3550,13 @@ ul {
 						border-radius: 50%;
 						overflow: hidden;
 						img {
-							min-width: 100%; position: relative; left: 50%; top: 50%; transform: translate(-50%,-50%);
+							width: 100%; position: relative; left: 50%; top: 50%; transform: translate(-50%,-50%);
 						}
 					}
-					a, p, span {
+					& > a, p, span {
 						color: $main-color-2;
 					}
-					a {
+					& > a {
 						font-size: 18px; font-family: $HNL-Bold;
 						display: inline-block; position: relative; margin-bottom: 12px;
 						transition: color 0.2s ease-out;
@@ -3759,7 +3790,7 @@ ul {
 	&-main {
 		&-body {
 			h1 {
-				color: $main-color-2; font-size: 23px; font-family: $HNL-Black; letter-spacing: -0.1px;
+				color: $main-color-2; font-size: 23px; font-family: $HNL-Black; letter-spacing: -0.1px; word-wrap: break-word;
 				margin-bottom: 17px;
 				@include respond-to(sm) {
 					font-size: 20px;
@@ -3962,7 +3993,7 @@ ul {
 					font-size: 14px; line-height: 20px;
 					padding: 0 15px; min-height: 40px; margin-bottom: 13px;
 					a {
-						color: $main-color-1; font-size: inherit; font-family: $HNL-Bold; line-height: inherit;
+						color: $main-color-1; font-size: inherit; font-family: $HNL-Bold; line-height: inherit; word-wrap: break-word;
 						&:hover {
 							text-decoration: underline;
 						}
@@ -3986,9 +4017,8 @@ ul {
 						}
 					}
 					span {
-						color: $main-color-1; font-size: 13px; font-family: $HNL-Roman; white-space: nowrap; text-overflow: ellipsis;
-						vertical-align: top; padding-top: 5px; display: inline-block; position: relative; max-width: calc(100% - 36px);
-						overflow: hidden;
+						color: $main-color-1; font-size: 13px; font-family: $HNL-Roman;
+						vertical-align: top; padding-top: 5px; display: inline-block; position: relative;
 						&:after {
 							content: '';
 							display: block; width: 0%; height: 1px; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%);
@@ -3998,7 +4028,7 @@ ul {
 					}
 				}
 				p {
-					color: #515151; font-size: 13px; font-family: $HNC-Medium; line-height: 19px; letter-spacing: -0.15px;
+					color: #515151; font-size: 13px; font-family: $HNC-Medium; line-height: 19px; letter-spacing: -0.15px; word-wrap: break-word;
 					padding: 0 15px;
 				}
 				ul {
@@ -4032,7 +4062,7 @@ ul {
 		&-single {
 			margin-bottom: 29px;
 			p {
-				color: $main-color-2; font-size: 14px; font-family: $HNC-Medium; line-height: 21px; letter-spacing: -0.13px;
+				color: $main-color-2; font-size: 14px; font-family: $HNC-Medium; line-height: 21px; letter-spacing: -0.13px; word-wrap: break-word;
 				margin-bottom: 21px;
 			}
 			& > figure {
@@ -4220,6 +4250,22 @@ ul {
 						}
 						&:hover {
 							border: solid 1px $main-color-1;
+						}
+
+						em {
+							color: inherit; font-size: inherit; font-family: inherit; letter-spacing: inherit;
+							display: inline-block; padding-left: 20px; position: relative;
+							&:before {
+								display: inline-block;
+								font: normal normal normal 14px/1 FontAwesome;
+								font-size: inherit;
+								text-rendering: auto;
+								-webkit-font-smoothing: antialiased;
+								-moz-osx-font-smoothing: grayscale;
+								transform: translate(0, 0);
+								content: "\f087";
+								position: absolute; left: 1px; top: 2px;
+							}
 						}
 
 						i, span {
@@ -4445,6 +4491,23 @@ ul {
 			}
 			&:after {
 				transform: translate(-50%,-50%) rotate(45deg);
+			}
+		}
+	}
+	&-blog-functional-unauth {
+		width: 500px; display: none;
+		@include respond-to(sm) {
+			width: calc(100% - 30px);
+		}
+		p {
+			font-size: 13px; font-family: $OpenSans; line-height: 16px; letter-spacing: -0.1px;
+			padding: 13px 25px 16px; margin-bottom: 25px; width: 100%; display: block;
+			background: #f9f9f9; border-radius: 3px;
+			a {
+				color: $main-color-1;
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 		}
 	}

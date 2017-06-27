@@ -18,433 +18,433 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .icon-add-photo {
   background-image: url(../img/sprite.png);
-  background-position: -273px -71px;
+  background-position: -270px -71px;
   width: 17px;
   height: 14px;
 }
 .icon-answers-green {
   background-image: url(../img/sprite.png);
-  background-position: -273px -85px;
+  background-position: -270px -85px;
   width: 16px;
   height: 14px;
 }
 .icon-blog-banner-question {
   background-image: url(../img/sprite.png);
-  background-position: -34px -204px;
+  background-position: -34px -201px;
   width: 32px;
   height: 33px;
 }
 .icon-blog-slider-answers {
   background-image: url(../img/sprite.png);
-  background-position: -183px -153px;
+  background-position: -146px -100px;
   width: 13px;
   height: 12px;
 }
 .icon-blog-slider-likes {
   background-image: url(../img/sprite.png);
-  background-position: -273px -194px;
+  background-position: -270px -194px;
   width: 12px;
   height: 14px;
 }
 .icon-blog {
   background-image: url(../img/sprite.png);
-  background-position: -106px -204px;
+  background-position: -185px -163px;
   width: 19px;
   height: 22px;
 }
 .icon-dictionary {
   background-image: url(../img/sprite.png);
-  background-position: -125px -204px;
+  background-position: -162px -201px;
   width: 23px;
   height: 18px;
 }
 .icon-disc-close {
   background-image: url(../img/sprite.png);
-  background-position: -94px -237px;
+  background-position: -60px -234px;
   width: 19px;
   height: 19px;
 }
 .icon-disc-rewr {
   background-image: url(../img/sprite.png);
-  background-position: -243px -163px;
+  background-position: -240px -163px;
   width: 23px;
   height: 23px;
 }
 .icon-discuss-likes {
   background-image: url(../img/sprite.png);
-  background-position: -273px -222px;
+  background-position: -270px -222px;
   width: 12px;
   height: 14px;
 }
 .icon-discussion {
   background-image: url(../img/sprite.png);
-  background-position: -34px -237px;
+  background-position: 0px -234px;
   width: 20px;
   height: 20px;
 }
 .icon-download-apple {
   background-image: url(../img/sprite.png);
-  background-position: -243px -90px;
+  background-position: -240px -90px;
   width: 22px;
   height: 26px;
 }
 .icon-download-arrow {
   background-image: url(../img/sprite.png);
-  background-position: -273px -39px;
+  background-position: -270px -39px;
   width: 16px;
   height: 16px;
 }
 .icon-download-google {
   background-image: url(../img/sprite.png);
-  background-position: -243px -116px;
+  background-position: -240px -116px;
   width: 23px;
   height: 24px;
 }
 .icon-exit-gray {
   background-image: url(../img/sprite.png);
-  background-position: -273px -127px;
+  background-position: -270px -127px;
   width: 15px;
   height: 13px;
 }
 .icon-footer-question {
   background-image: url(../img/sprite.png);
-  background-position: -208px -70px;
+  background-position: -205px -70px;
   width: 35px;
   height: 34px;
 }
 .icon-forum-1 {
   background-image: url(../img/sprite.png);
-  background-position: 0px -166px;
+  background-position: 0px -163px;
   width: 39px;
   height: 38px;
 }
 .icon-forum-2 {
   background-image: url(../img/sprite.png);
-  background-position: -170px -39px;
+  background-position: -167px -39px;
   width: 38px;
   height: 38px;
 }
 .icon-forum-3 {
   background-image: url(../img/sprite.png);
-  background-position: -170px -77px;
+  background-position: -167px -77px;
   width: 38px;
   height: 38px;
 }
 .icon-forum-4 {
   background-image: url(../img/sprite.png);
-  background-position: -170px 0px;
+  background-position: -167px 0px;
   width: 38px;
   height: 39px;
 }
 .icon-forum-5 {
   background-image: url(../img/sprite.png);
-  background-position: -170px -115px;
+  background-position: -167px -115px;
   width: 38px;
   height: 38px;
 }
 .icon-forum-6 {
   background-image: url(../img/sprite.png);
-  background-position: -95px -116px;
+  background-position: -95px -113px;
   width: 37px;
   height: 37px;
 }
 .icon-forum-answers {
   background-image: url(../img/sprite.png);
-  background-position: -170px -153px;
+  background-position: -133px -100px;
   width: 13px;
   height: 12px;
 }
 .icon-forum-likes {
   background-image: url(../img/sprite.png);
-  background-position: -273px -180px;
+  background-position: -270px -180px;
   width: 12px;
   height: 14px;
 }
 .icon-forum_news-answers {
   background-image: url(../img/sprite.png);
-  background-position: -273px -236px;
+  background-position: -270px -236px;
   width: 13px;
   height: 12px;
 }
 .icon-forum_news-likes {
   background-image: url(../img/sprite.png);
-  background-position: -273px -166px;
+  background-position: -270px -166px;
   width: 12px;
   height: 14px;
 }
 .icon-header-help {
   background-image: url(../img/sprite.png);
-  background-position: -273px -55px;
+  background-position: -270px -55px;
   width: 16px;
   height: 16px;
 }
 .icon-home-gray {
   background-image: url(../img/sprite.png);
-  background-position: -273px -113px;
+  background-position: -270px -113px;
   width: 14px;
   height: 14px;
 }
 .icon-home-small {
   background-image: url(../img/sprite.png);
-  background-position: -123px -100px;
+  background-position: -167px -153px;
   width: 10px;
   height: 10px;
 }
 .icon-likes-green {
   background-image: url(../img/sprite.png);
-  background-position: -273px -208px;
+  background-position: -270px -208px;
   width: 12px;
   height: 14px;
 }
 .icon-link-angle-green {
   background-image: url(../img/sprite.png);
-  background-position: -265px -186px;
+  background-position: -262px -186px;
   width: 8px;
   height: 14px;
 }
 .icon-link-angle-white {
   background-image: url(../img/sprite.png);
-  background-position: -265px -90px;
+  background-position: -262px -90px;
   width: 8px;
   height: 14px;
 }
 .icon-logo-small {
   background-image: url(../img/sprite.png);
-  background-position: -66px -204px;
+  background-position: -100px -201px;
   width: 40px;
   height: 25px;
 }
 .icon-main-intro-1 {
   background-image: url(../img/sprite.png);
-  background-position: -68px 0px;
+  background-position: -65px 0px;
   width: 55px;
   height: 62px;
 }
 .icon-main-intro-2 {
   background-image: url(../img/sprite.png);
-  background-position: 0px -116px;
+  background-position: 0px -113px;
   width: 52px;
   height: 50px;
 }
 .icon-main-intro-3 {
   background-image: url(../img/sprite.png);
-  background-position: 0px -68px;
+  background-position: 0px -65px;
   width: 62px;
   height: 48px;
 }
 .icon-main-intro-4 {
   background-image: url(../img/sprite.png);
-  background-position: -123px 0px;
+  background-position: -120px 0px;
   width: 47px;
   height: 56px;
 }
 .icon-main-intro-5 {
   background-image: url(../img/sprite.png);
   background-position: 0px 0px;
-  width: 68px;
-  height: 68px;
+  width: 65px;
+  height: 65px;
 }
 .icon-main-join-1 {
   background-image: url(../img/sprite.png);
-  background-position: -123px -56px;
+  background-position: -120px -56px;
   width: 44px;
   height: 44px;
 }
 .icon-main-join-2 {
   background-image: url(../img/sprite.png);
-  background-position: -62px -68px;
+  background-position: -62px -65px;
   width: 48px;
   height: 46px;
 }
 .icon-main-join-3 {
   background-image: url(../img/sprite.png);
-  background-position: -52px -116px;
+  background-position: -52px -113px;
   width: 43px;
   height: 37px;
 }
 .icon-placemarker {
   background-image: url(../img/sprite.png);
-  background-position: -273px 0px;
+  background-position: -270px 0px;
   width: 17px;
   height: 21px;
 }
 .icon-reference {
   background-image: url(../img/sprite.png);
-  background-position: -54px -237px;
+  background-position: -20px -234px;
   width: 20px;
   height: 20px;
 }
 .icon-registration-1 {
   background-image: url(../img/sprite.png);
-  background-position: -208px -172px;
+  background-position: -66px -201px;
   width: 34px;
   height: 31px;
 }
 .icon-registration-2 {
   background-image: url(../img/sprite.png);
-  background-position: -208px -104px;
+  background-position: -205px -104px;
   width: 34px;
   height: 34px;
 }
 .icon-registration-3 {
   background-image: url(../img/sprite.png);
-  background-position: 0px -204px;
+  background-position: 0px -201px;
   width: 34px;
   height: 33px;
 }
 .icon-registration-4 {
   background-image: url(../img/sprite.png);
-  background-position: -208px -138px;
+  background-position: -205px -138px;
   width: 34px;
   height: 34px;
 }
 .icon-search {
   background-image: url(../img/sprite.png);
-  background-position: -243px -140px;
+  background-position: -240px -140px;
   width: 23px;
   height: 23px;
 }
 .icon-sidebar-article {
   background-image: url(../img/sprite.png);
-  background-position: -148px -204px;
+  background-position: -185px -201px;
   width: 20px;
   height: 17px;
 }
 .icon-sidebar-discuss {
   background-image: url(../img/sprite.png);
-  background-position: -74px -237px;
+  background-position: -40px -234px;
   width: 20px;
   height: 19px;
 }
 .icon-sidebar-last-comments-book {
   background-image: url(../img/sprite.png);
-  background-position: 0px -237px;
+  background-position: -205px -172px;
   width: 34px;
   height: 26px;
 }
 .icon-sidebar-last-comments-dialog {
   background-image: url(../img/sprite.png);
-  background-position: -243px -63px;
+  background-position: -240px -63px;
   width: 28px;
   height: 27px;
 }
 .icon-sidebar-last-comments-light {
   background-image: url(../img/sprite.png);
-  background-position: -243px 0px;
+  background-position: -240px 0px;
   width: 30px;
   height: 33px;
 }
 .icon-sidebar-last-comments-mark {
   background-image: url(../img/sprite.png);
-  background-position: -243px -33px;
+  background-position: -240px -33px;
   width: 26px;
   height: 30px;
 }
 .icon-sidebar-themes {
   background-image: url(../img/sprite.png);
-  background-position: -243px -186px;
+  background-position: -240px -186px;
   width: 22px;
   height: 22px;
 }
 .icon-social-facebook {
   background-image: url(../img/sprite.png);
-  background-position: -132px -116px;
+  background-position: -39px -163px;
   width: 37px;
   height: 36px;
 }
 .icon-social-instagram {
   background-image: url(../img/sprite.png);
-  background-position: -208px 0px;
+  background-position: -205px 0px;
   width: 35px;
   height: 35px;
 }
 .icon-social-linkedin {
   background-image: url(../img/sprite.png);
-  background-position: -208px -35px;
+  background-position: -205px -35px;
   width: 35px;
   height: 35px;
 }
 .icon-social-odnoklassniki {
   background-image: url(../img/sprite.png);
-  background-position: -76px -166px;
+  background-position: -113px -163px;
   width: 36px;
   height: 36px;
 }
 .icon-social-twitter {
   background-image: url(../img/sprite.png);
-  background-position: -148px -166px;
+  background-position: -132px -113px;
   width: 35px;
   height: 35px;
 }
 .icon-social-vkontakte {
   background-image: url(../img/sprite.png);
-  background-position: -39px -166px;
+  background-position: -76px -163px;
   width: 37px;
   height: 36px;
 }
 .icon-social-youtube {
   background-image: url(../img/sprite.png);
-  background-position: -112px -166px;
+  background-position: -149px -163px;
   width: 36px;
   height: 36px;
 }
 .icon-subscribe {
   background-image: url(../img/sprite.png);
-  background-position: -273px -140px;
+  background-position: -270px -140px;
   width: 16px;
   height: 12px;
 }
 .icon-user-gray {
   background-image: url(../img/sprite.png);
-  background-position: -273px -99px;
+  background-position: -270px -99px;
   width: 14px;
   height: 14px;
 }
 .icon-user-ring {
   background-image: url(../img/sprite.png);
-  background-position: -273px -21px;
+  background-position: -270px -21px;
   width: 16px;
   height: 18px;
 }
 .icon-user-star {
   background-image: url(../img/sprite.png);
-  background-position: -113px -237px;
+  background-position: -79px -234px;
   width: 19px;
   height: 19px;
 }
 .icon-word-control-bold {
   background-image: url(../img/sprite.png);
-  background-position: -265px -104px;
+  background-position: -262px -104px;
   width: 8px;
   height: 12px;
 }
 .icon-word-control-emoji {
   background-image: url(../img/sprite.png);
-  background-position: -243px -208px;
+  background-position: -240px -208px;
   width: 22px;
   height: 22px;
 }
 .icon-word-control-file {
   background-image: url(../img/sprite.png);
-  background-position: -183px -166px;
+  background-position: -140px -201px;
   width: 22px;
   height: 19px;
 }
 .icon-word-control-italic {
   background-image: url(../img/sprite.png);
-  background-position: -196px -153px;
+  background-position: -52px -150px;
   width: 11px;
   height: 12px;
 }
 .icon-word-control-list {
   background-image: url(../img/sprite.png);
-  background-position: -273px -248px;
+  background-position: -120px -100px;
   width: 13px;
   height: 12px;
 }
 .icon-word-control-num-list {
   background-image: url(../img/sprite.png);
-  background-position: -273px -152px;
+  background-position: -270px -152px;
   width: 13px;
   height: 14px;
 }

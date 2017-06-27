@@ -464,6 +464,10 @@
 				background: $main-color-1;
 			}
 		}
+		.quote-message-link,
+		.lia-tabs-standard-wrapper {display: none;}
+		.lia-fieldset-title {margin-bottom: 15px;}
+
 	}
 
 	.CommentList,
@@ -485,7 +489,27 @@
 	.LithiumLogo,
 	.lia-component-common-widget-scroll-to,
 	.lia-component-common-widget-slide-out-nav-menu,
-	.lia-component-nodes-widget-community-title {display: none;}
+	.lia-component-nodes-widget-community-title,
+	.discussion-link {display: none;}
+
+	.lia-panel-section {
+		.blog-functional  {
+			display: none;
+		}
+		.lia-quilt-blog-topic-message,
+		.lia-quilt-blog-reply-message {
+			& > .lia-quilt-row-header {
+				display: none;
+			}
+			.lia-quilt-row-main {
+				padding: 0; width: 100%;
+			}
+		}
+		.forum-disc {
+			.disc-red {display: none;}
+		}
+	}
+
 	.lia-top-quilt > .lia-quilt-row-main > .lia-quilt-column-left-content > .lia-quilt-column-alley,
 	.lia-top-quilt > .lia-quilt-row-main > .lia-quilt-column-right-content > .lia-quilt-column-alley,
 	.lia-top-quilt > .lia-quilt-row-main > .lia-quilt-column-single > .lia-quilt-column-alley {padding: 0;}
@@ -493,8 +517,59 @@
 		padding: 0 15px;
 	}
 
+	.lia-CommentEditor-form {
+		.lia-form-thread-author-entry,
+		.lia-form-recent-participants-in-thread-entry,
+		.lia-notify-title {display: none;}
+		input[type="submit"].lia-button-Submit-action {
+			color: #ffffff; font-size: 16px; font-family: $OpenSans; font-weight: 600;
+			padding: 9px 37px 10px;
+			background: $main-color-1; border: solid 1px $main-color-1; border-radius: 2px;
+			&:hover {
+				color: $main-color-1;
+				background: #ffffff;
+			}
+			i {
+				margin-right: 10px;
+			}
+			span {
+				color: inherit;
+			}
+			&:focus {
+				outline: none;
+			}
+		}
+		input[type="submit"].lia-button-Cancel-action {
+			color: $main-color-1; font-size: 16px; font-family: $OpenSans; font-weight: 600;
+			padding: 9px 28px 10px;
+			background: #ffffff; border: solid 1px $main-color-1; border-radius: 2px;
+			&:hover {
+				color: #ffffff; text-decoration: none;
+				background: $main-color-1;
+			}
+			i {
+				margin-right: 10px;
+			}
+			span {
+				color: inherit;
+			}
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+
 	.wr-blog-main {
 		.blogControl,
 		.forum-disc {display: none;}
+	}
+}
+
+.lia-CommentEditor-form {
+	.quote-message-link {display: none;}
+	.mce-toolbar-grp {
+		.lia-mce-toolbar-insertcode,
+		.lia-mce-toolbar-link,
+		.lia-mce-toolbar-embedvideo {display: none;}
 	}
 }
