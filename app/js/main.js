@@ -74,9 +74,32 @@ $(document).ready(function() {
     	return false;
     });
 
-    $('.lia-button-Submit-action').click(function() {
-    	window.onbeforeunload = null;
+    // $('.lia-button-Submit-action').click(function() {
+    // 	window.onbeforeunload = null;
+    // });
+
+    // search popups
+    $('.js-search-popups').click(function(){
+    	var popupClass = $(this).data('search-popup');
+    	$(popupClass).bPopup({
+    		onOpen: function() {$('body').addClass('ov-hidden');}, 
+            onClose: function() {$('body').removeClass('ov-hidden');}
+    	});
+    	return false;
     });
+
+    var blogResLength = $('.popup-search-blog > ul > li').length;
+    if(blogResLength < 9) {
+    	switch(blogResLength) {
+    		case 6:
+    			$('.popup-search-blog').addClass('width-three');
+    			break;
+    		case 7:
+    		case 8:
+    			$('.popup-search-blog').addClass('width-four');
+    			break;
+    	}
+    }
 
 });
 

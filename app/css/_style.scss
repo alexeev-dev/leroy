@@ -143,6 +143,13 @@
 		&-user_page {
 			padding: 0 0 152px;
 		}
+		&-coockie {
+			padding: 0 0 60px;
+			&-agree {
+				width: 100%; position: fixed; bottom: 0; left: 0; z-index: 100; padding: 13px 0;
+				background: #e6e6e6;
+			}
+		}
 		&-footer {
 			padding: 29px 0 36px; position: relative;
 			background: #f7f7f7; border-top: solid 3px $main-color-1;

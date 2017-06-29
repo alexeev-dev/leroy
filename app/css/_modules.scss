@@ -171,6 +171,10 @@
 	}
 }
 
+.ov-hidden {
+	overflow: hidden;
+}
+
 
 .pluso-more {display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;}
 
@@ -3452,7 +3456,13 @@ ul {
 			padding: 18px 19px 19px;
 			background: #f3f3f3; border-bottom: solid 1px #e9e9e9;
 			span {
-				font-family: $HNC-Medium;
+				color: inherit; font-family: $HNC-Medium;
+			}
+			a {
+				transition: color 0.3s ease-out;
+				&:hover {
+					color: $main-color-1;
+				}
 			}
 		}
 		ul {
@@ -3486,7 +3496,7 @@ ul {
 							padding-top: 15px;
 							h5 {
 								a {
-									font-size: 14px; font-family: $HNC-Medium; line-height: 17px; letter-spacing: 0.4px;
+									font-size: 14px; font-family: $HNC-Medium; line-height: 17px; letter-spacing: 0.4px; word-wrap: break-word;
 									&:hover {
 										color: $main-color-1;
 									}
@@ -4511,6 +4521,144 @@ ul {
 			}
 		}
 	}
+	&-search {
+		&-blog,
+		&-forum,
+		&-users {
+			width: 1230px; padding: 40px; display: none; position: relative;
+			background: #ffffff;
+			h2 {
+				color: $main-color-2; font-size: 20px; font-family: $HNC-Bold;
+				span {
+					font-family: $HNC-Roman;
+				}
+			}
+			a.close {
+				display: block; width: 30px; height: 30px; position: absolute; top: 10px; right: 10px;
+				opacity: 1;
+				&:hover {
+					&:before,
+					&:after {
+						background: $main-color-2;
+					}
+				}
+				&:before,
+				&:after {
+					content: '';
+					display: block; width: 20px; height: 2px; position: absolute; left: 50%; top: 50%;
+					background: $main-color-1;
+					transition: background 0.3s ease-out;
+				}
+				&:before {
+					transform: translate(-50%, -50%) rotate(45deg);
+				}
+				&:after {
+					transform: translate(-50%, -50%) rotate(-45deg);
+				}
+			}
+			& > ul {
+				&::-webkit-scrollbar {
+					width: 10px;
+				}
+				&::-webkit-scrollbar-thumb {
+					background: $main-color-1; border-radius: 5px;
+					&:hover {
+						background: #00a639;
+					}					
+				}
+			}
+		}
+		&-blog {
+			&.width {
+				&-three {
+					width: 758px;
+					& > ul {
+						& > li {
+							width: calc(33.33333% - 30px);
+						}
+					}
+				}
+				&-four {
+					width: 994px;
+					& > ul {
+						& > li {
+							width: calc(25% - 30px);
+						}
+					}
+				}
+			}
+			h2 {
+				margin-bottom: 20px;
+			}
+			& > ul {
+				display: flex; margin: 0 -15px; flex-wrap: wrap; max-height: 560px;
+				overflow-y: auto; 
+				@include respond-to(md) {
+					flex-wrap: wrap; 
+				}
+				@include respond-to(xs) {
+					padding: 20px 15px; margin: 0;
+				}
+				& > li { 
+					margin: 0 15px 15px; width: calc(20% - 30px);
+					overflow: hidden;
+					@include respond-to(md) {
+						width: calc(50% - 30px); margin-bottom: 30px;
+					}
+					@include respond-to(xs) {
+						width: 100%; margin: 0 0 30px;
+					}
+					&:last-child {
+						@include respond-to(xs) {
+							margin-bottom: 0;
+						}
+					}
+					figure {
+						img {
+							width: 100%;
+						}
+						figcaption {
+							padding-top: 15px;
+							h5 {
+								a {
+									font-size: 14px; font-family: $HNC-Medium; line-height: 17px; letter-spacing: 0.4px; word-wrap: break-word;
+									transition: color 0.3s ease-out;
+									&:hover {
+										color: $main-color-1;
+									}
+								}
+							}
+							ul {
+								padding-top: 8px;
+								li {
+									font-size: 12px; font-family: $OpenSans; font-weight: 600;
+									display: inline-block; margin-right: 14px;
+									&:first-child {
+										color: #333399;
+									}
+									&:last-child {
+										color: $main-color-1;
+										margin-right: 0;
+									}
+									i {
+										margin-right: 4px; position: relative;
+										&.icon-forum_news {
+											&-answers {
+												top: 2px;
+											}
+											&-likes {
+												top: 1px;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 // user page
@@ -5003,6 +5151,74 @@ ul {
 								&-likes {
 									top: 1px;
 								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.coockie {
+	&-info {
+		h1 {
+			color: #333333; font-size: 30px; font-family: $OpenSans; font-weight: 800;
+			margin-bottom: 30px;
+			@include respond-to(xs) {
+				font-size: 24px;
+			}
+		}
+		h3 {
+			color: $main-color-2; font-size: 20px; font-family: $HNC-Bold;
+			margin-bottom: 21px;
+		}
+		li, p {
+			color: $main-color-2; font-size: 14px; font-family: $HNC-Medium; line-height: 21px; letter-spacing: -0.13px; word-wrap: break-word;
+			margin-bottom: 21px;
+		}
+		ul {
+			padding-left: 20px; margin-bottom: 21px;
+			li {
+				margin-bottom: 10px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	&-agree {
+		display: flex; justify-content: space-between;
+		p {
+			color: #333f46; font-size: 12px; font-family: $HNC-Roman; letter-spacing: 0.03px; line-height: 16px;
+			padding-right: 180px; padding-top: 2px;
+		}
+		ul {
+			display: flex;
+			li {
+				width: 140px; margin-right: 20px;
+				&:last-child {margin-right: 0;}
+				a {
+					&.btn {
+						&-green,
+						&-dark {
+							color: #ffffff; font-size: 12px; font-family: $HNC-Bold; line-height: 35px; text-align: center;
+							width: 140px; height: 35px; display: block; padding: 0 15px;
+							border-radius: 4px;
+							transition: color 0.3s ease-out, background 0.3s ease-out;
+						}
+						&-green {
+							background: #71c768; border: solid 1px #71c768;
+							&:hover {
+								color: #71c768;
+								background: #ffffff;
+							}
+						}
+						&-dark {
+							background: #333f46; border: solid 1px #333f46;
+							&:hover {
+								color: #333f46;
+								background: #ffffff;
 							}
 						}
 					}
