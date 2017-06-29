@@ -101,6 +101,18 @@ $(document).ready(function() {
     	}
     }
 
+    // coockie agree
+    setTimeout(function() {
+    	$('.wr-coockie-agree').addClass('active');
+    }, 2000);
+    $('.js-coockie-agree').click(function() {
+    	$('.wr-coockie-agree').removeClass('active');
+    	return false;
+    });
+    
+
+
+
 });
 
 $(window).load(function() {

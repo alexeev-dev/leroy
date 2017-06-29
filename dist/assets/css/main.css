@@ -17394,7 +17394,6 @@ ul.btn-list {
 .popup-search-blog, .popup-search-forum, .popup-search-users {
   width: 1230px;
   padding: 40px;
-  display: none;
   position: relative;
   background: #ffffff; }
   .popup-search-blog h2, .popup-search-forum h2, .popup-search-users h2 {
@@ -18629,7 +18628,19 @@ ul.forum-img {
       left: 0;
       z-index: 100;
       padding: 13px 0;
-      background: #e6e6e6; }
+      -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+      transform: translateY(100%);
+      background: #e6e6e6;
+      -webkit-transition: -webkit-transform 0.6s ease-out;
+      transition: -webkit-transform 0.6s ease-out;
+      transition: transform 0.6s ease-out;
+      transition: transform 0.6s ease-out, -webkit-transform 0.6s ease-out; }
+      .app .wr-coockie-agree.active,
+      .app .lia-quilt-wr-coockie-agree.active {
+        -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        transform: translateY(0%); }
   .app .wr-footer,
   .app .lia-quilt-wr-footer {
     padding: 29px 0 36px;

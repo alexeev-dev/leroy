@@ -146,8 +146,12 @@
 		&-coockie {
 			padding: 0 0 60px;
 			&-agree {
-				width: 100%; position: fixed; bottom: 0; left: 0; z-index: 100; padding: 13px 0;
+				width: 100%; position: fixed; bottom: 0; left: 0; z-index: 100; padding: 13px 0; transform: translateY(100%);
 				background: #e6e6e6;
+				transition: transform 0.6s ease-out;
+				&.active {
+					transform: translateY(0%);
+				}
 			}
 		}
 		&-footer {
