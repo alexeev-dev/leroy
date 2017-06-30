@@ -4571,11 +4571,39 @@ ul {
 		}
 		&-blog {
 			&.width {
+				&-one {
+					&-single {
+						width: 286px;
+						& > ul {
+							& > li {
+								width: 100%;
+							}
+						}
+					}
+				}
+				&-two {
+					&-single {
+						width: 522px;
+						& > ul {
+							& > li {
+								width: calc(50% - 30px);
+							}
+						}
+					}
+				}
 				&-three {
 					width: 758px;
 					& > ul {
 						& > li {
 							width: calc(33.33333% - 30px);
+						}
+					}
+					&-single {
+						width: 758px;
+						& > ul {
+							& > li {
+								width: calc(33.33333% - 30px);
+							}
 						}
 					}
 				}
@@ -4584,6 +4612,14 @@ ul {
 					& > ul {
 						& > li {
 							width: calc(25% - 30px);
+						}
+					}
+					&-single {
+						width: 994px;
+						& > ul {
+							& > li {
+								width: calc(25% - 30px);
+							}
 						}
 					}
 				}

@@ -17441,17 +17441,38 @@ ul.btn-list {
     .popup-search-blog > ul::-webkit-scrollbar-thumb:hover, .popup-search-forum > ul::-webkit-scrollbar-thumb:hover, .popup-search-users > ul::-webkit-scrollbar-thumb:hover {
       background: #00a639; }
 
+.popup-search-blog.width-one-single {
+  width: 286px; }
+  .popup-search-blog.width-one-single > ul > li {
+    width: 100%; }
+
+.popup-search-blog.width-two-single {
+  width: 522px; }
+  .popup-search-blog.width-two-single > ul > li {
+    width: -webkit-calc(50% - 30px);
+    width: calc(50% - 30px); }
+
 .popup-search-blog.width-three {
   width: 758px; }
   .popup-search-blog.width-three > ul > li {
     width: -webkit-calc(33.33333% - 30px);
     width: calc(33.33333% - 30px); }
+  .popup-search-blog.width-three-single {
+    width: 758px; }
+    .popup-search-blog.width-three-single > ul > li {
+      width: -webkit-calc(33.33333% - 30px);
+      width: calc(33.33333% - 30px); }
 
 .popup-search-blog.width-four {
   width: 994px; }
   .popup-search-blog.width-four > ul > li {
     width: -webkit-calc(25% - 30px);
     width: calc(25% - 30px); }
+  .popup-search-blog.width-four-single {
+    width: 994px; }
+    .popup-search-blog.width-four-single > ul > li {
+      width: -webkit-calc(25% - 30px);
+      width: calc(25% - 30px); }
 
 .popup-search-blog > ul {
   display: -webkit-box;

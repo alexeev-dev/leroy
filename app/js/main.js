@@ -91,6 +91,19 @@ $(document).ready(function() {
     var blogResLength = $('.popup-search-blog > ul > li').length;
     if(blogResLength < 9) {
     	switch(blogResLength) {
+    		case 1:
+    			$('.popup-search-blog').addClass('width-one-single');
+    			break;
+    		case 2:
+    			$('.popup-search-blog').addClass('width-two-single');
+    			break;
+    		case 3:
+    			$('.popup-search-blog').addClass('width-three-single');
+    			break;
+    		case 4:
+    			$('.popup-search-blog').addClass('width-four-single');
+    			break;
+    		case 5:
     		case 6:
     			$('.popup-search-blog').addClass('width-three');
     			break;
