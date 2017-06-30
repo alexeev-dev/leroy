@@ -4529,6 +4529,7 @@ ul {
 			background: #ffffff;
 			h2 {
 				color: $main-color-2; font-size: 20px; font-family: $HNC-Bold;
+				margin-bottom: 20px;
 				span {
 					font-family: $HNC-Roman;
 				}
@@ -4586,9 +4587,6 @@ ul {
 						}
 					}
 				}
-			}
-			h2 {
-				margin-bottom: 20px;
 			}
 			& > ul {
 				display: flex; margin: 0 -15px; flex-wrap: wrap; max-height: 560px;
@@ -4654,6 +4652,70 @@ ul {
 								}
 							}
 						}
+					}
+				}
+			}
+		}
+		&-users {
+			& > ul {
+				display: flex; justify-content: flex-start; flex-wrap: wrap; padding: 28px 8px 0; max-height: 400px;
+				overflow-y: auto; 
+				@include respond-to(xs) {
+					padding: 30px 15px;
+				}
+				& > li {
+					width: calc(25% - 40px); margin: 0 20px 37px; position: relative; padding-left: 100px; min-height: 76px; padding-top: 1px;
+					@include respond-to(lg) {
+						padding-left: 90px; margin: 0 10px 37px; width: calc(25% - 20px);
+					}
+					@include respond-to(md) {
+						width: calc(33.33333% - 20px);
+					}
+					@include respond-to(sm) {
+						width: calc(50% - 20px);
+					}
+					@include respond-to(xs) {
+						width: 100%; margin: 0 0 30px;
+					}
+					&:last-child {
+						@include respond-to(xs) {
+							margin-bottom: 0;
+						}
+					}
+					figure {
+						width: 76px; height: 76px; position: absolute; left: 0; top: 0;
+						border-radius: 50%;
+						overflow: hidden;
+						img {
+							width: 100%; position: relative; left: 50%; top: 50%; transform: translate(-50%,-50%);
+						}
+					}
+					& > a, p, span {
+						color: $main-color-2;
+					}
+					& > a {
+						font-size: 18px; font-family: $HNL-Bold;
+						display: inline-block; position: relative; margin-bottom: 12px;
+						transition: color 0.2s ease-out;
+						&:after {
+							content: '';
+							display: block; width: 0%; height: 1px; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%);
+							background: $main-color-2;
+							transition: opacity 0.2s ease-out, width 0.2s ease-out;
+						}
+						&:hover {
+							color: $main-color-1;
+							&:after {
+								width: 100%;
+								background: $main-color-1;
+							}
+						}
+					}
+					p {
+						font-size: 14px; font-family: $HNL-Medium; line-height: 16px;
+					}
+					span {
+						font-size: 11px; font-family: $HNC-Medium; letter-spacing: -0.1px;
 					}
 				}
 			}
@@ -5293,42 +5355,7 @@ ul.forum-img {
   padding: 20px 0 20px;
   background: #66c05d; }
 
-.forum-list > ul > li div span i.icon-kitchen_model {
-    background-image: url("../img/sprite.png");
-    background-position: 0 -149px;
-    height: 38px;
-    width: 39px;
-}
-.forum-list > ul > li div span i.icon-gaz {
-    background-image: url("../img/sprite.png");
-    background-position: -164px -39px;
-    height: 38px;
-    width: 38px;
-}
-.forum-list > ul > li div span i.icon-stroym {
-    background-image: url("../img/sprite.png");
-    background-position: -164px 0;
-    height: 39px;
-    width: 38px;
-}
-.forum-list > ul > li div span i.icon-dddd {
-   background-image: url("../img/sprite.png");
-    background-position: -39px -149px;
-    height: 38px;
-    width: 38px;
-}
-.forum-list > ul > li div span i.icon-kyhni {
-    background-image: url("../img/sprite.png");
-    background-position: -43px -112px;
-    height: 37px;
-    width: 37px;
-}
-.forum-list > ul > li div span i.icon-S {
-    background-image: url("../img/sprite.png");
-    background-position: -164px -77px;
-    height: 38px;
-    width: 38px;
-}
+
 
 .SearchForm, 
 #link_13, #link_4, #actionMenuDropDown, #link_10, #imagedisplay, #link_2, #threadnavigator, #link_1, 

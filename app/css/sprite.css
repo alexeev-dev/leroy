@@ -16,6 +16,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
+.icon-S {
+  background-image: url(../img/sprite.png);
+  background-position: -167px -39px;
+  width: 38px;
+  height: 38px;
+}
 .icon-add-photo {
   background-image: url(../img/sprite.png);
   background-position: -270px -71px;
@@ -36,7 +42,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-blog-slider-answers {
   background-image: url(../img/sprite.png);
-  background-position: -146px -100px;
+  background-position: -120px -100px;
   width: 13px;
   height: 12px;
 }
@@ -52,6 +58,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 19px;
   height: 22px;
 }
+.icon-dddd {
+  background-image: url(../img/sprite.png);
+  background-position: -167px -77px;
+  width: 38px;
+  height: 38px;
+}
 .icon-dictionary {
   background-image: url(../img/sprite.png);
   background-position: -162px -201px;
@@ -66,13 +78,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-disc-rewr {
   background-image: url(../img/sprite.png);
-  background-position: -240px -163px;
+  background-position: -240px -140px;
   width: 23px;
   height: 23px;
 }
 .icon-discuss-likes {
   background-image: url(../img/sprite.png);
-  background-position: -270px -222px;
+  background-position: -270px -166px;
   width: 12px;
   height: 14px;
 }
@@ -90,7 +102,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-download-arrow {
   background-image: url(../img/sprite.png);
-  background-position: -270px -39px;
+  background-position: -270px -55px;
   width: 16px;
   height: 16px;
 }
@@ -112,42 +124,6 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 35px;
   height: 34px;
 }
-.icon-forum-1 {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -163px;
-  width: 39px;
-  height: 38px;
-}
-.icon-forum-2 {
-  background-image: url(../img/sprite.png);
-  background-position: -167px -39px;
-  width: 38px;
-  height: 38px;
-}
-.icon-forum-3 {
-  background-image: url(../img/sprite.png);
-  background-position: -167px -77px;
-  width: 38px;
-  height: 38px;
-}
-.icon-forum-4 {
-  background-image: url(../img/sprite.png);
-  background-position: -167px 0px;
-  width: 38px;
-  height: 39px;
-}
-.icon-forum-5 {
-  background-image: url(../img/sprite.png);
-  background-position: -167px -115px;
-  width: 38px;
-  height: 38px;
-}
-.icon-forum-6 {
-  background-image: url(../img/sprite.png);
-  background-position: -95px -113px;
-  width: 37px;
-  height: 37px;
-}
 .icon-forum-answers {
   background-image: url(../img/sprite.png);
   background-position: -133px -100px;
@@ -156,7 +132,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-forum-likes {
   background-image: url(../img/sprite.png);
-  background-position: -270px -180px;
+  background-position: -270px -208px;
   width: 12px;
   height: 14px;
 }
@@ -168,19 +144,25 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-forum_news-likes {
   background-image: url(../img/sprite.png);
-  background-position: -270px -166px;
+  background-position: -270px -180px;
   width: 12px;
   height: 14px;
 }
+.icon-gaz {
+  background-image: url(../img/sprite.png);
+  background-position: -167px -115px;
+  width: 38px;
+  height: 38px;
+}
 .icon-header-help {
   background-image: url(../img/sprite.png);
-  background-position: -270px -55px;
+  background-position: -270px -39px;
   width: 16px;
   height: 16px;
 }
 .icon-home-gray {
   background-image: url(../img/sprite.png);
-  background-position: -270px -113px;
+  background-position: -270px -99px;
   width: 14px;
   height: 14px;
 }
@@ -190,9 +172,21 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 10px;
   height: 10px;
 }
+.icon-kitchen_model {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -163px;
+  width: 39px;
+  height: 38px;
+}
+.icon-kyhni {
+  background-image: url(../img/sprite.png);
+  background-position: -95px -113px;
+  width: 37px;
+  height: 37px;
+}
 .icon-likes-green {
   background-image: url(../img/sprite.png);
-  background-position: -270px -208px;
+  background-position: -270px -222px;
   width: 12px;
   height: 14px;
 }
@@ -300,7 +294,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-search {
   background-image: url(../img/sprite.png);
-  background-position: -240px -140px;
+  background-position: -240px -163px;
   width: 23px;
   height: 23px;
 }
@@ -342,51 +336,57 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-sidebar-themes {
   background-image: url(../img/sprite.png);
-  background-position: -240px -186px;
+  background-position: -240px -208px;
   width: 22px;
   height: 22px;
 }
 .icon-social-facebook {
   background-image: url(../img/sprite.png);
-  background-position: -39px -163px;
+  background-position: -76px -163px;
   width: 37px;
   height: 36px;
 }
 .icon-social-instagram {
   background-image: url(../img/sprite.png);
-  background-position: -205px 0px;
+  background-position: -205px -35px;
   width: 35px;
   height: 35px;
 }
 .icon-social-linkedin {
   background-image: url(../img/sprite.png);
-  background-position: -205px -35px;
+  background-position: -132px -113px;
   width: 35px;
   height: 35px;
 }
 .icon-social-odnoklassniki {
   background-image: url(../img/sprite.png);
-  background-position: -113px -163px;
+  background-position: -149px -163px;
   width: 36px;
   height: 36px;
 }
 .icon-social-twitter {
   background-image: url(../img/sprite.png);
-  background-position: -132px -113px;
+  background-position: -205px 0px;
   width: 35px;
   height: 35px;
 }
 .icon-social-vkontakte {
   background-image: url(../img/sprite.png);
-  background-position: -76px -163px;
+  background-position: -39px -163px;
   width: 37px;
   height: 36px;
 }
 .icon-social-youtube {
   background-image: url(../img/sprite.png);
-  background-position: -149px -163px;
+  background-position: -113px -163px;
   width: 36px;
   height: 36px;
+}
+.icon-stroym {
+  background-image: url(../img/sprite.png);
+  background-position: -167px 0px;
+  width: 38px;
+  height: 39px;
 }
 .icon-subscribe {
   background-image: url(../img/sprite.png);
@@ -396,7 +396,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-user-gray {
   background-image: url(../img/sprite.png);
-  background-position: -270px -99px;
+  background-position: -270px -113px;
   width: 14px;
   height: 14px;
 }
@@ -420,7 +420,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-word-control-emoji {
   background-image: url(../img/sprite.png);
-  background-position: -240px -208px;
+  background-position: -240px -186px;
   width: 22px;
   height: 22px;
 }
@@ -438,7 +438,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-word-control-list {
   background-image: url(../img/sprite.png);
-  background-position: -120px -100px;
+  background-position: -146px -100px;
   width: 13px;
   height: 12px;
 }

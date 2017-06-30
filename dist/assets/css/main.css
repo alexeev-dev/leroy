@@ -11176,6 +11176,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
+.icon-S {
+  background-image: url(../img/sprite.png);
+  background-position: -167px -39px;
+  width: 38px;
+  height: 38px; }
+
 .icon-add-photo {
   background-image: url(../img/sprite.png);
   background-position: -270px -71px;
@@ -11196,7 +11202,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 .icon-blog-slider-answers {
   background-image: url(../img/sprite.png);
-  background-position: -146px -100px;
+  background-position: -120px -100px;
   width: 13px;
   height: 12px; }
 
@@ -11212,6 +11218,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 19px;
   height: 22px; }
 
+.icon-dddd {
+  background-image: url(../img/sprite.png);
+  background-position: -167px -77px;
+  width: 38px;
+  height: 38px; }
+
 .icon-dictionary {
   background-image: url(../img/sprite.png);
   background-position: -162px -201px;
@@ -11226,13 +11238,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 .icon-disc-rewr {
   background-image: url(../img/sprite.png);
-  background-position: -240px -163px;
+  background-position: -240px -140px;
   width: 23px;
   height: 23px; }
 
 .icon-discuss-likes {
   background-image: url(../img/sprite.png);
-  background-position: -270px -222px;
+  background-position: -270px -166px;
   width: 12px;
   height: 14px; }
 
@@ -11250,7 +11262,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 .icon-download-arrow {
   background-image: url(../img/sprite.png);
-  background-position: -270px -39px;
+  background-position: -270px -55px;
   width: 16px;
   height: 16px; }
 
@@ -11272,42 +11284,6 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 35px;
   height: 34px; }
 
-.icon-forum-1 {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -163px;
-  width: 39px;
-  height: 38px; }
-
-.icon-forum-2 {
-  background-image: url(../img/sprite.png);
-  background-position: -167px -39px;
-  width: 38px;
-  height: 38px; }
-
-.icon-forum-3 {
-  background-image: url(../img/sprite.png);
-  background-position: -167px -77px;
-  width: 38px;
-  height: 38px; }
-
-.icon-forum-4 {
-  background-image: url(../img/sprite.png);
-  background-position: -167px 0px;
-  width: 38px;
-  height: 39px; }
-
-.icon-forum-5 {
-  background-image: url(../img/sprite.png);
-  background-position: -167px -115px;
-  width: 38px;
-  height: 38px; }
-
-.icon-forum-6 {
-  background-image: url(../img/sprite.png);
-  background-position: -95px -113px;
-  width: 37px;
-  height: 37px; }
-
 .icon-forum-answers {
   background-image: url(../img/sprite.png);
   background-position: -133px -100px;
@@ -11316,7 +11292,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 .icon-forum-likes {
   background-image: url(../img/sprite.png);
-  background-position: -270px -180px;
+  background-position: -270px -208px;
   width: 12px;
   height: 14px; }
 
@@ -11328,19 +11304,25 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 .icon-forum_news-likes {
   background-image: url(../img/sprite.png);
-  background-position: -270px -166px;
+  background-position: -270px -180px;
   width: 12px;
   height: 14px; }
 
+.icon-gaz {
+  background-image: url(../img/sprite.png);
+  background-position: -167px -115px;
+  width: 38px;
+  height: 38px; }
+
 .icon-header-help {
   background-image: url(../img/sprite.png);
-  background-position: -270px -55px;
+  background-position: -270px -39px;
   width: 16px;
   height: 16px; }
 
 .icon-home-gray {
   background-image: url(../img/sprite.png);
-  background-position: -270px -113px;
+  background-position: -270px -99px;
   width: 14px;
   height: 14px; }
 
@@ -11350,9 +11332,21 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 10px;
   height: 10px; }
 
+.icon-kitchen_model {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -163px;
+  width: 39px;
+  height: 38px; }
+
+.icon-kyhni {
+  background-image: url(../img/sprite.png);
+  background-position: -95px -113px;
+  width: 37px;
+  height: 37px; }
+
 .icon-likes-green {
   background-image: url(../img/sprite.png);
-  background-position: -270px -208px;
+  background-position: -270px -222px;
   width: 12px;
   height: 14px; }
 
@@ -11460,7 +11454,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 .icon-search {
   background-image: url(../img/sprite.png);
-  background-position: -240px -140px;
+  background-position: -240px -163px;
   width: 23px;
   height: 23px; }
 
@@ -11502,51 +11496,57 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 .icon-sidebar-themes {
   background-image: url(../img/sprite.png);
-  background-position: -240px -186px;
+  background-position: -240px -208px;
   width: 22px;
   height: 22px; }
 
 .icon-social-facebook {
   background-image: url(../img/sprite.png);
-  background-position: -39px -163px;
+  background-position: -76px -163px;
   width: 37px;
   height: 36px; }
 
 .icon-social-instagram {
   background-image: url(../img/sprite.png);
-  background-position: -205px 0px;
+  background-position: -205px -35px;
   width: 35px;
   height: 35px; }
 
 .icon-social-linkedin {
   background-image: url(../img/sprite.png);
-  background-position: -205px -35px;
+  background-position: -132px -113px;
   width: 35px;
   height: 35px; }
 
 .icon-social-odnoklassniki {
   background-image: url(../img/sprite.png);
-  background-position: -113px -163px;
+  background-position: -149px -163px;
   width: 36px;
   height: 36px; }
 
 .icon-social-twitter {
   background-image: url(../img/sprite.png);
-  background-position: -132px -113px;
+  background-position: -205px 0px;
   width: 35px;
   height: 35px; }
 
 .icon-social-vkontakte {
   background-image: url(../img/sprite.png);
-  background-position: -76px -163px;
+  background-position: -39px -163px;
   width: 37px;
   height: 36px; }
 
 .icon-social-youtube {
   background-image: url(../img/sprite.png);
-  background-position: -149px -163px;
+  background-position: -113px -163px;
   width: 36px;
   height: 36px; }
+
+.icon-stroym {
+  background-image: url(../img/sprite.png);
+  background-position: -167px 0px;
+  width: 38px;
+  height: 39px; }
 
 .icon-subscribe {
   background-image: url(../img/sprite.png);
@@ -11556,7 +11556,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 .icon-user-gray {
   background-image: url(../img/sprite.png);
-  background-position: -270px -99px;
+  background-position: -270px -113px;
   width: 14px;
   height: 14px; }
 
@@ -11580,7 +11580,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 .icon-word-control-emoji {
   background-image: url(../img/sprite.png);
-  background-position: -240px -208px;
+  background-position: -240px -186px;
   width: 22px;
   height: 22px; }
 
@@ -11598,7 +11598,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 .icon-word-control-list {
   background-image: url(../img/sprite.png);
-  background-position: -120px -100px;
+  background-position: -146px -100px;
   width: 13px;
   height: 12px; }
 
@@ -17399,7 +17399,8 @@ ul.btn-list {
   .popup-search-blog h2, .popup-search-forum h2, .popup-search-users h2 {
     color: #333333;
     font-size: 20px;
-    font-family: "HelveticaNeueCyr-Bold", Helvetica, sans-serif; }
+    font-family: "HelveticaNeueCyr-Bold", Helvetica, sans-serif;
+    margin-bottom: 20px; }
     .popup-search-blog h2 span, .popup-search-forum h2 span, .popup-search-users h2 span {
       font-family: "HelveticaNeueCyr-Roman", Helvetica, sans-serif; }
   .popup-search-blog a.close, .popup-search-forum a.close, .popup-search-users a.close {
@@ -17451,9 +17452,6 @@ ul.btn-list {
   .popup-search-blog.width-four > ul > li {
     width: -webkit-calc(25% - 30px);
     width: calc(25% - 30px); }
-
-.popup-search-blog h2 {
-  margin-bottom: 20px; }
 
 .popup-search-blog > ul {
   display: -webkit-box;
@@ -17526,6 +17524,108 @@ ul.btn-list {
               top: 2px; }
             .popup-search-blog > ul > li figure figcaption ul li i.icon-forum_news-likes {
               top: 1px; }
+
+.popup-search-users > ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 28px 8px 0;
+  max-height: 400px;
+  overflow-y: auto; }
+  @media (max-width: 480px) {
+    .popup-search-users > ul {
+      padding: 30px 15px; } }
+  .popup-search-users > ul > li {
+    width: -webkit-calc(25% - 40px);
+    width: calc(25% - 40px);
+    margin: 0 20px 37px;
+    position: relative;
+    padding-left: 100px;
+    min-height: 76px;
+    padding-top: 1px; }
+    @media (max-width: 1199px) {
+      .popup-search-users > ul > li {
+        padding-left: 90px;
+        margin: 0 10px 37px;
+        width: -webkit-calc(25% - 20px);
+        width: calc(25% - 20px); } }
+    @media (max-width: 991px) {
+      .popup-search-users > ul > li {
+        width: -webkit-calc(33.33333% - 20px);
+        width: calc(33.33333% - 20px); } }
+    @media (max-width: 767px) {
+      .popup-search-users > ul > li {
+        width: -webkit-calc(50% - 20px);
+        width: calc(50% - 20px); } }
+    @media (max-width: 480px) {
+      .popup-search-users > ul > li {
+        width: 100%;
+        margin: 0 0 30px; } }
+    @media (max-width: 480px) {
+      .popup-search-users > ul > li:last-child {
+        margin-bottom: 0; } }
+    .popup-search-users > ul > li figure {
+      width: 76px;
+      height: 76px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      overflow: hidden; }
+      .popup-search-users > ul > li figure img {
+        width: 100%;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+    .popup-search-users > ul > li > a, .popup-search-users > ul > li p, .popup-search-users > ul > li span {
+      color: #333333; }
+    .popup-search-users > ul > li > a {
+      font-size: 18px;
+      font-family: "HelveticaNeueLt-Bold", Helvetica, sans-serif;
+      display: inline-block;
+      position: relative;
+      margin-bottom: 12px;
+      -webkit-transition: color 0.2s ease-out;
+      transition: color 0.2s ease-out; }
+      .popup-search-users > ul > li > a:after {
+        content: '';
+        display: block;
+        width: 0%;
+        height: 1px;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background: #333333;
+        -webkit-transition: opacity 0.2s ease-out, width 0.2s ease-out;
+        transition: opacity 0.2s ease-out, width 0.2s ease-out; }
+      .popup-search-users > ul > li > a:hover {
+        color: #66c05d; }
+        .popup-search-users > ul > li > a:hover:after {
+          width: 100%;
+          background: #66c05d; }
+    .popup-search-users > ul > li p {
+      font-size: 14px;
+      font-family: "HelveticaNeueLt-Medium", Helvetica, sans-serif;
+      line-height: 16px; }
+    .popup-search-users > ul > li span {
+      font-size: 11px;
+      font-family: "HelveticaNeueCyr-Medium", Helvetica, sans-serif;
+      letter-spacing: -0.1px; }
 
 .user_page-info {
   display: -webkit-box;
@@ -18353,42 +18453,6 @@ ul.forum-img {
 .lia-quilt-row-wr-footer-subscribe {
   padding: 20px 0 20px;
   background: #66c05d; }
-
-.forum-list > ul > li div span i.icon-kitchen_model {
-  background-image: url("../img/sprite.png");
-  background-position: 0 -149px;
-  height: 38px;
-  width: 39px; }
-
-.forum-list > ul > li div span i.icon-gaz {
-  background-image: url("../img/sprite.png");
-  background-position: -164px -39px;
-  height: 38px;
-  width: 38px; }
-
-.forum-list > ul > li div span i.icon-stroym {
-  background-image: url("../img/sprite.png");
-  background-position: -164px 0;
-  height: 39px;
-  width: 38px; }
-
-.forum-list > ul > li div span i.icon-dddd {
-  background-image: url("../img/sprite.png");
-  background-position: -39px -149px;
-  height: 38px;
-  width: 38px; }
-
-.forum-list > ul > li div span i.icon-kyhni {
-  background-image: url("../img/sprite.png");
-  background-position: -43px -112px;
-  height: 37px;
-  width: 37px; }
-
-.forum-list > ul > li div span i.icon-S {
-  background-image: url("../img/sprite.png");
-  background-position: -164px -77px;
-  height: 38px;
-  width: 38px; }
 
 .lia-top-quilt > .lia-quilt-row-main > .lia-quilt-column:first-child {
   padding-right: 15px;
