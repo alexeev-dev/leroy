@@ -21,6 +21,7 @@
     "animate.css": "^3.5.2",
     "bootstrap": "^3.3.7",
     "owl.carousel": "^2.2.1",
-    "bPopup": "bpopup#^0.11.0"
+    "bPopup": "bpopup#^0.11.0",
+    "jquery.cookie": "jquery-cookie#^1.4.1"
   }
 }

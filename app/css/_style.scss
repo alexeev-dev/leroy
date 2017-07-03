@@ -30,7 +30,7 @@
 		&-main {
 			&-intro {
 				position: relative; padding: 100px 0 25px;
-				background: url('../img/main-intro-bg.jpg') center center no-repeat;
+				background: url('main-intro-bg.jpg') center center no-repeat;
 				background-size: cover;
 				@include respond-to(md) {
 					padding: 120px 0 25px;

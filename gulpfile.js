@@ -30,7 +30,7 @@ gulp.task('sass', function () {
 		browsers: ['last 15 versions', '> 1%', 'ie 8', 'ie 7'],
 		cascade: false
 	}))
-	.pipe(gulp.dest('dist/assets/css'))
+	.pipe(gulp.dest('dist/assets/all'))
 	.pipe(browserSync.reload({stream: true}));
 });
 
@@ -51,17 +51,18 @@ gulp.task('js:libs', function () {
 	gulp.src([
 		'bower_components/jquery/dist/jquery.min.js',
 		'bower_components/owl.carousel/dist/owl.carousel.min.js',
-		'bower_components/bPopup/jquery.bpopup.min.js'
+		'bower_components/bPopup/jquery.bpopup.min.js',
+		'bower_components/jquery.cookie/jquery.cookie.js'
 		])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify())
-	.pipe(gulp.dest('dist/assets/js/'));
+	.pipe(gulp.dest('dist/assets/all/'));
 });
 
 // main js
 gulp.task('js:main', function () {
 	gulp.src('app/js/*.js')
-	.pipe(gulp.dest('dist/assets/js/'))
+	.pipe(gulp.dest('dist/assets/all/'))
 	.pipe(browserSync.reload({stream:true}));
 });
 
@@ -70,14 +71,14 @@ gulp.task('sprite', function () {
 	var spriteData = gulp.src('app/img/icons/*.png').pipe(spritesmith({
 		imgName: 'sprite.png',
 		cssName: 'sprite.css',
-		imgPath: '../img/sprite.png'
+		imgPath: 'sprite.png'
 	}));
 
 	// sprite image
 	var imgStream = spriteData.img
 	.pipe(buffer())
 	.pipe(imagemin())
-	.pipe(gulp.dest('dist/assets/img'));
+	.pipe(gulp.dest('dist/assets/all'));
 
 	// sprite css
 	var cssStream = spriteData.css
@@ -96,15 +97,15 @@ gulp.task('html:build', function () {
 });
 
 // img minification
-gulp.task('img:minify', function () {
-	gulp.src('app/img/*.*')
-	.pipe(buffer())
-	.pipe(imagemin())
-	.pipe(gulp.dest('dist/assets/img'))
-	.pipe(browserSync.reload({stream: true}));
-});
+// gulp.task('img:minify', function () {
+// 	gulp.src('app/img/*.*')
+// 	.pipe(buffer())
+// 	.pipe(imagemin())
+// 	.pipe(gulp.dest('dist/assets/img'))
+// 	.pipe(browserSync.reload({stream: true}));
+// });
 
-gulp.task('watch', ['html:build', 'js:libs', 'js:main', 'sprite', 'browser-sync','sass', 'img:minify'/*, 'css:min'*/], function () {
+gulp.task('watch', ['html:build', 'js:libs', 'js:main', 'sprite', 'browser-sync','sass'/*, 'img:minify', 'css:min'*/], function () {
 	gulp.watch('app/css/*.scss', ['sass'/*, 'css:min'*/]);
 	gulp.watch('app/**/*.html', ['html:build']);
 	gulp.watch('app/img/icons/*.png', ['sprite', 'sass']);

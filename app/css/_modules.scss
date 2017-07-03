@@ -206,7 +206,7 @@
 						content: '';
 						color: transparent !important;
 						position: absolute; left: 3px; top: 50%; transform: translateY(-50%) !important; width: 10px; height: 10px;
-						background: url('../img/home-small.png') 0 0 no-repeat;
+						background: url('home-small.png') 0 0 no-repeat;
 					}
 				}
 			}
@@ -2058,7 +2058,8 @@ ul {
 			.spell-check-search-instead,
 			.spell-check-do-you-mean,
 			.lia-search-toggle,
-			.lia-search-granularity-wrapper {display: none !important;}
+			.lia-search-granularity-wrapper,
+			.search-autocomplete-toggle-link {display: none !important;}
 			.lia-search-input-wrapper {display: block;}
 
 			form.SearchForm.lia-form {
@@ -2093,11 +2094,11 @@ ul {
 				}
 				input[type=submit] {
 					position: absolute; right: 0; bottom: 0; width: 52px; height: 45px; top: 0; left: auto;
-					background: $main-color-1 url(../img/search.png) center center no-repeat; border: none; border-radius: 0;
+					background: $main-color-1 url(search.png) center center no-repeat; border: none; border-radius: 0;
 					&:active {
 						&:focus {
 							outline: none;
-							background: $main-color-1 url(../img/search.png) center center no-repeat; box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+							background: $main-color-1 url(search.png) center center no-repeat; box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 						}
 					}
 					&:hover {
@@ -3762,7 +3763,7 @@ ul {
 	}
 	&-error {
 		padding: 37px 41px 42px; margin-bottom: 50px;
-		background: #fbfbfb url('../img/result-error-bg.png') 100% -26px no-repeat;
+		background: #fbfbfb url('result-error-bg.png') 100% -26px no-repeat;
 		@include respond-to(sm) {
 			background-size: cover;
 		}
@@ -4525,7 +4526,7 @@ ul {
 		&-blog,
 		&-forum,
 		&-users {
-			width: 1230px; padding: 40px; position: relative;
+			width: 1230px; padding: 40px; position: relative; display: none;
 			background: #ffffff;
 			h2 {
 				color: $main-color-2; font-size: 20px; font-family: $HNC-Bold;
