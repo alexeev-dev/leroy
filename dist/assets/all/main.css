@@ -11903,6 +11903,10 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   opacity: 0 !important;
   pointer-events: none !important; }
 
+.lia-quilt-column-alley {
+  padding-right: 0 !important;
+  padding-left: 0 !important; }
+
 /*********************************/
 /*********** Modules *************/
 /*********************************/
@@ -15698,123 +15702,291 @@ ul.btn-list {
     .switch-user form {
       width: 100%;
       margin: 0 0 15px; } }
-  .registration form .reg-wrap .lia-form-login-entry, .registration form .reg-wrap .lia-form-password-entry, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry,
+  .registration form .reg-wrap .lia-text-form, .registration form .lia-form-fieldset-wrapper .lia-text-form,
+  .authorization form .reg-wrap .lia-text-form,
+  .authorization form .lia-form-fieldset-wrapper .lia-text-form,
+  .switch-user form .reg-wrap .lia-text-form,
+  .switch-user form .lia-form-fieldset-wrapper .lia-text-form {
+    display: none; }
+  .registration form .reg-wrap .lia-form-login-entry, .registration form .reg-wrap .lia-form-password-entry, .registration form .reg-wrap .lia-form-email-entry, .registration form .reg-wrap .lia-form-email-confirm-entry, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry, .registration form .lia-form-fieldset-wrapper .lia-form-email-entry, .registration form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry,
   .authorization form .reg-wrap .lia-form-login-entry,
   .authorization form .reg-wrap .lia-form-password-entry,
+  .authorization form .reg-wrap .lia-form-email-entry,
+  .authorization form .reg-wrap .lia-form-email-confirm-entry,
   .authorization form .lia-form-fieldset-wrapper .lia-form-login-entry,
   .authorization form .lia-form-fieldset-wrapper .lia-form-password-entry,
+  .authorization form .lia-form-fieldset-wrapper .lia-form-email-entry,
+  .authorization form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry,
   .switch-user form .reg-wrap .lia-form-login-entry,
   .switch-user form .reg-wrap .lia-form-password-entry,
+  .switch-user form .reg-wrap .lia-form-email-entry,
+  .switch-user form .reg-wrap .lia-form-email-confirm-entry,
   .switch-user form .lia-form-fieldset-wrapper .lia-form-login-entry,
-  .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry {
+  .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry,
+  .switch-user form .lia-form-fieldset-wrapper .lia-form-email-entry,
+  .switch-user form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry {
     width: 100%;
     margin-bottom: 20px;
     padding: 25px 29px 29px;
     position: relative;
     background: #f9f9f9;
     border: solid 1px #e9e9e9; }
-    .registration form .reg-wrap .lia-form-login-entry .lia-form-label-wrapper, .registration form .reg-wrap .lia-form-password-entry .lia-form-label-wrapper, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry .lia-form-label-wrapper, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry .lia-form-label-wrapper,
+    .registration form .reg-wrap .lia-form-login-entry .lia-form-label-wrapper, .registration form .reg-wrap .lia-form-password-entry .lia-form-label-wrapper, .registration form .reg-wrap .lia-form-email-entry .lia-form-label-wrapper, .registration form .reg-wrap .lia-form-email-confirm-entry .lia-form-label-wrapper, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry .lia-form-label-wrapper, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry .lia-form-label-wrapper, .registration form .lia-form-fieldset-wrapper .lia-form-email-entry .lia-form-label-wrapper, .registration form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry .lia-form-label-wrapper,
     .authorization form .reg-wrap .lia-form-login-entry .lia-form-label-wrapper,
     .authorization form .reg-wrap .lia-form-password-entry .lia-form-label-wrapper,
+    .authorization form .reg-wrap .lia-form-email-entry .lia-form-label-wrapper,
+    .authorization form .reg-wrap .lia-form-email-confirm-entry .lia-form-label-wrapper,
     .authorization form .lia-form-fieldset-wrapper .lia-form-login-entry .lia-form-label-wrapper,
     .authorization form .lia-form-fieldset-wrapper .lia-form-password-entry .lia-form-label-wrapper,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-email-entry .lia-form-label-wrapper,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry .lia-form-label-wrapper,
     .switch-user form .reg-wrap .lia-form-login-entry .lia-form-label-wrapper,
     .switch-user form .reg-wrap .lia-form-password-entry .lia-form-label-wrapper,
+    .switch-user form .reg-wrap .lia-form-email-entry .lia-form-label-wrapper,
+    .switch-user form .reg-wrap .lia-form-email-confirm-entry .lia-form-label-wrapper,
     .switch-user form .lia-form-fieldset-wrapper .lia-form-login-entry .lia-form-label-wrapper,
-    .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry .lia-form-label-wrapper {
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry .lia-form-label-wrapper,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-email-entry .lia-form-label-wrapper,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry .lia-form-label-wrapper {
       text-align: left; }
-    .registration form .reg-wrap .lia-form-login-entry .lia-quilt-column-16 .lia-quilt-column-16, .registration form .reg-wrap .lia-form-password-entry .lia-quilt-column-16 .lia-quilt-column-16, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry .lia-quilt-column-16 .lia-quilt-column-16, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry .lia-quilt-column-16 .lia-quilt-column-16,
+    .registration form .reg-wrap .lia-form-login-entry > .lia-quilt-row > .lia-quilt-column-16, .registration form .reg-wrap .lia-form-login-entry > .lia-quilt-row > .lia-quilt-column-08, .registration form .reg-wrap .lia-form-login-entry .lia-quilt-column-16 .lia-quilt-column-16, .registration form .reg-wrap .lia-form-password-entry > .lia-quilt-row > .lia-quilt-column-16, .registration form .reg-wrap .lia-form-password-entry > .lia-quilt-row > .lia-quilt-column-08, .registration form .reg-wrap .lia-form-password-entry .lia-quilt-column-16 .lia-quilt-column-16, .registration form .reg-wrap .lia-form-email-entry > .lia-quilt-row > .lia-quilt-column-16, .registration form .reg-wrap .lia-form-email-entry > .lia-quilt-row > .lia-quilt-column-08, .registration form .reg-wrap .lia-form-email-entry .lia-quilt-column-16 .lia-quilt-column-16, .registration form .reg-wrap .lia-form-email-confirm-entry > .lia-quilt-row > .lia-quilt-column-16, .registration form .reg-wrap .lia-form-email-confirm-entry > .lia-quilt-row > .lia-quilt-column-08, .registration form .reg-wrap .lia-form-email-confirm-entry .lia-quilt-column-16 .lia-quilt-column-16, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry > .lia-quilt-row > .lia-quilt-column-16, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry > .lia-quilt-row > .lia-quilt-column-08, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry .lia-quilt-column-16 .lia-quilt-column-16, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry > .lia-quilt-row > .lia-quilt-column-16, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry > .lia-quilt-row > .lia-quilt-column-08, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry .lia-quilt-column-16 .lia-quilt-column-16, .registration form .lia-form-fieldset-wrapper .lia-form-email-entry > .lia-quilt-row > .lia-quilt-column-16, .registration form .lia-form-fieldset-wrapper .lia-form-email-entry > .lia-quilt-row > .lia-quilt-column-08, .registration form .lia-form-fieldset-wrapper .lia-form-email-entry .lia-quilt-column-16 .lia-quilt-column-16, .registration form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry > .lia-quilt-row > .lia-quilt-column-16, .registration form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry > .lia-quilt-row > .lia-quilt-column-08, .registration form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry .lia-quilt-column-16 .lia-quilt-column-16,
+    .authorization form .reg-wrap .lia-form-login-entry > .lia-quilt-row > .lia-quilt-column-16,
+    .authorization form .reg-wrap .lia-form-login-entry > .lia-quilt-row > .lia-quilt-column-08,
     .authorization form .reg-wrap .lia-form-login-entry .lia-quilt-column-16 .lia-quilt-column-16,
+    .authorization form .reg-wrap .lia-form-password-entry > .lia-quilt-row > .lia-quilt-column-16,
+    .authorization form .reg-wrap .lia-form-password-entry > .lia-quilt-row > .lia-quilt-column-08,
     .authorization form .reg-wrap .lia-form-password-entry .lia-quilt-column-16 .lia-quilt-column-16,
+    .authorization form .reg-wrap .lia-form-email-entry > .lia-quilt-row > .lia-quilt-column-16,
+    .authorization form .reg-wrap .lia-form-email-entry > .lia-quilt-row > .lia-quilt-column-08,
+    .authorization form .reg-wrap .lia-form-email-entry .lia-quilt-column-16 .lia-quilt-column-16,
+    .authorization form .reg-wrap .lia-form-email-confirm-entry > .lia-quilt-row > .lia-quilt-column-16,
+    .authorization form .reg-wrap .lia-form-email-confirm-entry > .lia-quilt-row > .lia-quilt-column-08,
+    .authorization form .reg-wrap .lia-form-email-confirm-entry .lia-quilt-column-16 .lia-quilt-column-16,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-login-entry > .lia-quilt-row > .lia-quilt-column-16,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-login-entry > .lia-quilt-row > .lia-quilt-column-08,
     .authorization form .lia-form-fieldset-wrapper .lia-form-login-entry .lia-quilt-column-16 .lia-quilt-column-16,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-password-entry > .lia-quilt-row > .lia-quilt-column-16,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-password-entry > .lia-quilt-row > .lia-quilt-column-08,
     .authorization form .lia-form-fieldset-wrapper .lia-form-password-entry .lia-quilt-column-16 .lia-quilt-column-16,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-email-entry > .lia-quilt-row > .lia-quilt-column-16,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-email-entry > .lia-quilt-row > .lia-quilt-column-08,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-email-entry .lia-quilt-column-16 .lia-quilt-column-16,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry > .lia-quilt-row > .lia-quilt-column-16,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry > .lia-quilt-row > .lia-quilt-column-08,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry .lia-quilt-column-16 .lia-quilt-column-16,
+    .switch-user form .reg-wrap .lia-form-login-entry > .lia-quilt-row > .lia-quilt-column-16,
+    .switch-user form .reg-wrap .lia-form-login-entry > .lia-quilt-row > .lia-quilt-column-08,
     .switch-user form .reg-wrap .lia-form-login-entry .lia-quilt-column-16 .lia-quilt-column-16,
+    .switch-user form .reg-wrap .lia-form-password-entry > .lia-quilt-row > .lia-quilt-column-16,
+    .switch-user form .reg-wrap .lia-form-password-entry > .lia-quilt-row > .lia-quilt-column-08,
     .switch-user form .reg-wrap .lia-form-password-entry .lia-quilt-column-16 .lia-quilt-column-16,
+    .switch-user form .reg-wrap .lia-form-email-entry > .lia-quilt-row > .lia-quilt-column-16,
+    .switch-user form .reg-wrap .lia-form-email-entry > .lia-quilt-row > .lia-quilt-column-08,
+    .switch-user form .reg-wrap .lia-form-email-entry .lia-quilt-column-16 .lia-quilt-column-16,
+    .switch-user form .reg-wrap .lia-form-email-confirm-entry > .lia-quilt-row > .lia-quilt-column-16,
+    .switch-user form .reg-wrap .lia-form-email-confirm-entry > .lia-quilt-row > .lia-quilt-column-08,
+    .switch-user form .reg-wrap .lia-form-email-confirm-entry .lia-quilt-column-16 .lia-quilt-column-16,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-login-entry > .lia-quilt-row > .lia-quilt-column-16,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-login-entry > .lia-quilt-row > .lia-quilt-column-08,
     .switch-user form .lia-form-fieldset-wrapper .lia-form-login-entry .lia-quilt-column-16 .lia-quilt-column-16,
-    .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry .lia-quilt-column-16 .lia-quilt-column-16 {
-      width: 100%; }
-    .registration form .reg-wrap .lia-form-login-entry p, .registration form .reg-wrap .lia-form-password-entry p, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry p, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry p,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry > .lia-quilt-row > .lia-quilt-column-16,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry > .lia-quilt-row > .lia-quilt-column-08,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry .lia-quilt-column-16 .lia-quilt-column-16,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-email-entry > .lia-quilt-row > .lia-quilt-column-16,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-email-entry > .lia-quilt-row > .lia-quilt-column-08,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-email-entry .lia-quilt-column-16 .lia-quilt-column-16,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry > .lia-quilt-row > .lia-quilt-column-16,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry > .lia-quilt-row > .lia-quilt-column-08,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry .lia-quilt-column-16 .lia-quilt-column-16 {
+      width: 100%;
+      padding: 0; }
+    .registration form .reg-wrap .lia-form-login-entry p, .registration form .reg-wrap .lia-form-password-entry p, .registration form .reg-wrap .lia-form-email-entry p, .registration form .reg-wrap .lia-form-email-confirm-entry p, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry p, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry p, .registration form .lia-form-fieldset-wrapper .lia-form-email-entry p, .registration form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry p,
     .authorization form .reg-wrap .lia-form-login-entry p,
     .authorization form .reg-wrap .lia-form-password-entry p,
+    .authorization form .reg-wrap .lia-form-email-entry p,
+    .authorization form .reg-wrap .lia-form-email-confirm-entry p,
     .authorization form .lia-form-fieldset-wrapper .lia-form-login-entry p,
     .authorization form .lia-form-fieldset-wrapper .lia-form-password-entry p,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-email-entry p,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry p,
     .switch-user form .reg-wrap .lia-form-login-entry p,
     .switch-user form .reg-wrap .lia-form-password-entry p,
+    .switch-user form .reg-wrap .lia-form-email-entry p,
+    .switch-user form .reg-wrap .lia-form-email-confirm-entry p,
     .switch-user form .lia-form-fieldset-wrapper .lia-form-login-entry p,
-    .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry p {
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry p,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-email-entry p,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry p {
       color: #333333;
       font-size: 15px;
       font-family: "Open Sans", sans-serif;
       letter-spacing: 0.1px;
       margin-bottom: 14px; }
-      .registration form .reg-wrap .lia-form-login-entry p span, .registration form .reg-wrap .lia-form-password-entry p span, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry p span, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry p span,
+      .registration form .reg-wrap .lia-form-login-entry p span, .registration form .reg-wrap .lia-form-password-entry p span, .registration form .reg-wrap .lia-form-email-entry p span, .registration form .reg-wrap .lia-form-email-confirm-entry p span, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry p span, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry p span, .registration form .lia-form-fieldset-wrapper .lia-form-email-entry p span, .registration form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry p span,
       .authorization form .reg-wrap .lia-form-login-entry p span,
       .authorization form .reg-wrap .lia-form-password-entry p span,
+      .authorization form .reg-wrap .lia-form-email-entry p span,
+      .authorization form .reg-wrap .lia-form-email-confirm-entry p span,
       .authorization form .lia-form-fieldset-wrapper .lia-form-login-entry p span,
       .authorization form .lia-form-fieldset-wrapper .lia-form-password-entry p span,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-email-entry p span,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry p span,
       .switch-user form .reg-wrap .lia-form-login-entry p span,
       .switch-user form .reg-wrap .lia-form-password-entry p span,
+      .switch-user form .reg-wrap .lia-form-email-entry p span,
+      .switch-user form .reg-wrap .lia-form-email-confirm-entry p span,
       .switch-user form .lia-form-fieldset-wrapper .lia-form-login-entry p span,
-      .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry p span {
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry p span,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-email-entry p span,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry p span {
         color: #a3a3a3;
         font-size: 13px;
         font-family: inherit;
         letter-spacing: -0.08px;
         display: block;
         margin-top: 2px; }
-    .registration form .reg-wrap .lia-form-login-entry > div, .registration form .reg-wrap .lia-form-password-entry > div, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry > div, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry > div,
+    .registration form .reg-wrap .lia-form-login-entry > div, .registration form .reg-wrap .lia-form-password-entry > div, .registration form .reg-wrap .lia-form-email-entry > div, .registration form .reg-wrap .lia-form-email-confirm-entry > div, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry > div, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry > div, .registration form .lia-form-fieldset-wrapper .lia-form-email-entry > div, .registration form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry > div,
     .authorization form .reg-wrap .lia-form-login-entry > div,
     .authorization form .reg-wrap .lia-form-password-entry > div,
+    .authorization form .reg-wrap .lia-form-email-entry > div,
+    .authorization form .reg-wrap .lia-form-email-confirm-entry > div,
     .authorization form .lia-form-fieldset-wrapper .lia-form-login-entry > div,
     .authorization form .lia-form-fieldset-wrapper .lia-form-password-entry > div,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-email-entry > div,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry > div,
     .switch-user form .reg-wrap .lia-form-login-entry > div,
     .switch-user form .reg-wrap .lia-form-password-entry > div,
+    .switch-user form .reg-wrap .lia-form-email-entry > div,
+    .switch-user form .reg-wrap .lia-form-email-confirm-entry > div,
     .switch-user form .lia-form-fieldset-wrapper .lia-form-login-entry > div,
-    .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry > div {
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry > div,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-email-entry > div,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry > div {
       position: relative; }
-    .registration form .reg-wrap .lia-form-login-entry label, .registration form .reg-wrap .lia-form-password-entry label, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry label, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry label,
+    .registration form .reg-wrap .lia-form-login-entry label, .registration form .reg-wrap .lia-form-password-entry label, .registration form .reg-wrap .lia-form-email-entry label, .registration form .reg-wrap .lia-form-email-confirm-entry label, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry label, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry label, .registration form .lia-form-fieldset-wrapper .lia-form-email-entry label, .registration form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry label,
     .authorization form .reg-wrap .lia-form-login-entry label,
     .authorization form .reg-wrap .lia-form-password-entry label,
+    .authorization form .reg-wrap .lia-form-email-entry label,
+    .authorization form .reg-wrap .lia-form-email-confirm-entry label,
     .authorization form .lia-form-fieldset-wrapper .lia-form-login-entry label,
     .authorization form .lia-form-fieldset-wrapper .lia-form-password-entry label,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-email-entry label,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry label,
     .switch-user form .reg-wrap .lia-form-login-entry label,
     .switch-user form .reg-wrap .lia-form-password-entry label,
+    .switch-user form .reg-wrap .lia-form-email-entry label,
+    .switch-user form .reg-wrap .lia-form-email-confirm-entry label,
     .switch-user form .lia-form-fieldset-wrapper .lia-form-login-entry label,
-    .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry label {
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry label,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-email-entry label,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry label {
       color: #333333;
       font-size: 15px;
       font-family: "Open Sans", sans-serif;
       font-weight: 700;
       letter-spacing: -0.2px;
       text-align: left;
-      width: 100%;
+      display: inline-block;
       padding-left: 2px;
       position: relative;
-      top: -2px;
-      display: inherit; }
-      .registration form .reg-wrap .lia-form-login-entry label em, .registration form .reg-wrap .lia-form-password-entry label em, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry label em, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry label em,
+      top: -2px; }
+      .registration form .reg-wrap .lia-form-login-entry label span.lia-label-required-mark, .registration form .reg-wrap .lia-form-password-entry label span.lia-label-required-mark, .registration form .reg-wrap .lia-form-email-entry label span.lia-label-required-mark, .registration form .reg-wrap .lia-form-email-confirm-entry label span.lia-label-required-mark, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry label span.lia-label-required-mark, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry label span.lia-label-required-mark, .registration form .lia-form-fieldset-wrapper .lia-form-email-entry label span.lia-label-required-mark, .registration form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry label span.lia-label-required-mark,
+      .authorization form .reg-wrap .lia-form-login-entry label span.lia-label-required-mark,
+      .authorization form .reg-wrap .lia-form-password-entry label span.lia-label-required-mark,
+      .authorization form .reg-wrap .lia-form-email-entry label span.lia-label-required-mark,
+      .authorization form .reg-wrap .lia-form-email-confirm-entry label span.lia-label-required-mark,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-login-entry label span.lia-label-required-mark,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-password-entry label span.lia-label-required-mark,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-email-entry label span.lia-label-required-mark,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry label span.lia-label-required-mark,
+      .switch-user form .reg-wrap .lia-form-login-entry label span.lia-label-required-mark,
+      .switch-user form .reg-wrap .lia-form-password-entry label span.lia-label-required-mark,
+      .switch-user form .reg-wrap .lia-form-email-entry label span.lia-label-required-mark,
+      .switch-user form .reg-wrap .lia-form-email-confirm-entry label span.lia-label-required-mark,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-login-entry label span.lia-label-required-mark,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry label span.lia-label-required-mark,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-email-entry label span.lia-label-required-mark,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry label span.lia-label-required-mark {
+        display: none; }
+      .registration form .reg-wrap .lia-form-login-entry label em, .registration form .reg-wrap .lia-form-password-entry label em, .registration form .reg-wrap .lia-form-email-entry label em, .registration form .reg-wrap .lia-form-email-confirm-entry label em, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry label em, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry label em, .registration form .lia-form-fieldset-wrapper .lia-form-email-entry label em, .registration form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry label em,
       .authorization form .reg-wrap .lia-form-login-entry label em,
       .authorization form .reg-wrap .lia-form-password-entry label em,
+      .authorization form .reg-wrap .lia-form-email-entry label em,
+      .authorization form .reg-wrap .lia-form-email-confirm-entry label em,
       .authorization form .lia-form-fieldset-wrapper .lia-form-login-entry label em,
       .authorization form .lia-form-fieldset-wrapper .lia-form-password-entry label em,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-email-entry label em,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry label em,
       .switch-user form .reg-wrap .lia-form-login-entry label em,
       .switch-user form .reg-wrap .lia-form-password-entry label em,
+      .switch-user form .reg-wrap .lia-form-email-entry label em,
+      .switch-user form .reg-wrap .lia-form-email-confirm-entry label em,
       .switch-user form .lia-form-fieldset-wrapper .lia-form-login-entry label em,
-      .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry label em {
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry label em,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-email-entry label em,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry label em {
         color: #66c05d;
         font-size: 18px;
         font-family: "HelveticaNeueCyr-Bold", Helvetica, sans-serif;
         position: relative;
         top: -4px; }
-    .registration form .reg-wrap .lia-form-login-entry input, .registration form .reg-wrap .lia-form-password-entry input, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry input, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry input,
+      .registration form .reg-wrap .lia-form-login-entry label:after, .registration form .reg-wrap .lia-form-password-entry label:after, .registration form .reg-wrap .lia-form-email-entry label:after, .registration form .reg-wrap .lia-form-email-confirm-entry label:after, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry label:after, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry label:after, .registration form .lia-form-fieldset-wrapper .lia-form-email-entry label:after, .registration form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry label:after,
+      .authorization form .reg-wrap .lia-form-login-entry label:after,
+      .authorization form .reg-wrap .lia-form-password-entry label:after,
+      .authorization form .reg-wrap .lia-form-email-entry label:after,
+      .authorization form .reg-wrap .lia-form-email-confirm-entry label:after,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-login-entry label:after,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-password-entry label:after,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-email-entry label:after,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry label:after,
+      .switch-user form .reg-wrap .lia-form-login-entry label:after,
+      .switch-user form .reg-wrap .lia-form-password-entry label:after,
+      .switch-user form .reg-wrap .lia-form-email-entry label:after,
+      .switch-user form .reg-wrap .lia-form-email-confirm-entry label:after,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-login-entry label:after,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry label:after,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-email-entry label:after,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry label:after {
+        content: ' *';
+        color: #66c05d;
+        font-size: 18px;
+        font-family: "HelveticaNeueCyr-Bold", Helvetica, sans-serif; }
+    .registration form .reg-wrap .lia-form-login-entry .HelpIcon, .registration form .reg-wrap .lia-form-password-entry .HelpIcon, .registration form .reg-wrap .lia-form-email-entry .HelpIcon, .registration form .reg-wrap .lia-form-email-confirm-entry .HelpIcon, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry .HelpIcon, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry .HelpIcon, .registration form .lia-form-fieldset-wrapper .lia-form-email-entry .HelpIcon, .registration form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry .HelpIcon,
+    .authorization form .reg-wrap .lia-form-login-entry .HelpIcon,
+    .authorization form .reg-wrap .lia-form-password-entry .HelpIcon,
+    .authorization form .reg-wrap .lia-form-email-entry .HelpIcon,
+    .authorization form .reg-wrap .lia-form-email-confirm-entry .HelpIcon,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-login-entry .HelpIcon,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-password-entry .HelpIcon,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-email-entry .HelpIcon,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry .HelpIcon,
+    .switch-user form .reg-wrap .lia-form-login-entry .HelpIcon,
+    .switch-user form .reg-wrap .lia-form-password-entry .HelpIcon,
+    .switch-user form .reg-wrap .lia-form-email-entry .HelpIcon,
+    .switch-user form .reg-wrap .lia-form-email-confirm-entry .HelpIcon,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-login-entry .HelpIcon,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry .HelpIcon,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-email-entry .HelpIcon,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry .HelpIcon {
+      position: relative;
+      top: -3px; }
+    .registration form .reg-wrap .lia-form-login-entry input, .registration form .reg-wrap .lia-form-password-entry input, .registration form .reg-wrap .lia-form-email-entry input, .registration form .reg-wrap .lia-form-email-confirm-entry input, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry input, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry input, .registration form .lia-form-fieldset-wrapper .lia-form-email-entry input, .registration form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry input,
     .authorization form .reg-wrap .lia-form-login-entry input,
     .authorization form .reg-wrap .lia-form-password-entry input,
+    .authorization form .reg-wrap .lia-form-email-entry input,
+    .authorization form .reg-wrap .lia-form-email-confirm-entry input,
     .authorization form .lia-form-fieldset-wrapper .lia-form-login-entry input,
     .authorization form .lia-form-fieldset-wrapper .lia-form-password-entry input,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-email-entry input,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry input,
     .switch-user form .reg-wrap .lia-form-login-entry input,
     .switch-user form .reg-wrap .lia-form-password-entry input,
+    .switch-user form .reg-wrap .lia-form-email-entry input,
+    .switch-user form .reg-wrap .lia-form-email-confirm-entry input,
     .switch-user form .lia-form-fieldset-wrapper .lia-form-login-entry input,
-    .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry input {
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry input,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-email-entry input,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry input {
       color: #333333;
       font-size: 15px;
       font-family: "HelveticaNeueCyr-Medium", Helvetica, sans-serif;
@@ -15822,16 +15994,89 @@ ul.btn-list {
       width: 100%;
       padding: 0 19px;
       background: #ffffff;
-      border: solid 1px #e9e9e9; }
-    .registration form .reg-wrap .lia-form-login-entry span.form-tooltip, .registration form .reg-wrap .lia-form-password-entry span.form-tooltip, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry span.form-tooltip, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry span.form-tooltip,
+      border: solid 1px #e9e9e9;
+      -webkit-border-radius: 0;
+      border-radius: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+      .registration form .reg-wrap .lia-form-login-entry input:focus, .registration form .reg-wrap .lia-form-password-entry input:focus, .registration form .reg-wrap .lia-form-email-entry input:focus, .registration form .reg-wrap .lia-form-email-confirm-entry input:focus, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry input:focus, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry input:focus, .registration form .lia-form-fieldset-wrapper .lia-form-email-entry input:focus, .registration form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry input:focus,
+      .authorization form .reg-wrap .lia-form-login-entry input:focus,
+      .authorization form .reg-wrap .lia-form-password-entry input:focus,
+      .authorization form .reg-wrap .lia-form-email-entry input:focus,
+      .authorization form .reg-wrap .lia-form-email-confirm-entry input:focus,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-login-entry input:focus,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-password-entry input:focus,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-email-entry input:focus,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry input:focus,
+      .switch-user form .reg-wrap .lia-form-login-entry input:focus,
+      .switch-user form .reg-wrap .lia-form-password-entry input:focus,
+      .switch-user form .reg-wrap .lia-form-email-entry input:focus,
+      .switch-user form .reg-wrap .lia-form-email-confirm-entry input:focus,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-login-entry input:focus,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry input:focus,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-email-entry input:focus,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry input:focus {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-color: #66c05d; }
+      .registration form .reg-wrap .lia-form-login-entry input.lia-form-field-error, .registration form .reg-wrap .lia-form-password-entry input.lia-form-field-error, .registration form .reg-wrap .lia-form-email-entry input.lia-form-field-error, .registration form .reg-wrap .lia-form-email-confirm-entry input.lia-form-field-error, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry input.lia-form-field-error, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry input.lia-form-field-error, .registration form .lia-form-fieldset-wrapper .lia-form-email-entry input.lia-form-field-error, .registration form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry input.lia-form-field-error,
+      .authorization form .reg-wrap .lia-form-login-entry input.lia-form-field-error,
+      .authorization form .reg-wrap .lia-form-password-entry input.lia-form-field-error,
+      .authorization form .reg-wrap .lia-form-email-entry input.lia-form-field-error,
+      .authorization form .reg-wrap .lia-form-email-confirm-entry input.lia-form-field-error,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-login-entry input.lia-form-field-error,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-password-entry input.lia-form-field-error,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-email-entry input.lia-form-field-error,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry input.lia-form-field-error,
+      .switch-user form .reg-wrap .lia-form-login-entry input.lia-form-field-error,
+      .switch-user form .reg-wrap .lia-form-password-entry input.lia-form-field-error,
+      .switch-user form .reg-wrap .lia-form-email-entry input.lia-form-field-error,
+      .switch-user form .reg-wrap .lia-form-email-confirm-entry input.lia-form-field-error,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-login-entry input.lia-form-field-error,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry input.lia-form-field-error,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-email-entry input.lia-form-field-error,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry input.lia-form-field-error {
+        background: #ffffff url("input-error.png") no-repeat;
+        background-position: -webkit-calc(100% - 14px) 13px;
+        background-position: calc(100% - 14px) 13px;
+        border-color: #ff0000; }
+      .registration form .reg-wrap .lia-form-login-entry input.lia-form-field-success, .registration form .reg-wrap .lia-form-password-entry input.lia-form-field-success, .registration form .reg-wrap .lia-form-email-entry input.lia-form-field-success, .registration form .reg-wrap .lia-form-email-confirm-entry input.lia-form-field-success, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry input.lia-form-field-success, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry input.lia-form-field-success, .registration form .lia-form-fieldset-wrapper .lia-form-email-entry input.lia-form-field-success, .registration form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry input.lia-form-field-success,
+      .authorization form .reg-wrap .lia-form-login-entry input.lia-form-field-success,
+      .authorization form .reg-wrap .lia-form-password-entry input.lia-form-field-success,
+      .authorization form .reg-wrap .lia-form-email-entry input.lia-form-field-success,
+      .authorization form .reg-wrap .lia-form-email-confirm-entry input.lia-form-field-success,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-login-entry input.lia-form-field-success,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-password-entry input.lia-form-field-success,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-email-entry input.lia-form-field-success,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry input.lia-form-field-success,
+      .switch-user form .reg-wrap .lia-form-login-entry input.lia-form-field-success,
+      .switch-user form .reg-wrap .lia-form-password-entry input.lia-form-field-success,
+      .switch-user form .reg-wrap .lia-form-email-entry input.lia-form-field-success,
+      .switch-user form .reg-wrap .lia-form-email-confirm-entry input.lia-form-field-success,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-login-entry input.lia-form-field-success,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry input.lia-form-field-success,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-email-entry input.lia-form-field-success,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry input.lia-form-field-success {
+        background: #ffffff url("input-success.png") no-repeat;
+        background-position: -webkit-calc(100% - 14px) 13px;
+        background-position: calc(100% - 14px) 13px; }
+    .registration form .reg-wrap .lia-form-login-entry span.form-tooltip, .registration form .reg-wrap .lia-form-password-entry span.form-tooltip, .registration form .reg-wrap .lia-form-email-entry span.form-tooltip, .registration form .reg-wrap .lia-form-email-confirm-entry span.form-tooltip, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry span.form-tooltip, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry span.form-tooltip, .registration form .lia-form-fieldset-wrapper .lia-form-email-entry span.form-tooltip, .registration form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry span.form-tooltip,
     .authorization form .reg-wrap .lia-form-login-entry span.form-tooltip,
     .authorization form .reg-wrap .lia-form-password-entry span.form-tooltip,
+    .authorization form .reg-wrap .lia-form-email-entry span.form-tooltip,
+    .authorization form .reg-wrap .lia-form-email-confirm-entry span.form-tooltip,
     .authorization form .lia-form-fieldset-wrapper .lia-form-login-entry span.form-tooltip,
     .authorization form .lia-form-fieldset-wrapper .lia-form-password-entry span.form-tooltip,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-email-entry span.form-tooltip,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry span.form-tooltip,
     .switch-user form .reg-wrap .lia-form-login-entry span.form-tooltip,
     .switch-user form .reg-wrap .lia-form-password-entry span.form-tooltip,
+    .switch-user form .reg-wrap .lia-form-email-entry span.form-tooltip,
+    .switch-user form .reg-wrap .lia-form-email-confirm-entry span.form-tooltip,
     .switch-user form .lia-form-fieldset-wrapper .lia-form-login-entry span.form-tooltip,
-    .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry span.form-tooltip {
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry span.form-tooltip,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-email-entry span.form-tooltip,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry span.form-tooltip {
       color: #666666;
       font-size: 12px;
       font-family: "HelveticaNeueCyr-Medium", Helvetica, sans-serif;
@@ -15849,15 +16094,23 @@ ul.btn-list {
       border-radius: 4px;
       -webkit-box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.15);
       box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.15); }
-      .registration form .reg-wrap .lia-form-login-entry span.form-tooltip:after, .registration form .reg-wrap .lia-form-password-entry span.form-tooltip:after, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry span.form-tooltip:after, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry span.form-tooltip:after,
+      .registration form .reg-wrap .lia-form-login-entry span.form-tooltip:after, .registration form .reg-wrap .lia-form-password-entry span.form-tooltip:after, .registration form .reg-wrap .lia-form-email-entry span.form-tooltip:after, .registration form .reg-wrap .lia-form-email-confirm-entry span.form-tooltip:after, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry span.form-tooltip:after, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry span.form-tooltip:after, .registration form .lia-form-fieldset-wrapper .lia-form-email-entry span.form-tooltip:after, .registration form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry span.form-tooltip:after,
       .authorization form .reg-wrap .lia-form-login-entry span.form-tooltip:after,
       .authorization form .reg-wrap .lia-form-password-entry span.form-tooltip:after,
+      .authorization form .reg-wrap .lia-form-email-entry span.form-tooltip:after,
+      .authorization form .reg-wrap .lia-form-email-confirm-entry span.form-tooltip:after,
       .authorization form .lia-form-fieldset-wrapper .lia-form-login-entry span.form-tooltip:after,
       .authorization form .lia-form-fieldset-wrapper .lia-form-password-entry span.form-tooltip:after,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-email-entry span.form-tooltip:after,
+      .authorization form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry span.form-tooltip:after,
       .switch-user form .reg-wrap .lia-form-login-entry span.form-tooltip:after,
       .switch-user form .reg-wrap .lia-form-password-entry span.form-tooltip:after,
+      .switch-user form .reg-wrap .lia-form-email-entry span.form-tooltip:after,
+      .switch-user form .reg-wrap .lia-form-email-confirm-entry span.form-tooltip:after,
       .switch-user form .lia-form-fieldset-wrapper .lia-form-login-entry span.form-tooltip:after,
-      .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry span.form-tooltip:after {
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry span.form-tooltip:after,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-email-entry span.form-tooltip:after,
+      .switch-user form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry span.form-tooltip:after {
         content: '';
         display: block;
         width: 6px;
@@ -15871,15 +16124,23 @@ ul.btn-list {
         background: #ffffff;
         border-left: solid 1px #e9e9e9;
         border-bottom: solid 1px #e9e9e9; }
-    .registration form .reg-wrap .lia-form-login-entry input:focus + span.form-tooltip, .registration form .reg-wrap .lia-form-password-entry input:focus + span.form-tooltip, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry input:focus + span.form-tooltip, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry input:focus + span.form-tooltip,
+    .registration form .reg-wrap .lia-form-login-entry input:focus + span.form-tooltip, .registration form .reg-wrap .lia-form-password-entry input:focus + span.form-tooltip, .registration form .reg-wrap .lia-form-email-entry input:focus + span.form-tooltip, .registration form .reg-wrap .lia-form-email-confirm-entry input:focus + span.form-tooltip, .registration form .lia-form-fieldset-wrapper .lia-form-login-entry input:focus + span.form-tooltip, .registration form .lia-form-fieldset-wrapper .lia-form-password-entry input:focus + span.form-tooltip, .registration form .lia-form-fieldset-wrapper .lia-form-email-entry input:focus + span.form-tooltip, .registration form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry input:focus + span.form-tooltip,
     .authorization form .reg-wrap .lia-form-login-entry input:focus + span.form-tooltip,
     .authorization form .reg-wrap .lia-form-password-entry input:focus + span.form-tooltip,
+    .authorization form .reg-wrap .lia-form-email-entry input:focus + span.form-tooltip,
+    .authorization form .reg-wrap .lia-form-email-confirm-entry input:focus + span.form-tooltip,
     .authorization form .lia-form-fieldset-wrapper .lia-form-login-entry input:focus + span.form-tooltip,
     .authorization form .lia-form-fieldset-wrapper .lia-form-password-entry input:focus + span.form-tooltip,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-email-entry input:focus + span.form-tooltip,
+    .authorization form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry input:focus + span.form-tooltip,
     .switch-user form .reg-wrap .lia-form-login-entry input:focus + span.form-tooltip,
     .switch-user form .reg-wrap .lia-form-password-entry input:focus + span.form-tooltip,
+    .switch-user form .reg-wrap .lia-form-email-entry input:focus + span.form-tooltip,
+    .switch-user form .reg-wrap .lia-form-email-confirm-entry input:focus + span.form-tooltip,
     .switch-user form .lia-form-fieldset-wrapper .lia-form-login-entry input:focus + span.form-tooltip,
-    .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry input:focus + span.form-tooltip {
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-password-entry input:focus + span.form-tooltip,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-email-entry input:focus + span.form-tooltip,
+    .switch-user form .lia-form-fieldset-wrapper .lia-form-email-confirm-entry input:focus + span.form-tooltip {
       display: block; }
   .registration form .reg-wrap,
   .authorization form .reg-wrap,
@@ -16082,7 +16343,7 @@ ul.btn-list {
     font-weight: 400;
     letter-spacing: 0.2px;
     width: 226px;
-    margin: 0 auto;
+    margin: 0 auto 10px;
     display: block; }
     .registration form button:hover, .registration form input[type=submit]:hover,
     .authorization form button:hover,

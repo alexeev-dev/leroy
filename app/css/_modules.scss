@@ -178,6 +178,10 @@
 
 .pluso-more {display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;}
 
+.lia-quilt-column-alley {
+	padding-right: 0 !important; padding-left: 0 !important;
+}
+
 /*********************************/
 /*********** Modules *************/
 /*********************************/
@@ -3173,13 +3177,14 @@ ul {
 			width: 100%; margin: 0 0 15px;;
 		}
 		.reg-wrap, .lia-form-fieldset-wrapper {
-			.lia-form-login-entry, .lia-form-password-entry {
+			.lia-text-form {display: none;}
+			.lia-form-login-entry, .lia-form-password-entry, .lia-form-email-entry, .lia-form-email-confirm-entry {
 				width: 100%; margin-bottom: 20px; padding: 25px 29px 29px; position: relative;
 				background: #f9f9f9; border: solid 1px #e9e9e9;
 				.lia-form-label-wrapper {
 					text-align: left;
 				}
-				.lia-quilt-column-16 .lia-quilt-column-16 {width: 100%;}
+				& > .lia-quilt-row > .lia-quilt-column-16, & > .lia-quilt-row > .lia-quilt-column-08, .lia-quilt-column-16 .lia-quilt-column-16 {width: 100%; padding: 0;}
 				p {
 					color: $main-color-2; font-size: 15px; font-family: $OpenSans; letter-spacing: 0.1px;
 					margin-bottom: 14px;
@@ -3193,16 +3198,32 @@ ul {
 				}
 				label {
 					color: $main-color-2; font-size: 15px; font-family: $OpenSans; font-weight: 700; letter-spacing: -0.2px; text-align: left;
-					width: 100%; padding-left: 2px; position: relative; top: -2px; display: inherit;
+					display: inline-block; padding-left: 2px; position: relative; top: -2px;
+					span.lia-label-required-mark {display: none;}
 					em {
 						color: $main-color-1; font-size: 18px; font-family: $HNC-Bold;
 						position: relative; top: -4px;
 					}
+					&:after {
+						content: ' *';
+						color: $main-color-1; font-size: 18px; font-family: $HNC-Bold;
+					}
 				}
+				.HelpIcon {position: relative; top: -3px;}
 				input {
 					color: $main-color-2; font-size: 15px; font-family: $HNC-Medium;
 					height: 45px; width: 100%; padding: 0 19px;
-					background: #ffffff; border: solid 1px #e9e9e9;
+					background: #ffffff; border: solid 1px #e9e9e9; border-radius: 0; box-shadow: none;
+
+					&:focus {
+						box-shadow: none; border-color: $main-color-1;
+					}
+					&.lia-form-field-error {
+						background: #ffffff url('input-error.png') no-repeat; background-position: calc(100% - 14px) 13px; border-color: #ff0000;
+					}
+					&.lia-form-field-success {
+						background: #ffffff url('input-success.png') no-repeat; background-position: calc(100% - 14px) 13px;
+					}
 				}
 				span.form-tooltip {
 					color: #666666; font-size: 12px; font-family: $HNC-Medium; line-height: 13px; letter-spacing: -0.18px;
@@ -3310,7 +3331,7 @@ ul {
 		button, input[type=submit] {
 			@extend .btn;
 			font-size: 16px; font-family: $HNC-Medium; font-weight: 400; letter-spacing: 0.2px;
-			width: 226px; margin: 0 auto; display: block;
+			width: 226px; margin: 0 auto 10px; display: block;
 			&:hover {
 				border-color: $main-color-1;
 			}
