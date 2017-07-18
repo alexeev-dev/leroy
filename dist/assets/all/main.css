@@ -11857,7 +11857,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .icon {
   display: inline-block; }
 
-.clear:after, .forum-list > ul > li div:last-child ul:after, .footer > ul > li:after, .footer-subscribe:after, .footer-subscribe form:after, .header:after, .header-search div.user:after, .header-navigation div.user:after, .header-unauth:after, .header-unauth ul.auth:after, .main-social ul li .socials-title:after, .user_page-info div:after, .user_page-last_articles > ul > li .articles-body:after, .shops-region-shops:after, .wr-container:after {
+.clear:after, .forum-disc > ul > li > form > div.message-footer:after, .forum-disc > ul > li > div.message-footer:after, .forum-list > ul > li div:last-child ul:after, .footer > ul > li:after, .footer-subscribe:after, .footer-subscribe form:after, .header:after, .header-search div.user:after, .header-navigation div.user:after, .header-unauth:after, .header-unauth ul.auth:after, .main-social ul li .socials-title:after, .user_page-info div:after, .user_page-last_articles > ul > li .articles-body:after, .shops-region-shops:after, .wr-container:after {
   content: '';
   display: block;
   width: 100%;
@@ -12988,7 +12988,22 @@ ul.btn-list {
     margin-left: -15px;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+    position: relative; }
+    .forum-articles > ul:after {
+      content: '';
+      display: block;
+      width: -webkit-calc(100% - 15px);
+      width: calc(100% - 15px);
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: #eaeaea; }
+      @media (max-width: 480px) {
+        .forum-articles > ul:after {
+          width: 100%; } }
     @media (max-width: 480px) {
       .forum-articles > ul {
         margin-left: 0; } }
@@ -13038,6 +13053,15 @@ ul.btn-list {
                 top: 2px; }
               .forum-articles > ul > li figure figcaption ul li i.icon-forum_news-likes {
                 top: 1px; }
+  .forum-articles > a {
+    color: #66c05d;
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    margin: 17px 17px 17px 0; }
+    .forum-articles > a:hover {
+      text-decoration: underline; }
 
 .forum-disc h4 {
   color: #333333;
@@ -13053,16 +13077,16 @@ ul.btn-list {
   padding-bottom: 13px;
   background: #f3f3f3;
   border: solid 1px #e9e9e9; }
-  .forum-disc > ul > li > form > div, .forum-disc > ul > li > div {
+  .forum-disc > ul > li > form > div.message-body, .forum-disc > ul > li > div.message-body {
     padding: 23px 23px;
     min-height: 209px;
     margin-bottom: 12px;
     background: #f9f9f9;
     border-bottom: solid 1px #e9e9e9; }
-    .forum-disc > ul > li > form > div .user, .forum-disc > ul > li > div .user {
+    .forum-disc > ul > li > form > div.message-body .user, .forum-disc > ul > li > div.message-body .user {
       position: relative;
       margin-bottom: 23px; }
-      .forum-disc > ul > li > form > div .user figure, .forum-disc > ul > li > div .user figure {
+      .forum-disc > ul > li > form > div.message-body .user figure, .forum-disc > ul > li > div.message-body .user figure {
         float: left;
         width: 37px;
         height: 37px;
@@ -13074,14 +13098,14 @@ ul.btn-list {
         -webkit-border-radius: 50%;
         border-radius: 50%;
         overflow: hidden; }
-        .forum-disc > ul > li > form > div .user figure img, .forum-disc > ul > li > div .user figure img {
+        .forum-disc > ul > li > form > div.message-body .user figure img, .forum-disc > ul > li > div.message-body .user figure img {
           position: absolute;
           left: 50%;
           top: 50%;
           -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
-      .forum-disc > ul > li > form > div .user a.auth, .forum-disc > ul > li > div .user a.auth {
+      .forum-disc > ul > li > form > div.message-body .user a.auth, .forum-disc > ul > li > div.message-body .user a.auth {
         color: #66c05d;
         font-size: 15px;
         font-family: "Open Sans", sans-serif;
@@ -13089,31 +13113,31 @@ ul.btn-list {
         display: inline-block;
         margin-bottom: 3px; }
         @media (max-width: 480px) {
-          .forum-disc > ul > li > form > div .user a.auth, .forum-disc > ul > li > div .user a.auth {
+          .forum-disc > ul > li > form > div.message-body .user a.auth, .forum-disc > ul > li > div.message-body .user a.auth {
             text-overflow: ellipsis;
             max-width: 130px;
             overflow: hidden; } }
-      .forum-disc > ul > li > form > div .user span, .forum-disc > ul > li > div .user span {
+      .forum-disc > ul > li > form > div.message-body .user span, .forum-disc > ul > li > div.message-body .user span {
         font-size: 11px;
         display: block; }
-        .forum-disc > ul > li > form > div .user span i, .forum-disc > ul > li > div .user span i {
+        .forum-disc > ul > li > form > div.message-body .user span i, .forum-disc > ul > li > div.message-body .user span i {
           color: #bcbcbc;
           font-size: 12px;
           margin-right: 6px;
           position: relative;
           top: 1px; }
-        .forum-disc > ul > li > form > div .user span.date, .forum-disc > ul > li > div .user span.date {
+        .forum-disc > ul > li > form > div.message-body .user span.date, .forum-disc > ul > li > div.message-body .user span.date {
           font-family: "Roboto", sans-serif; }
-        .forum-disc > ul > li > form > div .user span.date-comm, .forum-disc > ul > li > div .user span.date-comm {
+        .forum-disc > ul > li > form > div.message-body .user span.date-comm, .forum-disc > ul > li > div.message-body .user span.date-comm {
           font-family: "Open Sans", sans-serif; }
-    .forum-disc > ul > li > form > div h3, .forum-disc > ul > li > div h3 {
+    .forum-disc > ul > li > form > div.message-body h3, .forum-disc > ul > li > div.message-body h3 {
       font-size: 15px;
       font-family: "Open Sans", sans-serif;
       font-weight: 700;
       letter-spacing: 0.05px;
       word-wrap: break-word;
       margin-bottom: 16px; }
-    .forum-disc > ul > li > form > div h4, .forum-disc > ul > li > div h4 {
+    .forum-disc > ul > li > form > div.message-body h4, .forum-disc > ul > li > div.message-body h4 {
       font-size: 13px;
       font-family: "Open Sans", sans-serif;
       font-weight: 600;
@@ -13121,17 +13145,17 @@ ul.btn-list {
       word-wrap: break-word;
       margin-bottom: 16px;
       padding-top: 2px; }
-    .forum-disc > ul > li > form > div p, .forum-disc > ul > li > div p {
+    .forum-disc > ul > li > form > div.message-body p, .forum-disc > ul > li > div.message-body p {
       font-size: 14px;
       font-family: "Open Sans", sans-serif;
       line-height: 21px;
       letter-spacing: 0.1px;
       word-wrap: break-word; }
-      .forum-disc > ul > li > form > div p a, .forum-disc > ul > li > div p a {
+      .forum-disc > ul > li > form > div.message-body p a, .forum-disc > ul > li > div.message-body p a {
         color: #66c05d; }
-        .forum-disc > ul > li > form > div p a:hover, .forum-disc > ul > li > div p a:hover {
+        .forum-disc > ul > li > form > div.message-body p a:hover, .forum-disc > ul > li > div.message-body p a:hover {
           text-decoration: underline; }
-    .forum-disc > ul > li > form > div > input, .forum-disc > ul > li > div > input {
+    .forum-disc > ul > li > form > div.message-body > input, .forum-disc > ul > li > div.message-body > input {
       font-size: 15px;
       font-family: "Open Sans", sans-serif;
       font-weight: 700;
@@ -13143,7 +13167,7 @@ ul.btn-list {
       margin-bottom: 15px;
       background: #ffffff;
       border: solid 1px #e9e9e9; }
-    .forum-disc > ul > li > form > div textarea, .forum-disc > ul > li > div textarea {
+    .forum-disc > ul > li > form > div.message-body textarea, .forum-disc > ul > li > div.message-body textarea {
       font-size: 14px;
       font-family: "Open Sans", sans-serif;
       line-height: 21px;
@@ -13156,12 +13180,16 @@ ul.btn-list {
       background: #ffffff;
       border: solid 1px #e9e9e9;
       resize: none; }
-    .forum-disc > ul > li > form > div .word-control, .forum-disc > ul > li > div .word-control {
+    .forum-disc > ul > li > form > div.message-body .word-control, .forum-disc > ul > li > div.message-body .word-control {
       margin-bottom: -21px; }
-      .forum-disc > ul > li > form > div .word-control ul:first-child, .forum-disc > ul > li > div .word-control ul:first-child {
+      .forum-disc > ul > li > form > div.message-body .word-control ul:first-child, .forum-disc > ul > li > div.message-body .word-control ul:first-child {
         padding-left: 3px; }
-        .forum-disc > ul > li > form > div .word-control ul:first-child li, .forum-disc > ul > li > div .word-control ul:first-child li {
+        .forum-disc > ul > li > form > div.message-body .word-control ul:first-child li, .forum-disc > ul > li > div.message-body .word-control ul:first-child li {
           margin-right: 27px; }
+  .forum-disc > ul > li > form > div.message-footer ul.btn-list, .forum-disc > ul > li > div.message-footer ul.btn-list {
+    float: right; }
+  .forum-disc > ul > li > form > div.message-footer ul.btn-share, .forum-disc > ul > li > div.message-footer ul.btn-share {
+    float: left; }
   .forum-disc > ul > li a.btn, .forum-disc > ul > li .KudosButton a.lia-button-image-kudos, .KudosButton .forum-disc > ul > li a.lia-button-image-kudos, .forum-disc > ul > li a.btn-punct {
     font-size: 13px;
     font-family: Helvetica, sans-serif;
@@ -13189,6 +13217,25 @@ ul.btn-list {
     margin-right: 25px; }
     .forum-disc > ul > li ul.btn-list li .KudosButton {
       display: block; }
+  .forum-disc > ul > li ul.btn-share {
+    margin-left: 25px; }
+    @media (max-width: 767px) {
+      .forum-disc > ul > li ul.btn-share {
+        margin-bottom: 15px; } }
+    .forum-disc > ul > li ul.btn-share li {
+      display: inline-block;
+      margin-right: 11px; }
+      @media (max-width: 1199px) {
+        .forum-disc > ul > li ul.btn-share li {
+          margin-right: 10px; } }
+      .forum-disc > ul > li ul.btn-share li:first-child {
+        color: #333333;
+        font-size: 13px;
+        font-family: Helvetica, sans-serif;
+        vertical-align: top;
+        padding-top: 8px; }
+      .forum-disc > ul > li ul.btn-share li:last-child {
+        margin-right: 0; }
 
 .forum-comment {
   padding-top: 15px; }

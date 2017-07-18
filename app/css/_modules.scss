@@ -1077,7 +1077,15 @@ ul {
 			margin-bottom: 27px;
 		}
 		& > ul {
-			display: flex; margin-left: -15px; flex-wrap: wrap;		
+			display: flex; margin-left: -15px; flex-wrap: wrap;	padding-bottom: 15px; position: relative;
+			&:after {
+				content: '';
+				display: block; width: calc(100% - 15px); height: 1px; position: absolute; bottom: 0; right: 0;
+				background: #eaeaea;
+				@include respond-to(xs) {
+					width: 100%;
+				}
+			}
 			@include respond-to(xs) {
 				margin-left: 0;
 			}
@@ -1133,6 +1141,13 @@ ul {
 				}
 			}
 		}
+		& > a {
+			color: $main-color-1; font-size: 13px; font-family: $OpenSans; font-weight: 700;
+			display: inline-block; margin: 17px 17px 17px 0;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 	
 	&-disc {
@@ -1146,79 +1161,92 @@ ul {
 				position: relative; margin-bottom: 20px; padding-bottom: 13px;
 				background: #f3f3f3; border: solid 1px #e9e9e9;
 				& > form > div, & > div {
-					padding: 23px 23px; min-height: 209px; margin-bottom: 12px;
-					background: #f9f9f9; border-bottom: solid 1px #e9e9e9;
-					.user {
-						position: relative; margin-bottom: 23px;
-						figure {
-							float: left; width: 37px; height: 37px; position: relative; top: 2px; left: 1px; margin-right: 15px;
-							border: solid 1px #ebebeb; border-radius: 50%;
-							overflow: hidden;
-							img {
-								position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
-							}
-						}
-						a {
-							&.auth {
-								color: $main-color-1; font-size: 15px; font-family: $OpenSans; font-weight: 600;
-								display: inline-block; margin-bottom: 3px;
-								@include respond-to(xs) {
-									text-overflow: ellipsis;
-									max-width: 130px;
+					&.message {
+						&-body {
+							padding: 23px 23px; min-height: 209px; margin-bottom: 12px;
+							background: #f9f9f9; border-bottom: solid 1px #e9e9e9;
+							.user {
+								position: relative; margin-bottom: 23px;
+								figure {
+									float: left; width: 37px; height: 37px; position: relative; top: 2px; left: 1px; margin-right: 15px;
+									border: solid 1px #ebebeb; border-radius: 50%;
 									overflow: hidden;
+									img {
+										position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+									}
+								}
+								a {
+									&.auth {
+										color: $main-color-1; font-size: 15px; font-family: $OpenSans; font-weight: 600;
+										display: inline-block; margin-bottom: 3px;
+										@include respond-to(xs) {
+											text-overflow: ellipsis;
+											max-width: 130px;
+											overflow: hidden;
+										}
+									}
+								}
+								span {
+									font-size: 11px;
+									display: block;
+									i {
+										color: #bcbcbc; font-size: 12px;
+										margin-right: 6px; position: relative; top: 1px;
+									}
+									&.date {
+										font-family: $Roboto;
+									}
+									&.date-comm {
+										font-family: $OpenSans;
+									}
+								}
+							}
+							h3 {
+								font-size: 15px; font-family: $OpenSans; font-weight: 700; letter-spacing: 0.05px; word-wrap: break-word;
+								margin-bottom: 16px;
+							}
+							h4 {
+								font-size: 13px; font-family: $OpenSans; font-weight: 600; letter-spacing: -0.08px; word-wrap: break-word;
+								margin-bottom: 16px; padding-top: 2px;
+							}
+							p {
+								font-size: 14px; font-family: $OpenSans; line-height: 21px; letter-spacing: 0.1px; word-wrap: break-word;
+								a {
+									color: $main-color-1;
+									&:hover {
+										text-decoration: underline;
+									}
+								}
+							}
+							& > input {
+								font-size: 15px; font-family: $OpenSans; font-weight: 700; letter-spacing: 0.05px;
+								width: 100%; display: block; margin-top: -14px; padding: 11px 16px; margin-bottom: 15px;
+								background: #ffffff;  border: solid 1px #e9e9e9;
+							}
+							textarea {
+								font-size: 14px; font-family: $OpenSans; line-height: 21px; letter-spacing: 0.1px;
+								width: 100%; display: block; height: 113px; padding: 12px 16px; margin-bottom: 17px;
+								background: #ffffff;  border: solid 1px #e9e9e9;
+								resize: none;
+							}
+							.word-control {
+								margin-bottom: -21px;
+								ul {
+									&:first-child {
+										padding-left: 3px;
+										li {
+											margin-right: 27px;
+										}
+									}
 								}
 							}
 						}
-						span {
-							font-size: 11px;
-							display: block;
-							i {
-								color: #bcbcbc; font-size: 12px;
-								margin-right: 6px; position: relative; top: 1px;
-							}
-							&.date {
-								font-family: $Roboto;
-							}
-							&.date-comm {
-								font-family: $OpenSans;
-							}
-						}
-					}
-					h3 {
-						font-size: 15px; font-family: $OpenSans; font-weight: 700; letter-spacing: 0.05px; word-wrap: break-word;
-						margin-bottom: 16px;
-					}
-					h4 {
-						font-size: 13px; font-family: $OpenSans; font-weight: 600; letter-spacing: -0.08px; word-wrap: break-word;
-						margin-bottom: 16px; padding-top: 2px;
-					}
-					p {
-						font-size: 14px; font-family: $OpenSans; line-height: 21px; letter-spacing: 0.1px; word-wrap: break-word;
-						a {
-							color: $main-color-1;
-							&:hover {
-								text-decoration: underline;
-							}
-						}
-					}
-					& > input {
-						font-size: 15px; font-family: $OpenSans; font-weight: 700; letter-spacing: 0.05px;
-						width: 100%; display: block; margin-top: -14px; padding: 11px 16px; margin-bottom: 15px;
-						background: #ffffff;  border: solid 1px #e9e9e9;
-					}
-					textarea {
-						font-size: 14px; font-family: $OpenSans; line-height: 21px; letter-spacing: 0.1px;
-						width: 100%; display: block; height: 113px; padding: 12px 16px; margin-bottom: 17px;
-						background: #ffffff;  border: solid 1px #e9e9e9;
-						resize: none;
-					}
-					.word-control {
-						margin-bottom: -21px;
-						ul {
-							&:first-child {
-								padding-left: 3px;
-								li {
-									margin-right: 27px;
+						&-footer {
+							@extend .clear;
+							ul{
+								&.btn-list {float: right;}
+								&.btn-share {
+									float: left;
 								}
 							}
 						}
@@ -1254,6 +1282,53 @@ ul {
 						margin-right: 25px;
 						li {
 							.KudosButton {display: block;}
+						}
+					}
+					&.btn-share {
+						margin-left: 25px;
+						@include respond-to(sm) {
+							margin-bottom: 15px;
+						}
+						li {
+							display: inline-block; margin-right: 11px;
+							@include respond-to(lg) {
+								margin-right: 10px;
+							}
+							&:first-child {
+								color: $main-color-2; font-size: 13px; font-family: $helv;
+								vertical-align: top; padding-top: 8px;
+							}
+							&:last-child {margin-right: 0;}
+							// a {
+							// 	font-size: 16px;
+							// 	display: inline-block; width: 33px; height: 33px; position: relative;
+							// 	border: solid 1px #efefef; border-radius: 50%;
+							// 	&.vk {
+							// 		color: #5075a5;
+							// 		&:hover {
+							// 			color: #ffffff;
+							// 			background: #5075a5; border-color: #5075a5;
+							// 		}
+							// 	}
+							// 	&.fb {
+							// 		color: #2d4485;
+							// 		&:hover {
+							// 			color: #ffffff;
+							// 			background: #2d4485; border-color: #2d4485;
+							// 		}
+							// 	}
+							// 	&.ok {
+							// 		color: #f58220;
+							// 		&:hover {
+							// 			color: #ffffff;
+							// 			background: #f58220; border-color: #f58220;
+							// 		}
+							// 	}
+							// 	i {
+							// 		color: inherit;
+							// 		position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+							// 	}
+							// }
 						}
 					}
 				}
