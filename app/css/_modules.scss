@@ -175,8 +175,17 @@
 	overflow: hidden;
 }
 
+.pluso {
+	.pluso-more {
+		display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+	}
+	.pluso-wrap {
+		a.pluso-vkontakte {
+			background:url('vk.svg') center center no-repeat !important;
+		}
+	}
+}
 
-.pluso-more {display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;}
 
 .lia-quilt-column-alley {
 	padding-right: 0 !important; padding-left: 0 !important;

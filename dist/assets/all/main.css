@@ -8441,8 +8441,8 @@ button.close {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("fontawesome-webfont.eot?v=4.7.0");
-  src: url("fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("fontawesome-webfont.woff?v=4.7.0") format("woff"), url("fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -11897,11 +11897,14 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .ov-hidden {
   overflow: hidden; }
 
-.pluso-more {
+.pluso .pluso-more {
   display: none !important;
   visibility: hidden !important;
   opacity: 0 !important;
   pointer-events: none !important; }
+
+.pluso .pluso-wrap a.pluso-vkontakte {
+  background: url("vk.svg") center center no-repeat !important; }
 
 .lia-quilt-column-alley {
   padding-right: 0 !important;
