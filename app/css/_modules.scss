@@ -2793,9 +2793,9 @@ ul {
 					}
 				}
 				&:nth-child(3) {
-					@include respond-to(md) {
-						width: 100%;
-					}
+					// @include respond-to(md) {
+					// 	width: 100%;
+					// }
 					&:before {
 						content: '';
 						display: none; position: absolute; left: 0; top: 0; width: 1px; height: 100%;
