@@ -2774,7 +2774,7 @@ ul {
 				flex-wrap: wrap;
 			}
 			& > li {
-				position: relative; padding: 37px 19px 40px; width: 33.33333%;
+				position: relative; padding: 40px 20px 40px 40px; width: 33.33333%;
 				@include respond-to(md) {
 					width: 50%;
 				}
@@ -2826,8 +2826,14 @@ ul {
 				}
 				ul {
 					li {
-						color: #ffffff; font-size: 20px; font-family: $HNC-Medium; line-height: 24px; letter-spacing: 0.5px; text-align: center;
-						margin-bottom: 16px; position: relative;
+						color: #ffffff; font-size: 13px; font-family: $HNC-Roman; line-height: 18px; letter-spacing: 0.6px;
+						margin-bottom: 18px; position: relative;
+						&:before {
+							content: '';
+							display: block; width: 11px; height: 2px;
+							position: absolute; top: 7px; left: -19px;
+							background: #66c05d;
+						}
 						&:last-child {
 							margin-bottom: 0;
 						}
@@ -3037,6 +3043,35 @@ ul {
 			}
 		}
 	}
+	&-banner_map {
+		padding-left: 84px;
+		@include respond-to(sm) {padding-left: 10px; text-align: center;}
+
+		h2 {
+			color: $main-color-2; font-size: 48px; line-height: 60px; letter-spacing: 1.2px; font-family: $HNL-Black;
+			margin-bottom: 60px;
+
+			@include respond-to(md) {
+				font-size: 40px; line-height: 48px; margin-bottom: 48px;
+			}
+			@include respond-to(sm) {
+				font-size: 32px; line-height: 40px; margin-bottom: 40px;
+			}
+			@include respond-to(xs) {
+				font-size: 26px; line-height: 30px; margin-bottom: 30px;
+
+				br {display: none;}
+			}
+		}
+		a.btn {
+			text-transform: uppercase;
+			padding: 20px 70px;
+			@include respond-to(sm) {
+				padding: 15px 50px;
+			}
+			@include respond-to(xs) {width: 100%;}
+		}
+	}
 	&-join {
 		text-align: center;
 		width: 66.66667%; margin: 0 auto;
@@ -3047,7 +3082,7 @@ ul {
 			width: 100%;
 		}
 		h2 {
-			color: $main-color-2; font-size: 48px; font-family: $HNL-Black; text-align: center;
+			color: $main-color-2; font-size: 48px; line-height: 60px; font-family: $HNL-Black; text-align: center;
 			margin-bottom: 81px;
 			@include respond-to(md) {
 				font-size: 40px;
@@ -3055,10 +3090,12 @@ ul {
 			}
 			@include respond-to(sm) {
 				font-size: 32px;
+				line-height: 40px;
 				margin-bottom: 40px;
 			}
 			@include respond-to(xs) {
 				font-size: 26px;
+				line-height: 30px;
 				margin-bottom: 30px;
 			}
 		}
