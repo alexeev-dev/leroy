@@ -4033,7 +4033,7 @@ ul {
 		figure {
 			position: relative; width: 100%;
 			overflow: hidden;
-			& > img {
+			img {
 				width: 100%;
 				@include respond-to(sm) {
 					width: 767px; position: relative; left: 50%; transform: translateX(-50%);

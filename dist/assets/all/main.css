@@ -17252,10 +17252,10 @@ ul.btn-list {
     position: relative;
     width: 100%;
     overflow: hidden; }
-    .blog-slider figure > img {
+    .blog-slider figure img {
       width: 100%; }
       @media (max-width: 767px) {
-        .blog-slider figure > img {
+        .blog-slider figure img {
           width: 767px;
           position: relative;
           left: 50%;
