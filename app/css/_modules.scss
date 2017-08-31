@@ -5657,3 +5657,6 @@ ul.forum-img {
 		.lia-button-wrapper {display: none;}
 	}
 }
+
+// hide checkbox
+.lia-form-row.lia-form-auto-subscribe-to-thread-entry.lia-form-row-reverse-label-input.lia-form-row-checkbox {display: none;}

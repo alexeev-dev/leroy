@@ -19236,6 +19236,9 @@ ul.forum-img {
     .lia-panel-message .MessageView .lia-button-wrapper {
       display: none; }
 
+.lia-form-row.lia-form-auto-subscribe-to-thread-entry.lia-form-row-reverse-label-input.lia-form-row-checkbox {
+  display: none; }
+
 .app {
   min-width: 320px;
   overflow-x: hidden;
