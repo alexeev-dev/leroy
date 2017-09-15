@@ -5507,12 +5507,15 @@ ul {
 	}
 	&-agree {
 		display: flex; justify-content: space-between;
+		@include respond-to(sm) {flex-direction: column;}
 		p {
 			color: #333f46; font-size: 12px; font-family: $HNC-Roman; letter-spacing: 0.03px; line-height: 16px;
 			padding-right: 180px; padding-top: 2px;
+			@include respond-to(sm) {padding-right: 0; width: 100%; margin-bottom: 20px;}
 		}
 		ul {
 			display: flex;
+			@include respond-to(sm) {justify-content: center;}
 			li {
 				width: 140px; margin-right: 20px;
 				&:last-child {margin-right: 0;}

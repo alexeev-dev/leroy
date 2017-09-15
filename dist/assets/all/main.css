@@ -19054,6 +19054,13 @@ ul.btn-list {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  @media (max-width: 767px) {
+    .coockie-agree {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
   .coockie-agree p {
     color: #333f46;
     font-size: 12px;
@@ -19062,11 +19069,22 @@ ul.btn-list {
     line-height: 16px;
     padding-right: 180px;
     padding-top: 2px; }
+    @media (max-width: 767px) {
+      .coockie-agree p {
+        padding-right: 0;
+        width: 100%;
+        margin-bottom: 20px; } }
   .coockie-agree ul {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+    @media (max-width: 767px) {
+      .coockie-agree ul {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center; } }
     .coockie-agree ul li {
       width: 140px;
       margin-right: 20px; }
