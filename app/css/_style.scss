@@ -69,8 +69,8 @@
 				}
 			}
 			&-banner_map {
-				padding: 120px 0 120px;
-				background: url('../img/banner-map.png') right 0 no-repeat; background-size: contain; border-bottom: 1px solid #e1e1e1;
+				padding: 120px 0 120px; max-width: 1920px; margin: 0 auto;
+				background: url('banner-map.png') right 0 no-repeat; background-size: contain; border-bottom: 1px solid #e1e1e1;
 
 				@include respond-to(lg) {
 					background-position: 420px 0; background-size: cover;
