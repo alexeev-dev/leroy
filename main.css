@@ -19872,3 +19872,33 @@ ul.forum-img {
 /*********************************/
 /*********** Modules *************/
 /*********************************/
+
+
+/*правки в пт*/
+.app .wr-main-banner_map,
+.app .lia-quilt-wr-main-banner_map {
+	max-width: 1920px;
+    margin: 0 auto;
+    background: url("banner-map.png") right 0 no-repeat;
+    background-size: contain;
+}
+
+@media (max-width: 767px) {
+    .coockie-agree {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+
+@media (max-width: 767px) {
+      .coockie-agree p {
+        padding-right: 0;
+        width: 100%;
+        margin-bottom: 20px; } }
+@media (max-width: 767px) {
+      .coockie-agree ul {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center; } }
