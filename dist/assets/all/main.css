@@ -13883,17 +13883,37 @@ ul.btn-list {
       display: inline-block;
       margin-bottom: 16px;
       max-height: 35px; }
+      @media (max-width: 480px) {
+        .footer > ul > li ul.socials {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          width: 100%;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+          justify-content: space-between; } }
       .footer > ul > li ul.socials:hover li {
         opacity: 0.6; }
       .footer > ul > li ul.socials li {
         max-height: 35px;
         display: inline-block;
-        margin-right: 25px;
+        margin-right: 12px;
         -webkit-transition: opacity 0.3s ease-out;
         transition: opacity 0.3s ease-out; }
         @media (max-width: 767px) {
           .footer > ul > li ul.socials li {
-            margin-right: 12px; } }
+            margin-right: -1px;
+            -webkit-transform: scale(0.8);
+            -ms-transform: scale(0.8);
+            transform: scale(0.8); } }
+        @media (max-width: 480px) {
+          .footer > ul > li ul.socials li {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+            margin-right: 0; } }
         .footer > ul > li ul.socials li:last-child {
           margin-right: 0; }
         .footer > ul > li ul.socials li:hover {
@@ -14570,7 +14590,7 @@ ul.btn-list {
     .header-navigation div.user > a {
       text-align: center;
       float: left;
-      width: 180px;
+      width: 100%;
       height: 41px;
       padding: 6px 10px 5px;
       position: relative;

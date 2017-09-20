@@ -1856,16 +1856,22 @@ ul {
 			}
 			ul.socials {
 				display: inline-block; margin-bottom: 16px; max-height: 35px;
+				@include respond-to(xs) {
+					display: flex; width: 100%; justify-content: space-between;
+				}
 				&:hover {
 					li {
 						opacity: 0.6;
 					}
 				}
 				li {
-					max-height: 35px; display: inline-block; margin-right: 25px;
+					max-height: 35px; display: inline-block; margin-right: 12px;
 					transition: opacity 0.3s ease-out;
 					@include respond-to(sm) {
-						margin-right: 12px;
+						margin-right: -1px; transform: scale(0.8);
+					}
+					@include respond-to(xs) {
+						transform: scale(1); margin-right: 0;
 					}
 					&:last-child {margin-right: 0;}
 					&:hover {
@@ -2410,7 +2416,7 @@ ul {
 				}
 				& > a {
 					text-align: center;
-					float: left; width: 180px; height: 41px; padding: 6px 10px 5px; position: relative; display: block;
+					float: left; width: 100%; height: 41px; padding: 6px 10px 5px; position: relative; display: block;
 					&:hover {
 						background: #00a639;
 					}
