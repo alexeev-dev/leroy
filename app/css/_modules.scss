@@ -3990,7 +3990,11 @@ ul {
 		padding: 37px 41px 42px; margin-bottom: 50px;
 		background: #fbfbfb url('result-error-bg.png') 100% -26px no-repeat;
 		@include respond-to(sm) {
-			background-size: cover;
+			background-size: auto 100%; background: #fbfbfb url('result-error-bg.png') 100% 0px no-repeat;
+		}
+		@include respond-to(xs) {
+			padding: 0;
+			background: none;
 		}
 		h2 {
 			color: $main-color-2; font-size: 20px; font-family: $HNC-Bold; letter-spacing: -0.05px;

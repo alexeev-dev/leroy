@@ -547,6 +547,9 @@
 			color: #ffffff; font-size: 16px; font-family: $OpenSans; font-weight: 600;
 			padding: 9px 37px 10px;
 			background: $main-color-1; border: solid 1px $main-color-1; border-radius: 2px;
+			@include respond-to(sm) {
+				padding: 9px 10px 10px; width: 100%;
+			}
 			&:hover {
 				color: $main-color-1;
 				background: #ffffff;
@@ -565,6 +568,9 @@
 			color: $main-color-1; font-size: 16px; font-family: $OpenSans; font-weight: 600;
 			padding: 9px 28px 10px;
 			background: #ffffff; border: solid 1px $main-color-1; border-radius: 2px;
+			@include respond-to(sm) {
+				padding: 9px 10px 10px; width: 100%;
+			}
 			&:hover {
 				color: #ffffff; text-decoration: none;
 				background: $main-color-1;
@@ -593,5 +599,27 @@
 		.lia-mce-toolbar-insertcode,
 		.lia-mce-toolbar-link,
 		.lia-mce-toolbar-embedvideo {display: none;}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.PostPage .lia-quilt-row-header .lia-component-quilt-header .lia-quilt-row, .ReplyPage .lia-quilt-row-header .lia-component-quilt-header .lia-quilt-row, .EditPage .lia-quilt-row-header .lia-component-quilt-header .lia-quilt-row {
+		display: block;
+	}
+
+	.lia-component-common-widget-page-title > .lia-link-navigation, .lia-discussion-page-header-subject, .lia-qanda-question-page-subject, .lia-thread-subject, .lia-message-blog .blog-article-link, .lia-messages-search-before-post-title {
+		font-size: 18px;
+	}
+
+	.lia-form-vertical .lia-button-group .lia-button-wrapper, .TkbArticlePage .lia-quilt-tkb-message .lia-quilt-column-footer-left .lia-button-wrapper, .TkbArticlePage .lia-quilt-tkb-message .lia-quilt-column-footer-right .lia-button-wrapper {
+		padding: 0; float: none; display: block;
+	}
+
+	.lia-form-vertical .lia-button-group .lia-button-wrapper.lia-button-wrapper-Submit-action {
+		margin-bottom: 10px;
+	}
+
+	.lia-form-vertical .lia-form-submit {
+		float: none;
 	}
 }

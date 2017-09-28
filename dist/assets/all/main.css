@@ -17218,7 +17218,12 @@ ul.btn-list {
   background: #fbfbfb url("result-error-bg.png") 100% -26px no-repeat; }
   @media (max-width: 767px) {
     .result-error {
-      background-size: cover; } }
+      background-size: auto 100%;
+      background: #fbfbfb url("result-error-bg.png") 100% 0px no-repeat; } }
+  @media (max-width: 480px) {
+    .result-error {
+      padding: 0;
+      background: none; } }
   .result-error h2 {
     color: #333333;
     font-size: 20px;
@@ -19837,6 +19842,10 @@ ul.forum-img {
   border: solid 1px #66c05d;
   -webkit-border-radius: 2px;
   border-radius: 2px; }
+  @media (max-width: 767px) {
+    .EditPage .lia-CommentEditor-form input[type="submit"].lia-button-Submit-action {
+      padding: 9px 10px 10px;
+      width: 100%; } }
   .EditPage .lia-CommentEditor-form input[type="submit"].lia-button-Submit-action:hover {
     color: #66c05d;
     background: #ffffff; }
@@ -19857,6 +19866,10 @@ ul.forum-img {
   border: solid 1px #66c05d;
   -webkit-border-radius: 2px;
   border-radius: 2px; }
+  @media (max-width: 767px) {
+    .EditPage .lia-CommentEditor-form input[type="submit"].lia-button-Cancel-action {
+      padding: 9px 10px 10px;
+      width: 100%; } }
   .EditPage .lia-CommentEditor-form input[type="submit"].lia-button-Cancel-action:hover {
     color: #ffffff;
     text-decoration: none;
@@ -19879,6 +19892,20 @@ ul.forum-img {
 .lia-CommentEditor-form .mce-toolbar-grp .lia-mce-toolbar-link,
 .lia-CommentEditor-form .mce-toolbar-grp .lia-mce-toolbar-embedvideo {
   display: none; }
+
+@media screen and (max-width: 767px) {
+  .PostPage .lia-quilt-row-header .lia-component-quilt-header .lia-quilt-row, .ReplyPage .lia-quilt-row-header .lia-component-quilt-header .lia-quilt-row, .EditPage .lia-quilt-row-header .lia-component-quilt-header .lia-quilt-row {
+    display: block; }
+  .lia-component-common-widget-page-title > .lia-link-navigation, .lia-discussion-page-header-subject, .lia-qanda-question-page-subject, .lia-thread-subject, .lia-message-blog .blog-article-link, .lia-messages-search-before-post-title {
+    font-size: 18px; }
+  .lia-form-vertical .lia-button-group .lia-button-wrapper, .TkbArticlePage .lia-quilt-tkb-message .lia-quilt-column-footer-left .lia-button-wrapper, .TkbArticlePage .lia-quilt-tkb-message .lia-quilt-column-footer-right .lia-button-wrapper {
+    padding: 0;
+    float: none;
+    display: block; }
+  .lia-form-vertical .lia-button-group .lia-button-wrapper.lia-button-wrapper-Submit-action {
+    margin-bottom: 10px; }
+  .lia-form-vertical .lia-form-submit {
+    float: none; } }
 
 /*********************************/
 /********** Typography ***********/
